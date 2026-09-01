@@ -1,0 +1,75 @@
+---
+name: archivist-check
+description: Read docs/archivist/ and judge whether the document set meets the shipping condition. Reports broken links, skipped layers, cycles, and marks that disagree with the implementation. Writes nothing. Use after a reduction, or to see where things stand.
+---
+
+# archivist-check
+
+**Writes nothing.** Reads only; changes neither content nor file names. Fixing is
+the work of `archivist-promote` and of whoever adds decisions.
+
+## Input
+
+The decisions under `docs/archivist/L4_decisions/`, and the whole document tree.
+The decisions say what the documents above them are supposed to carry; without
+them, only broken links can be found.
+
+## What it judges
+
+**Link resolution** — does the relative path exist. With an anchor, does
+`<a id="...">` exist at the destination.
+
+**Layer step** — a reference must land on one of:
+
+- a node in the layer directly below
+- a node in the same layer the graph gives a direction to (`design --> spec`,
+  `structure --> terms`)
+- a document inside the same node
+- `L4_decisions`, which any layer may cite directly
+
+Anything else is a skip, and a violation.
+
+**Cycles** — do references inside one node form a loop. A loop leaves no way to
+tell which is the original.
+
+**Marks against implementation** — the condition differs per layer.
+
+| Layer | Becomes fact when |
+| --- | --- |
+| design | the files listed under Parts exist |
+| spec | every item carries `Means:`, and declared file paths exist |
+| feature | the spec and design it cites are both fact |
+| structure / terms / decisions | never marked. A mark here is itself an error |
+
+**Verification detail** — can each item be implemented as a test without reading
+anything but its spec. Raise items that presume the internal make-up. A check that
+depends on the design is not a test.
+
+**Verification means** — does each item carry `Means:`. A file path must exist; a
+`checklist` must be detailed enough to run on its own. Means in place is enough for
+the spec to be fact. Whether it passes is out of scope.
+
+**Diagrams against reality** — every diagram carries prose saying what it is.
+Set three against each other.
+
+- Does the prose contradict what the diagram draws. Prose that supplements what
+  a diagram cannot hold is fine; prose that states a rule the diagram omits is not
+- Does what is drawn hold in the repository as it stands
+- Where a label has the shape of a path or a command name, does it exist
+
+A rule stated in prose but missing an edge in the diagram is the common failure,
+and nothing else catches it.
+
+**Commands against features** — set the entry points under `skills/` against
+`L1_features/` and raise what exists on one side only.
+
+## Report
+
+Emit it so `archivist-promote` can consume it directly: the files whose mark should
+come off, listed one per line.
+
+## The shipping condition
+
+The layers the topic touched are filled, and links run unbroken from the bottom up.
+A layer left untouched is not a violation. **Not skipping layers and writing one
+document per layer are different things.**
