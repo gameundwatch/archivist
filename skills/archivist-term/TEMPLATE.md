@@ -1,3 +1,9 @@
+<!--
+    LARGE_SNAKE_CASE is a placeholder. Replace every one with content.
+    Everything else is written as it stands, field names included.
+    A line holding only `...` means repeat as needed; delete the line.
+-->
+
 # TERM_NAME — about term
 
 <!--
@@ -15,7 +21,9 @@
 -->
 
 - Aliases: ALIAS_1, ALIAS_2
-- Details: details...
+- Details:
+  - DETAIL_1
+  - DETAIL_2
 
 ...
 

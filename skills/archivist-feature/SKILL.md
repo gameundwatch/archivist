@@ -1,6 +1,6 @@
 ---
 name: archivist-feature
-description: Write the feature a decision defines into docs/archivist/L1_features/. Use when the unit a user can name gets settled, or when something is invocable but has no promise written for it.
+description: Write the feature a decision defines into docs/archivist/L1_features/. Use when the unit a user can name gets settled, or when something the user can name has no promise written for it.
 ---
 
 # archivist-feature
@@ -9,7 +9,7 @@ Read `TEMPLATE.md` in this directory for the form. It is not copied here.
 
 ## What to read
 
-The decision, `docs/archivist/L2_*/`, and the set of entry points a user can invoke.
+The decision, `docs/archivist/L2_*/`, and the units the project exposes to a user.
 
 ## The starting point is the decision
 
@@ -23,12 +23,15 @@ how the layers below were written.
 
 ## The unit
 
-**One invocable command is one feature.** Set the entry points against the features.
+**What counts as one nameable unit is itself a decision.** Read the unit out of
+the decision. Do not derive it from how the implementation happens to be divided.
+
+Set the units the project exposes against the features.
 
 | Difference | Meaning |
 | --- | --- |
-| More commands | Nameable, but no promise written |
-| More features | A promise with nothing to invoke |
+| More units | Nameable, but no promise written |
+| More features | A promise with nothing behind it |
 
 ## Availability
 

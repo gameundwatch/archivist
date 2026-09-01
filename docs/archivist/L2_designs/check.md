@@ -16,7 +16,6 @@
 | ----------- | ----------- | -- | --- |
 | check | skills/archivist-check/SKILL.md | 決断, docs/archivist/ | 判定の報告 |
 | docs | docs/archivist/ | 全文書 | 走査の対象 |
-| skills | skills/ | 起動できるコマンド | feature との照合先 |
 
 ### Relation
 

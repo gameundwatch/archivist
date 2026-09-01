@@ -1,3 +1,9 @@
+<!--
+    LARGE_SNAKE_CASE is a placeholder. Replace every one with content.
+    Everything else is written as it stands, field names included.
+    A line holding only `...` means repeat as needed; delete the line.
+-->
+
 # SPEC_NAME — about spec
 
 ## Requirements
@@ -12,36 +18,36 @@
 
 ### R1 REQUIREMENT_NAME_1
 
-- details
-- details
+- DETAIL_1
+- DETAIL_2
 
 <a id="R2"></a>
 
 ### R2 REQUIREMENT_NAME_2
 
-- details
-- details
-- details
+- DETAIL_1
+- DETAIL_2
+- DETAIL_3
 
 <a id="R3"></a>
 
 ### R3 REQUIREMENT_NAME_3
 
-- details
+- DETAIL_1
 
 <a id="R4"></a>
 
 ### R4 REQUIREMENT_NAME_4
 
-- details
-- details
+- DETAIL_1
+- DETAIL_2
 
 <a id="R5"></a>
 
 ### R5 REQUIREMENT_NAME_5
 
-- details
-- details
+- DETAIL_1
+- DETAIL_2
 ...
 
 ## Verify
@@ -72,35 +78,35 @@
 ### V1 VERIFY_NAME_1
 
 - Means: checklist
-- details
+- DETAIL_1
 
 <a id="V2"></a>
 
 ### V2 VERIFY_NAME_2
 
 - Means: test/TEST_FILE
-- details
+- DETAIL_1
 
 <a id="V3"></a>
 
 ### V3 VERIFY_NAME_3
 
 - Means: checklist
-- details
+- DETAIL_1
 
 <a id="V4"></a>
 
 ### V4 VERIFY_NAME_4
 
 - Means: test/TEST_FILE
-- details
+- DETAIL_1
 
 <a id="V5"></a>
 
 ### V5 VERIFY_NAME_5
 
 - Means: checklist
-- details
+- DETAIL_1
 ...
 
 ## Decisions

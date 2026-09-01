@@ -1,3 +1,9 @@
+<!--
+    LARGE_SNAKE_CASE is a placeholder. Replace every one with content.
+    Everything else is written as it stands, field names included.
+    A line holding only `...` means repeat as needed; delete the line.
+-->
+
 # FEATURE_NAME — about feature
 
 <!-- FEATURE description... -->
@@ -16,9 +22,10 @@ Write the prose in the language the project already uses.
 -->
 
 - AVAILABILITY_ITEMS_1
-    details...
+    - DETAIL_1
+    - DETAIL_2
 - AVAILABILITY_ITEMS_2
-    details...
+    - DETAIL_1
 - AVAILABILITY_ITEMS_3
 ...
 

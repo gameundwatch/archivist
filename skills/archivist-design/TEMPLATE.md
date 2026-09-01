@@ -1,3 +1,9 @@
+<!--
+    LARGE_SNAKE_CASE is a placeholder. Replace every one with content.
+    Everything else is written as it stands, field names included.
+    A line holding only `...` means repeat as needed; delete the line.
+-->
+
 # DESIGN_NAME — about design
 
 ## Needs
@@ -5,9 +11,9 @@
 <!-- What each cited requirement needs. Not a restatement of the requirement. -->
 | spec | needs |
 | ---- | ----- |
-| [R1](../L2_specs/SPEC_NAME.md#R1) | needs details... |
-| [R2](../L2_specs/SPEC_NAME.md#R2) | needs details... |
-| [R3](../L2_specs/SPEC_NAME.md#R3) | needs details... |
+| [R1](../L2_specs/SPEC_NAME.md#R1) | NEEDS_1 |
+| [R2](../L2_specs/SPEC_NAME.md#R2) | NEEDS_2 |
+| [R3](../L2_specs/SPEC_NAME.md#R3) | NEEDS_3 |
 
 
 ## Parts
@@ -22,9 +28,9 @@
 
 | target_name | target_file | IN | OUT |
 | ----------- | ---------------- | -- | --- |
-| TARGET_NAME_1 | src/TARGET_FILE_1 | input description | output description |
-| TARGET_NAME_2 | src/TARGET_FILE_2 | input description | - |
-| TARGET_NAME_3 | src/TARGET_FILE_3 | - | output description |
+| TARGET_NAME_1 | src/TARGET_FILE_1 | IN_1 | OUT_1 |
+| TARGET_NAME_2 | src/TARGET_FILE_2 | IN_2 | - |
+| TARGET_NAME_3 | src/TARGET_FILE_3 | - | OUT_3 |
 | TARGET_NAME_4 | src/TARGET_FILE_4 | - | - |
 | ... | ... | ... | ... |
 ...
@@ -38,9 +44,10 @@
 ## Rules
 <!-- Rules and constraints for the implementation. Each traces to a decision -->
 - DESIGN_RULES_1
-    - details...
+    - DETAIL_1
+    - DETAIL_2
 - DESIGN_RULES_2
-    - details...
+    - DETAIL_1
 - DESIGN_RULES_3
 ...
 

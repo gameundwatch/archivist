@@ -16,7 +16,7 @@ The decision, `docs/archivist/L3_*/`, and the spec in question.
 What each requirement needs. Cite the requirement by anchor.
 
 ```
-| [R1](../L2_specs/SPEC_NAME.md#R1) | needs details... |
+| [R1](../L2_specs/SPEC_NAME.md#R1) | NEEDS_1 |
 ```
 
 **Not a restatement of the requirement.** R says what must be achieved; needs says

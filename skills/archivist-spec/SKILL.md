@@ -30,7 +30,7 @@ bottom completes the verification. Details carry the procedure and the condition
 under which it counts as met.
 
 **Write each item detailed enough that the test can be written from this spec alone.**
-Paths, command names, inputs and expected outputs are vocabulary observable from
+Paths, names exposed to the outside, inputs and expected outputs are vocabulary observable from
 outside - write them. Only what presumes the internal make-up goes to design. If
 the test cannot be written, the judgement is not yet stated.
 

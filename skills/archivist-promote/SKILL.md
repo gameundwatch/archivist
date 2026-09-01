@@ -26,7 +26,7 @@ There is no index. Find incoming links by scanning.
 grep -rl '_TARGET_NAME\.md' docs/archivist/
 ```
 
-Where the file is cited with an anchor, as in `../L2_specs/_reduction.md#R1`,
+Where the file is cited with an anchor, as in `../L2_specs/_SPEC_NAME.md#R1`,
 rewrite the path alone. The anchor is unchanged.
 
 ## When done

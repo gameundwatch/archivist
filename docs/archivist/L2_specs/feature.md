@@ -13,7 +13,7 @@
 
 ### R2 利用者が名指しできる単位を一つとする
 
-- 起動できるコマンド1本に1枚が対応する
+- 何を一つの単位とするかは決断が決める。実装の分割から導かない
 
 <a id="R3"></a>
 
@@ -40,7 +40,7 @@
 | No | VERIFY_NAME | REQUIREMENT |
 | -- | ----------- | ----------- |
 | 1 | [起点の確認](#V1) | [R1](#R1) |
-| 2 | [コマンドとの対応](#V2) | [R2](#R2) |
+| 2 | [単位との対応](#V2) | [R2](#R2) |
 | 3 | [層の越境](#V3) | [R3](#R3) |
 | 4 | [参照の網羅](#V4) | [R4](#R4) |
 | 5 | [言語の追随](#V5) | [R5](#R5) |
@@ -54,10 +54,10 @@
 
 <a id="V2"></a>
 
-### V2 コマンドとの対応
+### V2 単位との対応
 
 - Means: checklist
-- 起動できるコマンドの集合と機能の集合が一致することを見る
+- 決断が公開すると定めた単位の集合と機能の集合が一致することを見る
 
 <a id="V3"></a>
 
@@ -84,7 +84,6 @@
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [コマンド1本を feature 1枚とする](../L4_decisions/command-is-feature.md)
 - [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
 
 ## References

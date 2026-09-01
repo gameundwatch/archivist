@@ -55,13 +55,14 @@ Set three against each other.
 - Does the prose contradict what the diagram draws. Prose that supplements what
   a diagram cannot hold is fine; prose that states a rule the diagram omits is not
 - Does what is drawn hold in the repository as it stands
-- Where a label has the shape of a path or a command name, does it exist
+- Where a label has the shape of a path or a name declared elsewhere, does it exist
 
 A rule stated in prose but missing an edge in the diagram is the common failure,
 and nothing else catches it.
 
-**Commands against features** — set the entry points under `skills/` against
-`L1_features/` and raise what exists on one side only.
+**Exposed units against features** — where a decision names what the project
+exposes, set that set against `L1_features/` and raise what exists on one
+side only.
 
 ## Report
 
