@@ -4,7 +4,7 @@
     A line holding only `...` means repeat as needed; delete the line.
 -->
 
-# TERM_NAME — about term
+# TERM_NAME
 
 <!--
     Explains the meaning of one word. The file name is the word itself.

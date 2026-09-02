@@ -4,7 +4,7 @@
     A line holding only `...` means repeat as needed; delete the line.
 -->
 
-# SPEC_NAME — about spec
+# SPEC_NAME
 
 ## Requirements
 <!-- 

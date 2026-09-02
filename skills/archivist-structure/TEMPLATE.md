@@ -4,7 +4,7 @@
     A line holding only `...` means repeat as needed; delete the line.
 -->
 
-# STRUCTURE_NAME — about structure
+# STRUCTURE_NAME
 
 <!--
     Shows the whole structure named in the title.

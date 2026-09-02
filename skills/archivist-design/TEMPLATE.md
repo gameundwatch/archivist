@@ -4,7 +4,7 @@
     A line holding only `...` means repeat as needed; delete the line.
 -->
 
-# DESIGN_NAME — about design
+# DESIGN_NAME
 
 ## Needs
 
