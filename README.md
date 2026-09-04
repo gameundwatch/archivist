@@ -57,7 +57,7 @@ flowchart TD
 | `/archivist-design` | 要件を満たす中身を材料と規則として書く | [design](docs/archivist/L1_features/design.md) |
 | `/archivist-feature` | 決断が定めた機能を1枚書く | [feature](docs/archivist/L1_features/feature.md) |
 | `/archivist-check` | 揃っているかを判定する。書き換えない | [check](docs/archivist/L1_features/check.md) |
-| `/archivist-promote` | 実装が届いた印を外し、流入リンクを追随させる | [promote](docs/archivist/L1_features/promote.md) |
+| `/archivist-promote` | 実現先が揃った印を外し、流入リンクを追随させる | [promote](docs/archivist/L1_features/promote.md) |
 
 起動順は書き起こしの向きに従う。
 
@@ -70,17 +70,19 @@ term → structure → spec → design → feature
 
 ## 印
 
-まだ実装に届いていない文書は、ファイル名の先頭に `_` を付ける。`ls` に印が出るので、
+実現先がまだ実在しない文書は、ファイル名の先頭に `_` を付ける。`ls` に印が出るので、
 どこまでが現物でどこからが予定かが一覧で読める。
 
 印が付くのは実現先を持つ三層だけ。
 
 | 層 | 事実になる条件 |
 | --- | --- |
-| design | Parts が挙げるファイルが実在する |
+| design | Parts の `target_file` 列のファイルが実在する |
 | spec | 全ての検証が `手段:` を持ち、ファイルを宣言したものは実在する |
 | feature | 参照する spec と design が両方事実 |
 | structure / terms / decisions | 印が付かない。決まった時点で事実 |
+
+見るのは実現先そのものが在るかどうかで、実現先を動かして得られる生成物ではない。
 
 外すのは `/archivist-check` の報告を受けた `/archivist-promote`。check は読むだけで
 書き換えない。

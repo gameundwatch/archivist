@@ -1,6 +1,6 @@
 ---
 name: archivist-check
-description: Read docs/archivist/ and judge whether the document set meets the shipping condition. Reports broken links, skipped layers, cycles, and marks that disagree with the implementation. Writes nothing. Use after a reduction, or to see where things stand.
+description: Read docs/archivist/ and judge whether the document set meets the shipping condition. Reports broken links, skipped layers, cycles, and marks that disagree with what now exists. Writes nothing. Use after a reduction, or to see where things stand.
 ---
 
 # archivist-check
@@ -32,11 +32,12 @@ Anything else is a skip, and a violation.
 **Cycles** — do references inside one node form a loop. A loop leaves no way to
 tell which is the original.
 
-**Marks against implementation** — the condition differs per layer.
+**Marks against what exists** — the condition differs per layer. What is judged is the
+existence of the thing the document names, never any output produced by running it.
 
 | Layer | Becomes fact when |
 | --- | --- |
-| design | the files listed under Parts exist |
+| design | the files in the `target_file` column of Parts exist |
 | spec | every item carries `Means:`, and declared file paths exist |
 | feature | the spec and design it cites are both fact |
 | structure / terms / decisions | never marked. A mark here is itself an error |

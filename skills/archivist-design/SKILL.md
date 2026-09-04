@@ -28,6 +28,11 @@ List the files touched, with inputs and outputs. Citing `src/` and `test/` direc
 is correct here. This is the **implementation correspondence**, not a reference in
 the layer order.
 
+Only `target_file` names a file. `IN` and `OUT` describe what flows through it, and
+may hold what the run produces or a name with a placeholder in it; neither column is
+ever judged for existence. The mark comes off this design when the `target_file`
+column exists — not when anything it outputs has been produced.
+
 ## Rules
 
 Each rule carries the decision it comes from. Do not write a rule the decision does

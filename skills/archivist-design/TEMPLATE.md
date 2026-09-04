@@ -21,9 +21,9 @@
     Materials for the implementation.
     List the files this design touches, with their inputs and outputs.
     target_name: name of the target
-    target_file: file it lives in
-    IN: input (optional)
-    OUT: output (optional)
+    target_file: file it lives in. The only column judged for existence
+    IN: input (optional). Describes the flow, never judged for existence
+    OUT: output (optional). Describes the flow, never judged for existence
 -->
 
 | target_name | target_file | IN | OUT |

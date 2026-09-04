@@ -1,6 +1,6 @@
 ---
 name: archivist-promote
-description: Strip the `_` from documents whose implementation has arrived and rewrite every incoming link. Use on the report from archivist-check.
+description: Strip the `_` from documents whose named files now exist and rewrite every incoming link. Use on the report from archivist-check.
 ---
 
 # archivist-promote

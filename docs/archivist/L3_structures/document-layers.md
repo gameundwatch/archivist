@@ -70,7 +70,7 @@ flowchart LR
 ```
 
 実現先を持つ三層にだけ印が付く。structure と terms は決断の像であり、
-実装の有無で状態が変わらない。
+実現先の有無で状態が変わらない。
 
 ## Decisions
 - [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)

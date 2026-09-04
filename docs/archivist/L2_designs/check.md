@@ -7,7 +7,7 @@
 | [R1](../L2_specs/check.md#R1) | 相対パスとアンカーの実在を確かめる手 |
 | [R2](../L2_specs/check.md#R2) | 参照の行き先の層を求める手 |
 | [R3](../L2_specs/check.md#R3) | ノード内の参照から閉路を探す手 |
-| [R4](../L2_specs/check.md#R4) | `_` 付き文書の実装到達を判定する手 |
+| [R4](../L2_specs/check.md#R4) | `_` 付き文書の実現先の実在を判定する手 |
 | [R5](../L2_specs/check.md#R5) | 読むだけに留める仕組み |
 | [R6](../L2_specs/check.md#R6) | V が design を前提にしていないか確かめる手 |
 ## Parts
