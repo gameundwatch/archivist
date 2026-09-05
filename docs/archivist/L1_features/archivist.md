@@ -15,10 +15,12 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 - 範囲は任意で、1件でも全件でもよい
 - 決断から導けない箇所に達したとき、何が足りないかを述べて止まる
 - 組み直された文書は、どの決断から来たかを自身に持つ
+- 決断が一枚も無いときは、取り込みのコマンドを案内して止まる
 
 ## Decisions
 - [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
 - [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
+- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
 
 ## References
 
@@ -31,6 +33,7 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 - [feature](feature.md)
 - [check](check.md)
 - [promote](promote.md)
+- [adopt](_adopt.md)
 
 ### Specs
 

@@ -39,6 +39,14 @@
 - 生成した各文書は Decisions 節を持ち、起点の決断を指す
 - どの決断からも指されない記述を残さない
 
+<a id="R6"></a>
+
+### R6 決断が一枚も無いときは取り込みを案内する
+
+- `L4_decisions/` が空のとき、何も書かずに取り込みのスキルを案内して止まる
+- 案内するだけで、呼ばない
+- 空でないときは案内しない
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -48,6 +56,7 @@
 | 3 | [停止の報告](#V3) | [R3](#R3) |
 | 4 | [再構成](#V4) | [R4](#R4) |
 | 5 | [跡の到達](#V5) | [R5](#R5) |
+| 6 | [空の入力](#V6) | [R6](#R6) |
 
 <a id="V1"></a>
 
@@ -85,9 +94,17 @@
 - Means: checklist
 - 生成された全文書の Decisions 節を辿り、起点の決断に到達することを見る
 
+<a id="V6"></a>
+
+### V6 空の入力
+
+- Means: checklist
+- `L4_decisions/` を空にして起動し、取り込みが案内され、勝手に起動しないことを見る
+
 ## Decisions
 - [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
 - [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
+- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
 
 ## References
 
@@ -100,6 +117,7 @@
 - [feature](feature.md)
 - [check](check.md)
 - [promote](promote.md)
+- [adopt](_adopt.md)
 
 ### Structures
 
@@ -110,3 +128,4 @@
 - [reduction](../L3_terms/reduction.md)
 - [decision](../L3_terms/decision.md)
 - [layer](../L3_terms/layer.md)
+- [adoption](../L3_terms/adoption.md)
