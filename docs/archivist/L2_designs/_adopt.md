@@ -4,12 +4,12 @@
 
 | spec | needs |
 | ---- | ----- |
-| [R1](../L2_specs/_adopt.md#R1) | ディレクトリを引数に取り、無ければ問う口 |
-| [R1](../L2_specs/_adopt.md#R1) | 一枚一文の決断記述かを判じ、外れたものを控える手 |
-| [R2](../L2_specs/_adopt.md#R2) | `L4_decisions/` を読み、同義と矛盾を見つける手 |
-| [R3](../L2_specs/_adopt.md#R3) | 候補を一枚ずつ示し、答えを待つ口 |
-| [R4](../L2_specs/_adopt.md#R4) | 決断の書式を持つ型紙 |
-| [R4](../L2_specs/_adopt.md#R4) | 名前の衝突を見て止まる手 |
+| [R1](../L2_specs/adopt.md#R1) | ディレクトリを引数に取り、無ければ問う口 |
+| [R1](../L2_specs/adopt.md#R1) | 一枚一文の決断記述かを判じ、外れたものを控える手 |
+| [R2](../L2_specs/adopt.md#R2) | `L4_decisions/` を読み、同義と矛盾を見つける手 |
+| [R3](../L2_specs/adopt.md#R3) | 候補を一枚ずつ示し、答えを待つ口 |
+| [R4](../L2_specs/adopt.md#R4) | 決断の書式を持つ型紙 |
+| [R4](../L2_specs/adopt.md#R4) | 名前の衝突を見て止まる手 |
 
 ## Parts
 
@@ -52,7 +52,7 @@ flowchart LR
 
 ### Specs
 
-- [adopt](../L2_specs/_adopt.md)
+- [adopt](../L2_specs/adopt.md)
 
 ### Structures
 

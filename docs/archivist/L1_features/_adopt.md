@@ -29,7 +29,7 @@ archivist は `L4_decisions/` に置かれたものしか読まない。既に�
 
 ### Specs
 
-- [adopt](../L2_specs/_adopt.md)
+- [adopt](../L2_specs/adopt.md)
 
 ### Designs
 
