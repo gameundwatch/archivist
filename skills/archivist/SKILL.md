@@ -18,6 +18,14 @@ Decisions placed in `docs/archivist/L4_decisions/`. Any range - one file,
 all of them, any subset. A topic with no document there is out of scope;
 making decisions is not this skill's work.
 
+## When there is nothing to read
+
+`L4_decisions/` empty is not a failure of this skill and not a decision to make
+here. Write nothing, say that `archivist-adopt` is what fills it, and stop.
+
+**Point at it; do not call it.** Say nothing about it when the directory is not
+empty.
+
 ## Order
 
 Write upward. Never skip a layer.

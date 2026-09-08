@@ -63,7 +63,7 @@ flowchart LR
 - [feature](feature.md)
 - [check](check.md)
 - [promote](promote.md)
-- [adopt](_adopt.md)
+- [adopt](adopt.md)
 
 ### Structures
 

@@ -33,4 +33,4 @@ archivist は `L4_decisions/` に置かれたものしか読まない。既に�
 
 ### Designs
 
-- [adopt](../L2_designs/_adopt.md)
+- [adopt](../L2_designs/adopt.md)

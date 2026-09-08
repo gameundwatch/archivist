@@ -58,6 +58,7 @@ flowchart TD
 | `/archivist-feature` | 決断が定めた機能を1枚書く | [feature](docs/archivist/L1_features/feature.md) |
 | `/archivist-check` | 揃っているかを判定する。書き換えない | [check](docs/archivist/L1_features/check.md) |
 | `/archivist-promote` | 実現先が揃った印を外し、流入リンクを追随させる | [promote](docs/archivist/L1_features/promote.md) |
+| `/archivist-adopt` | 外にある決断記述を突き合わせ、採ったものを置く | [adopt](docs/archivist/L1_features/adopt.md) |
 
 起動順は書き起こしの向きに従う。
 
@@ -111,7 +112,7 @@ docs/archivist/
 ## リポジトリ
 
 ```
-skills/           配布される中身。スキル8本
+skills/           配布される中身。スキル9本
 docs/archivist/   archivist 自身の文書。archivist で書かれている
 ```
 
