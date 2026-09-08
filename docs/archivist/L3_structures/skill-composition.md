@@ -13,12 +13,17 @@ flowchart LR
     SP --> D["/archivist-design"] --> F["/archivist-feature"]
     A --> C["/archivist-check"] -.報告.-> P["/archivist-promote"]
     DEC["( decision )"] --> C
+    EXT["( 外の決断記述 )"] --> AD["/archivist-adopt"] --> DEC
+    DEC --> A
+    A -.decision が無いとき案内.-> AD
 ```
 
 archivist がオーケストレーターとして伝播を司る。起動順は還元の向きに従う。
 check も decisions を受け取るが、書かずに読むだけで判定を返す。
 promote は check の報告を受け、`_` の除去と流入リンクの書き換えを行う。
 decision は すでに存在するものとし、このskillでは作成しない。
+adopt は Order の外に立ち、archivist が回り始める前に decision を用意する。
+archivist は decision が一枚も無いときだけ adopt を案内し、呼びはしない。
 
 <a id="D2"></a>
 
@@ -34,6 +39,7 @@ flowchart LR
     S5["/archivist-feature"] ---|1対1| F5["feature: feature"]
     S6["/archivist-check"] ---|1対1| F6["feature: check"]
     S7["/archivist-promote"] ---|1対1| F7["feature: promote"]
+    S8["/archivist-adopt"] ---|1対1| F8["feature: adopt"]
 ```
 
 起動できるコマンド1本が feature 1枚に対応する。片方だけが増えた状態は、
@@ -45,6 +51,7 @@ flowchart LR
 - [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
 - [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
 - [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
+- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
 
 ## References
 
@@ -53,3 +60,4 @@ flowchart LR
 - [reduction](../L3_terms/reduction.md)
 - [feature](../L3_terms/feature.md)
 - [decision](../L3_terms/decision.md)
+- [adoption](../L3_terms/adoption.md)
