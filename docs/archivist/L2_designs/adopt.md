@@ -1,22 +1,11 @@
 # adopt — 取り込みの設計
 
-## Needs
-
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/adopt.md#R1) | ディレクトリを引数に取り、無ければ問う口 |
-| [R1](../L2_specs/adopt.md#R1) | 一枚一文の決断記述かを判じ、外れたものを控える手 |
-| [R2](../L2_specs/adopt.md#R2) | `L4_decisions/` を読み、同義と矛盾を見つける手 |
-| [R3](../L2_specs/adopt.md#R3) | 候補を一枚ずつ示し、答えを待つ口 |
-| [R4](../L2_specs/adopt.md#R4) | 決断の書式を持つ型紙 |
-| [R4](../L2_specs/adopt.md#R4) | 名前の衝突を見て止まる手 |
-
 ## Parts
 
-| target_name | target_file | IN | OUT |
-| ----------- | ----------- | -- | --- |
-| adopt | skills/archivist-adopt/SKILL.md | 決断記述の並ぶディレクトリ | L4_decisions/DECISION_NAME.md |
-| template | skills/archivist-adopt/TEMPLATE.md | — | 決断の書式 |
+| No | target_name | target_file | IN | OUT |
+| -- | ----------- | ----------- | -- | --- |
+| <a id="T1"></a>T1 | adopt | skills/archivist-adopt/SKILL.md | 決断記述の並ぶディレクトリ | L4_decisions/DECISION_NAME.md |
+| <a id="T2"></a>T2 | template | skills/archivist-adopt/TEMPLATE.md | — | 決断の書式 |
 
 ### Relation
 
@@ -41,6 +30,30 @@ flowchart LR
 - 原文を写さず、型紙に整える
     - Details: 原文の場所は Decisions ではなく報告に載る。文書は元本の複製にならない
 
+## Verify
+
+| No | VERIFY_NAME | TARGET |
+| -- | ----------- | ------ |
+| 1 | [書き込みの条件](#V1) | [T1](#T1) |
+| 2 | [型紙の欄](#V2) | [T2](#T2) |
+
+<a id="V1"></a>
+
+### V1 書き込みの条件
+
+- Means: checklist
+- 書き込みが提示と回答の後にだけ起きると `SKILL.md` に書かれていることを見る
+- 名前の衝突では飛ばして報告し、連番を付けないと書かれていることを見る
+- 書く先が `L4_decisions/` だけであると書かれていることを見る
+
+<a id="V2"></a>
+
+### V2 型紙の欄
+
+- Means: checklist
+- `TEMPLATE.md` が原文の複製ではなく整形された決断の形を持つことを見る
+
+
 ## Decisions
 - [取り込みの入力は決断記述が並ぶディレクトリ](../L4_decisions/adoption-input-is-a-directory.md)
 - [取り込むかどうかは人が答える](../L4_decisions/adoption-needs-consent.md)
@@ -49,10 +62,6 @@ flowchart LR
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
 
 ## References
-
-### Specs
-
-- [adopt](../L2_specs/adopt.md)
 
 ### Structures
 

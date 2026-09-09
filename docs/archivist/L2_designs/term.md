@@ -1,21 +1,12 @@
 # term — 語を起こす設計
 
-## Needs
-
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/term.md#R1) | 決断文から語を拾い、意味が確定されたかを判定する手 |
-| [R2](../L2_specs/term.md#R2) | ファイル名を語そのものから決める手 |
-| [R3](../L2_specs/term.md#R3) | 既存の語を読み、決断と突き合わせる手 |
-| [R4](../L2_specs/term.md#R4) | Decisions 節を書く手 |
-| [R5](../L2_specs/term.md#R5) | 既存の文書から言語を見分ける手 |
 ## Parts
 
-| target_name | target_file | IN | OUT |
-| ----------- | ----------- | -- | --- |
-| term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
-| template | skills/archivist-term/TEMPLATE.md | - | 書式 |
-| terms | docs/archivist/L3_terms/ | 既存の語 | 書き直しの対象 |
+| No | target_name | target_file | IN | OUT |
+| -- | ----------- | ----------- | -- | --- |
+| <a id="T1"></a>T1 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
+| <a id="T2"></a>T2 | template | skills/archivist-term/TEMPLATE.md | - | 書式 |
+| <a id="T3"></a>T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 書き直しの対象 |
 
 ### Relation
 
@@ -28,6 +19,29 @@ flowchart LR
 ## Rules
 - 決断だけを見る。上層は読まない
 - 1回の起動で1ファイルだけ書く
+
+## Verify
+
+| No | VERIFY_NAME | TARGET |
+| -- | ----------- | ------ |
+| 1 | [スキルの入力範囲](#V1) | [T1](#T1) |
+| 2 | [型紙の欄](#V2) | [T2](#T2) |
+
+<a id="V1"></a>
+
+### V1 スキルの入力範囲
+
+- Means: checklist
+- `SKILL.md` の What to read が `L4_decisions/` だけを挙げ、上層のディレクトリを挙げていないことを見る
+
+<a id="V2"></a>
+
+### V2 型紙の欄
+
+- Means: checklist
+- `TEMPLATE.md` が Definition, Aliases, Details, Terms, Decisions の欄を全て持つことを見る
+- 一語一ファイルであることが型紙の注記に書かれていることを見る
+
 
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)

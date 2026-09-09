@@ -9,8 +9,9 @@
 ```mermaid
 flowchart LR
     A["/archivist"]
-    A --> T["/archivist-term"] --> S["/archivist-structure"] --> SP["/archivist-spec"]
-    SP --> D["/archivist-design"] --> F["/archivist-feature"]
+    A --> T["/archivist-term"] --> S["/archivist-structure"]
+    S --> SP["/archivist-spec"] --> F["/archivist-feature"]
+    S --> D["/archivist-design"] --> F
     A --> C["/archivist-check"] -.報告.-> P["/archivist-promote"]
     DEC["( decision )"] --> C
     EXT["( 外の決断記述 )"] --> AD["/archivist-adopt"] --> DEC
@@ -19,6 +20,8 @@ flowchart LR
 ```
 
 archivist がオーケストレーターとして伝播を司る。起動順は還元の向きに従う。
+spec と design は structure の後で二叉に割れ、互いを待たない。合流するのは
+feature ただ一つで、そこで両者が対応表として突き合わされる。
 check も decisions を受け取るが、書かずに読むだけで判定を返す。
 promote は check の報告を受け、`_` の除去と流入リンクの書き換えを行う。
 decision は すでに存在するものとし、このskillでは作成しない。

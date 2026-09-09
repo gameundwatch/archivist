@@ -3,11 +3,17 @@
 要件に対する how。実装の中身。
 
 - Aliases: 設計, DESIGN
-- Details: 実装ファイルを名指しできる唯一の層になる。spec を引くが、spec からは
-  引き返さない。code として実現され、test は design を読まずに書ける。
+- Details: 実装ファイルを名指しできる唯一の層になる。材料は Parts として持ち、
+  各行は `T1`, `T2`, ... の錨で feature から指せる。code として実現される。
+- Details: 検証は V として持ち、V は design だけを読んで [test](test.md) が書ける
+  詳しさで書く。
+- Details: [spec](spec.md) を引かない。両者は対等な並列で、互いを待たずに書ける。
+  整合は上の feature が担保する。
 
 ## Terms
+- [test](test.md)
 - [spec](spec.md)
 
 ## Decisions
-- [テストコードは spec だけを読んで書ける](../L4_decisions/test-from-spec-alone.md)
+- [test は design を読んで書く](../L4_decisions/test-from-design.md)
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)

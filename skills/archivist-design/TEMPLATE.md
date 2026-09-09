@@ -50,7 +50,8 @@
     running the whole artefact. One item is one judgement.
     The table below holds which VERIFY checks which TARGET.
     Details carry the procedure and the condition under which it counts as met.
-    Means carries what runs the check: a file path for test code.
+    Means carries what runs the check: a file path for test code, or `checklist`
+    when the target cannot be exercised by code.
 
     Write each item detailed enough that the test can be written from this
     design alone. Do not cite a spec - the promise is verified by debug,

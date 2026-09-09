@@ -31,7 +31,7 @@
 
 <a id="R5"></a>
 
-### R5 検証はそれだけでテストコードが書ける詳しさで書く
+### R5 検証はそれだけで debug が書ける詳しさで書く
 
 - パス名、外に公開された名前、入力と期待される出力など、外から観測できる語彙は書いてよい
 - 内部の作りを前提とする記述は design に回す
@@ -41,7 +41,7 @@
 
 ### R6 各検証は自分の手段を宣言する
 
-- テストコードならそのファイルパス、人が上から通すなら checklist と書く
+- 自動で走る debug ならそのファイルパス、人が上から通すなら checklist と書く
 - 手段が揃った時点で spec は事実になる。通ったかどうかは範囲にない
 
 <a id="R7"></a>
@@ -51,6 +51,14 @@
 - 既存の文書が無いときは、決断が書かれている言語に合わせる
 - 見出し、アンカー、フィールド名は言語に依らず英語で固定する
 
+<a id="R8"></a>
+
+### R8 design を引かない
+
+- 生成した spec は L2_designs のいかなる文書もアンカーも参照しない
+- design の側からも引かれない。両者は対等な並列で、互いを待たずに書ける
+- 整合を担保するのは上の feature であり、この層ではない
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -59,9 +67,10 @@
 | 2 | [要件の指し先](#V2) | [R2](#R2) |
 | 3 | [通し検証](#V3) | [R3](#R3) |
 | 4 | [未検証の検出](#V4) | [R4](#R4) |
-| 5 | [テストの実装可能性](#V5) | [R5](#R5) |
+| 5 | [debug の実装可能性](#V5) | [R5](#R5) |
 | 6 | [手段の宣言](#V6) | [R6](#R6) |
 | 7 | [言語の追随](#V7) | [R7](#R7) |
+| 8 | [design 非参照](#V8) | [R8](#R8) |
 
 <a id="V1"></a>
 
@@ -93,10 +102,11 @@
 
 <a id="V5"></a>
 
-### V5 テストの実装可能性
+### V5 debug の実装可能性
 
 - Means: checklist
-- 生成された各 V について、spec 以外を読まずにテストコードが書けることを見る
+- 生成された各 V について、spec 以外を読まずに debug が書けることを見る
+- 内部の作りを前提とする記述が V に残っていないことを見る
 
 <a id="V6"></a>
 
@@ -113,11 +123,19 @@
 - 既存の文書が日本語のプロジェクトで起動し、生成物の散文が日本語であることを見る
 - 同じ生成物の見出しとフィールド名が英語のままであることを見る
 
+<a id="V8"></a>
+
+### V8 design 非参照
+
+- Means: checklist
+- 生成された spec に `../L2_designs/` を含むリンクが一つも無いことを見る
+
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
 - [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
-- [テストコードは spec だけを読んで書ける](../L4_decisions/test-from-spec-alone.md)
+- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
 - [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
 
 ## References
@@ -132,5 +150,6 @@
 
 - [form](../L3_terms/form.md)
 - [decision](../L3_terms/decision.md)
-- [test](../L3_terms/test.md)
+- [debug](../L3_terms/debug.md)
+- [design](../L3_terms/design.md)
 - [reference](../L3_terms/reference.md)

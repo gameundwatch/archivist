@@ -21,12 +21,18 @@
 
 - 要件と設計には踏み込まない
 - なぜ必要とされたかを背景として持つ
+- 各項目は `A1`, `A2`, ... の錨を持ち、下の表から指せる
 
 <a id="R4"></a>
 
-### R4 仕様と設計を参照する
+### R4 仕様と設計を availability ごとの表で突き合わせる
 
-- 両方を等しく並べる
+- 一行が一つの availability。spec 列は `R` の錨を、design 列は `T` の錨を持つ
+- spec と design は互いを引かないため、両者が出会う場所はこの表だけになる
+- 空欄は不備であり、出荷を止める
+    - spec 列が空 — 約束せずに作った
+    - design 列が空 — 約束したが解いていない
+- どの行からも指されない `R` や `T` は、同じ不備を下から見たものになる
 
 <a id="R5"></a>
 
@@ -42,7 +48,7 @@
 | 1 | [起点の確認](#V1) | [R1](#R1) |
 | 2 | [単位との対応](#V2) | [R2](#R2) |
 | 3 | [層の越境](#V3) | [R3](#R3) |
-| 4 | [参照の網羅](#V4) | [R4](#R4) |
+| 4 | [対応表の網羅](#V4) | [R4](#R4) |
 | 5 | [言語の追随](#V5) | [R5](#R5) |
 
 <a id="V1"></a>
@@ -65,13 +71,16 @@
 
 - Means: checklist
 - 記述に要件や設計の内容が混ざっていないことを見る
+- 各項目が `A` 番号と `<a id>` を持つことを見る
 
 <a id="V4"></a>
 
-### V4 参照の網羅
+### V4 対応表の網羅
 
 - Means: checklist
-- その機能に属する仕様と設計が全て指されていることを見る
+- 各 availability が一行を持ち、spec 列と design 列が共に埋まっていることを見る
+- 片方の列だけ空の行を含む文書を与え、どちらが空かを言い当てて止まることを見る
+- 仕様の全 `R` と設計の全 `T` が、いずれかの行から指されていることを見る
 
 <a id="V5"></a>
 
@@ -85,6 +94,8 @@
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
 - [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
 
 ## References
 
@@ -99,3 +110,5 @@
 - [form](../L3_terms/form.md)
 - [feature](../L3_terms/feature.md)
 - [decision](../L3_terms/decision.md)
+- [spec](../L3_terms/spec.md)
+- [design](../L3_terms/design.md)

@@ -1,26 +1,15 @@
 # archivist — 還元の設計
 
-## Needs
-
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/archivist.md#R1) | L4_decisions を読み、与えられた範囲に絞る手 |
-| [R2](../L2_specs/archivist.md#R2) | 層ごとのスキルと、それを順に呼ぶ側 |
-| [R3](../L2_specs/archivist.md#R3) | 導けない箇所で止まり、何が足りないかを述べる口 |
-| [R4](../L2_specs/archivist.md#R4) | 既存文書を読み、決断と突き合わせる手 |
-| [R5](../L2_specs/archivist.md#R5) | 生成した文書に Decisions 節を書く手 |
-| [R6](../L2_specs/archivist.md#R6) | L4_decisions の空を見て、取り込みの名を告げる口 |
-
 ## Parts
 
-| target_name | target_file | IN | OUT |
-| ----------- | ----------- | -- | --- |
-| archivist | skills/archivist/SKILL.md | 決断の集合 | 下位スキルの起動 |
-| term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
-| structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
-| spec | skills/archivist-spec/SKILL.md | 決断, L3 | L2_specs/SPEC_NAME.md |
-| design | skills/archivist-design/SKILL.md | 決断, L3, spec | L2_designs/DESIGN_NAME.md |
-| feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
+| No | target_name | target_file | IN | OUT |
+| -- | ----------- | ----------- | -- | --- |
+| <a id="T1"></a>T1 | archivist | skills/archivist/SKILL.md | 決断の集合 | 下位スキルの起動 |
+| <a id="T2"></a>T2 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
+| <a id="T3"></a>T3 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
+| <a id="T4"></a>T4 | spec | skills/archivist-spec/SKILL.md | 決断, L3 | L2_specs/SPEC_NAME.md |
+| <a id="T5"></a>T5 | design | skills/archivist-design/SKILL.md | 決断, L3 | L2_designs/DESIGN_NAME.md |
+| <a id="T6"></a>T6 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
 
 ### Relation
 
@@ -39,13 +28,61 @@ flowchart LR
 - 下位スキルは1回の起動で1ファイルだけ書く
     - Details: 複数枚に及ぶ還元は、archivist が繰り返し呼ぶ
 - 下位スキルは自分の層より上を読まない
-    - Details: term は decisions だけを見る。design は decisions と L3 と spec を見る
+    - Details: term は decisions だけを見る。spec と design はどちらも decisions と L3 だけを見る
 - 書式は各スキルの TEMPLATE.md にある。SKILL.md に写さない
     - Details: archivist はテンプレートを持たない。文書を書くのは下位スキルになる
 - 取り込みは Relation に載せず、名を告げるだけにする
     - Details: 起動順の外にあり、archivist が呼ぶ相手ではない
 
+## Verify
+
+| No | VERIFY_NAME | TARGET |
+| -- | ----------- | ------ |
+| 1 | [起動順](#V1) | [T1](#T1) |
+| 2 | [下位スキルの独立](#V2) | [T2](#T2) |
+| 3 | [spec の入力](#V3) | [T4](#T4) |
+| 4 | [design の入力](#V4) | [T5](#T5) |
+| 5 | [feature の合流](#V5) | [T6](#T6) |
+
+<a id="V1"></a>
+
+### V1 起動順
+
+- Means: checklist
+- `SKILL.md` の Order が term, structure, spec, design, feature を挙げることを見る
+- spec と design が同じ段に置かれ、互いを待たないと書かれていることを見る
+
+<a id="V2"></a>
+
+### V2 下位スキルの独立
+
+- Means: checklist
+- term の What to read が決断だけであることを見る
+
+<a id="V3"></a>
+
+### V3 spec の入力
+
+- Means: checklist
+- spec の入力に design が含まれていないことを見る
+
+<a id="V4"></a>
+
+### V4 design の入力
+
+- Means: checklist
+- design の入力に spec が含まれていないことを見る
+
+<a id="V5"></a>
+
+### V5 feature の合流
+
+- Means: checklist
+- feature の入力に L2 の両方が含まれ、Coverage 表を書くことになっていることを見る
+
+
 ## Decisions
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
 - [テンプレートはスキルの中に置く](../L4_decisions/template-belongs-to-skill.md)
 - [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
 - [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)

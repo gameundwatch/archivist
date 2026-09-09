@@ -25,22 +25,28 @@ flowchart TD
     subgraph L5[L5 sources]
         code[code: src/*]
         test[test: test/*]
+        debug[debug: e2e/* or checklist]
     end
     L1 --> L2 --> L3 --> L4 --> L5
     L1 --> L4
     L2 --> L4
-    design --> spec
     structure --> terms
     test --> code
+    debug --> code
     design -.-> code
-    spec -.-> test
+    design -.-> test
+    spec -.-> debug
 ```
 
 実線は参照の方向で、上の層から直下の層へ引く。破線は実装の対応を示し、
 参照の順序には数えない。decisions だけは例外で、どの層からも直接指せる。
 
-破線が spec から test へ、design から code へ分かれているのは、test が spec だけを
-読んで書けるためにある。design から test への線は引かない。
+L2 の二つに線は無い。spec と design は対等な並列で、どちらの向きにも引かない。
+両者が矛盾していないことは feature の Coverage 表が担保する。
+
+破線が spec から debug へ、design から test へ分かれているのは、二つの検証が
+別のものを判定するためにある。debug は成果物を動かして約束を判定し、test は
+材料をパーツ単位で判定する。spec から test へも、design から debug へも線は引かない。
 
 <a id="D2"></a>
 
@@ -49,11 +55,15 @@ flowchart TD
 ```mermaid
 flowchart BT
     D["L4 decisions"] --> T["L3 terms"] --> S["L3 structures"]
-    S --> SP["L2 specs"] --> DE["L2 designs"] --> F["L1 features"]
+    S --> SP["L2 specs"] --> F["L1 features"]
+    S --> DE["L2 designs"] --> F
 ```
 
 参照は上から下へ張るが、書き起こしは下から上へ進む。この向きが
 archivist の起動順そのものになる。
+
+L2 で経路が二叉に割れる。specs と designs は互いを待たないので、順不同に書ける。
+合流するのは features ただ一つで、そこで初めて両方が揃っている必要が出る。
 
 <a id="D3"></a>
 
@@ -61,7 +71,7 @@ archivist の起動順そのものになる。
 
 ```mermaid
 flowchart LR
-    F["feature"] -->|"spec と design が事実なら"| M["印が外れる"]
+    F["feature"] -->|"Coverage が指す spec と design が事実なら"| M["印が外れる"]
     S["spec"] -->|"全 V に手段が在れば"| M
     D["design"] -->|"Parts のファイルが在れば"| M
     ST["structure"] --- N["印が付かない"]
@@ -74,7 +84,10 @@ flowchart LR
 
 ## Decisions
 - [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)
-- [テストコードは spec だけを読んで書ける](../L4_decisions/test-from-spec-alone.md)
+- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
+- [test は design を読んで書く](../L4_decisions/test-from-design.md)
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
 - [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
 - [時間的な要素を文書に持たせない](../L4_decisions/no-time-factor.md)
 
@@ -86,4 +99,5 @@ flowchart LR
 - [reference](../L3_terms/reference.md)
 - [reduction](../L3_terms/reduction.md)
 - [test](../L3_terms/test.md)
+- [debug](../L3_terms/debug.md)
 - [mark](../L3_terms/mark.md)

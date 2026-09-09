@@ -9,11 +9,31 @@
 
 ## Availability
 
-- 決断を指定して起動すると、その決断が意味を確定させた語が1枚起きる
-- 既に語がある場合、決断と食い違う定義が書き直される
-- 語は1ファイル1語で、ファイル名が語そのものになる
-- 起きた語は、自分を確定させた決断を持つ
-- 散文は対象プロジェクトの言語で書かれ、見出しとフィールド名は英語のままになる
+<a id="A1"></a>
+- **A1** 決断を指定して起動すると、その決断が意味を確定させた語が1枚起きる
+
+<a id="A2"></a>
+- **A2** 既に語がある場合、決断と食い違う定義が書き直される
+
+<a id="A3"></a>
+- **A3** 語は1ファイル1語で、ファイル名が語そのものになる
+
+<a id="A4"></a>
+- **A4** 起きた語は、自分を確定させた決断を持つ
+
+<a id="A5"></a>
+- **A5** 散文は対象プロジェクトの言語で書かれ、見出しとフィールド名は英語のままになる
+
+### Coverage
+
+| availability | spec | design |
+| --- | --- | --- |
+| [A1](#A1) | [R1](../L2_specs/term.md#R1) | [T1](../L2_designs/term.md#T1), [T2](../L2_designs/term.md#T2) |
+| [A2](#A2) | [R3](../L2_specs/term.md#R3) | [T1](../L2_designs/term.md#T1), [T3](../L2_designs/term.md#T3) |
+| [A3](#A3) | [R2](../L2_specs/term.md#R2) | [T2](../L2_designs/term.md#T2) |
+| [A4](#A4) | [R4](../L2_specs/term.md#R4) | [T2](../L2_designs/term.md#T2) |
+| [A5](#A5) | [R5](../L2_specs/term.md#R5) | [T1](../L2_designs/term.md#T1) |
+
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)

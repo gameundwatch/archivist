@@ -36,7 +36,6 @@ flowchart TD
     L1 --> L4
     L2 --> L4
     structure --> terms
-    test --> code
     debug --> code
     design -.-> code
     design -.-> test
@@ -73,7 +72,7 @@ availability ごとの対応表として担保する。
 起動順は書き起こしの向きに従う。
 
 ```
-term → structure → spec → design → feature
+term → structure → (spec & design) → feature
 ```
 
 `/archivist` はこの順に呼び、各段で書くものが無ければ飛ばす。**層を飛ばさないことと、

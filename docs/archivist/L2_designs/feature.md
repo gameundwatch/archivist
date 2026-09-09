@@ -1,20 +1,11 @@
 # feature — 機能を起こす設計
 
-## Needs
-
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/feature.md#R1) | 決断から名指しできる単位を切り出す手 |
-| [R2](../L2_specs/feature.md#R2) | 公開される単位の集合と突き合わせる手 |
-| [R3](../L2_specs/feature.md#R3) | できることを箇条書きに落とす手 |
-| [R4](../L2_specs/feature.md#R4) | 仕様と設計を参照として張る手 |
-| [R5](../L2_specs/feature.md#R5) | 既存の文書から言語を見分ける手 |
 ## Parts
 
-| target_name | target_file | IN | OUT |
-| ----------- | ----------- | -- | --- |
-| feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
-| template | skills/archivist-feature/TEMPLATE.md | - | 書式 |
+| No | target_name | target_file | IN | OUT |
+| -- | ----------- | ----------- | -- | --- |
+| <a id="T1"></a>T1 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
+| <a id="T2"></a>T2 | template | skills/archivist-feature/TEMPLATE.md | - | 書式 |
 
 ### Relation
 
@@ -26,9 +17,36 @@ flowchart LR
 
 ## Rules
 - 仕様と設計の要約にしない。起点は決断に置く
+- 仕様と設計が出会う場所はこの層の対応表だけになる。空欄は出荷を止める
 - 1回の起動で1ファイルだけ書く
 
+## Verify
+
+| No | VERIFY_NAME | TARGET |
+| -- | ----------- | ------ |
+| 1 | [スキルの起点](#V1) | [T1](#T1) |
+| 2 | [型紙の対応表](#V2) | [T2](#T2) |
+
+<a id="V1"></a>
+
+### V1 スキルの起点
+
+- Means: checklist
+- 仕様と設計の要約にしないことが `SKILL.md` に書かれていることを見る
+- Coverage の節が spec 列と design 列の空欄の意味を書き分けていることを見る
+
+<a id="V2"></a>
+
+### V2 型紙の対応表
+
+- Means: checklist
+- `TEMPLATE.md` の Availability の各項目が `A1`, `A2`, ... の錨を持つことを見る
+- Coverage 表が availability, spec, design の三列を持つことを見る
+
+
 ## Decisions
+- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
 - [テンプレートはスキルの中に置く](../L4_decisions/template-belongs-to-skill.md)

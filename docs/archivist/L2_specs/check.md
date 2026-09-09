@@ -14,7 +14,8 @@
 
 - 行き先が直下の層、同じ層でグラフが向きを定めた相手、同じノードの中、
   L4_decisions のいずれかであることを確かめる
-- グラフが定めた層内の向きは `design --> spec` と `structure --> terms`
+- グラフが定めた層内の向きは `structure --> terms` の一つだけ
+- `spec` と `design` はその相手にあたらない。どちらの向きの参照も違反として挙げる
 
 <a id="R3"></a>
 
@@ -38,10 +39,12 @@
 
 <a id="R6"></a>
 
-### R6 検証がテストを書ける詳しさに達しているか判定する
+### R6 検証が実装できる詳しさに達しているか判定する
 
-- 各 V が spec 以外を読まずに実装できるかを確かめる
-- 内部の作りを前提とする V を挙げる
+- spec の V は、spec 以外を読まずに debug が実装できるかを確かめる。内部の作りを
+  前提とする V を挙げる
+- design の V は、design 以外を読まずに test が実装できるかを確かめる。spec を
+  引く V と、外向きの約束を言い直しただけの V を挙げる
 
 <a id="R7"></a>
 
@@ -56,7 +59,7 @@
 
 - design は Parts の `target_file` 列のファイルの実在で測る。`IN` と `OUT` は見ない
 - spec は全ての V が手段を持つかで測る
-- feature は参照する spec と design が両方事実かで測る
+- feature は Coverage 表が指す spec と design が両方事実かで測る
 - structure と terms と decisions は対象にしない
 
 <a id="R9"></a>
@@ -75,6 +78,15 @@
 - 図のラベルがパスや宣言された名前の形をしているなら、その実在を確かめる
 - 雛形の穴を含む名前と、Parts の `IN` `OUT` に由来するラベルは対象にしない
 
+<a id="R11"></a>
+
+### R11 対応表の欠落を判定する
+
+- feature の Coverage 表で、spec 列または design 列が空の行を挙げる
+- どの行からも指されない spec の `R` と design の `T` を挙げる
+- 三つとも出荷を止める不備として扱う
+- spec が緩いのか design が緩いのか、どちらの側の不備かを報告に含める
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -89,6 +101,7 @@
 | 8 | [層ごとの印](#V8) | [R8](#R8) |
 | 9 | [形の言語](#V9) | [R9](#R9) |
 | 10 | [図の一致](#V10) | [R10](#R10) |
+| 11 | [対応表の欠落](#V11) | [R11](#R11) |
 
 <a id="V1"></a>
 
@@ -131,6 +144,7 @@
 
 - Means: checklist
 - 内部の作りを前提とする V を含む spec を置き、それが挙がることを見る
+- spec を引く V を含む design を置き、それが挙がることを見る
 
 <a id="V7"></a>
 
@@ -162,12 +176,24 @@
 - 説明文が述べている辺を1本欠いた図を置き、それが挙がることを見る
 - 存在しない名前をラベルに持つ図を置き、それが挙がることを見る
 
+<a id="V11"></a>
+
+### V11 対応表の欠落
+
+- Means: checklist
+- 片方の列だけ空の行を含む feature を置き、どちらの側の不備かを添えて挙がることを見る
+- どの行からも指されない `R` を含む spec と、`T` を含む design を置き、両方が
+  挙がることを見る
+
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
 - [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)
 - [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
-- [テストコードは spec だけを読んで書ける](../L4_decisions/test-from-spec-alone.md)
+- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
+- [test は design を読んで書く](../L4_decisions/test-from-design.md)
+- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
 - [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
 
 ## References

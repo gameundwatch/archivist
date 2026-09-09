@@ -33,7 +33,7 @@ elsewhere.
 
 Each item decides whether a target is built as this design says. Its realisation is
 **test**: parts exercised on their own, without running the whole artefact. Means is
-a path to test code.
+a path to test code, or `checklist` when the target cannot be exercised by code.
 
 Write each item detailed enough that the test can be written from this design alone.
 

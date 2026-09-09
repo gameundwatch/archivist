@@ -1,21 +1,12 @@
 # structure — 構造を起こす設計
 
-## Needs
-
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/structure.md#R1) | 決断が課した制約を、図の種類に振り分ける手 |
-| [R2](../L2_specs/structure.md#R2) | 図に使う語が L3_terms に在るかを確かめる手 |
-| [R3](../L2_specs/structure.md#R3) | design を捨てても残るかを判定する手 |
-| [R4](../L2_specs/structure.md#R4) | 図ごとにアンカーを振る手 |
-| [R5](../L2_specs/structure.md#R5) | 既存の文書から言語を見分ける手 |
 ## Parts
 
-| target_name | target_file | IN | OUT |
-| ----------- | ----------- | -- | --- |
-| structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
-| template | skills/archivist-structure/TEMPLATE.md | - | 書式 |
-| terms | docs/archivist/L3_terms/ | 既存の語 | 図に使える語の集合 |
+| No | target_name | target_file | IN | OUT |
+| -- | ----------- | ----------- | -- | --- |
+| <a id="T1"></a>T1 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
+| <a id="T2"></a>T2 | template | skills/archivist-structure/TEMPLATE.md | - | 書式 |
+| <a id="T3"></a>T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 図に使える語の集合 |
 
 ### Relation
 
@@ -28,6 +19,36 @@ flowchart LR
 ## Rules
 - 台帳に無い語が要るときは書かずに止まる
 - 1回の起動で1ファイルだけ書く
+
+## Verify
+
+| No | VERIFY_NAME | TARGET |
+| -- | ----------- | ------ |
+| 1 | [スキルの停止条件](#V1) | [T1](#T1) |
+| 2 | [型紙の欄](#V2) | [T2](#T2) |
+| 3 | [語の台帳](#V3) | [T3](#T3) |
+
+<a id="V1"></a>
+
+### V1 スキルの停止条件
+
+- Means: checklist
+- 台帳に無い語が要るときは書かずに止まる、と `SKILL.md` に書かれていることを見る
+
+<a id="V2"></a>
+
+### V2 型紙の欄
+
+- Means: checklist
+- `TEMPLATE.md` が図と、その図が何であるかを述べる散文の欄を対で持つことを見る
+
+<a id="V3"></a>
+
+### V3 語の台帳
+
+- Means: checklist
+- `docs/archivist/L3_terms/` が入力として `SKILL.md` に挙がっていることを見る
+
 
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
