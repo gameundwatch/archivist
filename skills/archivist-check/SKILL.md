@@ -22,8 +22,8 @@ them, only broken links can be found.
 **Layer step** — a reference must land on one of:
 
 - a node in the layer directly below
-- a node in the same layer the graph gives a direction to (`design --> spec`,
-  `structure --> terms`)
+- a node in the same layer the graph gives a direction to (`structure --> terms`).
+  `spec` and `design` are **not** such a pair: a reference either way is a violation
 - a document inside the same node
 - `L4_decisions`, which any layer may cite directly
 
@@ -39,16 +39,31 @@ existence of the thing the document names, never any output produced by running 
 | --- | --- |
 | design | the files in the `target_file` column of Parts exist |
 | spec | every item carries `Means:`, and declared file paths exist |
-| feature | the spec and design it cites are both fact |
+| feature | the spec and design its Coverage table cites are both fact |
 | structure / terms / decisions | never marked. A mark here is itself an error |
 
-**Verification detail** — can each item be implemented as a test without reading
-anything but its spec. Raise items that presume the internal make-up. A check that
-depends on the design is not a test.
+**Verification detail** — two judgements, one per L2 node.
+
+- a spec item must be implementable as **debug** reading nothing but its spec.
+  Raise items that presume the internal make-up
+- a design item must be implementable as **test** reading nothing but its design.
+  Raise items that cite a spec, or that only restate an outside promise
 
 **Verification means** — does each item carry `Means:`. A file path must exist; a
 `checklist` must be detailed enough to run on its own. Means in place is enough for
-the spec to be fact. Whether it passes is out of scope.
+the document to be fact. Whether it passes is out of scope.
+
+**Coverage** — the feature's table is the only place spec and design meet, so it is
+the only place their disagreement is visible. Three defects, all of which stop
+shipping.
+
+- a row with an empty `spec` cell — built without being promised
+- a row with an empty `design` cell — promised without being solved
+- an `R` in a spec, or a `T` in a design, that no row cites — the same two defects
+  seen from below
+
+Report which of the two a defect is. It says whether the spec or the design is the
+loose one, and it says so before implementation starts.
 
 **Diagrams against reality** — every diagram carries prose saying what it is.
 Set three against each other.

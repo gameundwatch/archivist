@@ -8,7 +8,7 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 
 ## 層
 
-情報の参照順序を6ノード5層で定める。層は「一つ下の層の要素が消えたときに一緒に
+情報の参照順序を7ノード5層で定める。層は「一つ下の層の要素が消えたときに一緒に
 消えるかどうか」で分かれる。
 
 ```mermaid
@@ -30,19 +30,29 @@ flowchart TD
     subgraph L5[L5 sources]
         code
         test
+        debug
     end
     L1 --> L2 --> L3 --> L4 --> L5
     L1 --> L4
     L2 --> L4
-    design --> spec
     structure --> terms
     test --> code
+    debug --> code
     design -.-> code
-    spec -.-> test
+    design -.-> test
+    spec -.-> debug
 ```
 
 実線が参照の方向で、上の層から直下の層へ引く。decisions だけは例外で、どの層からも
 直接指せる——どの層のどの記述にも理由はあり得るため。破線は実装の対応を示す。
+
+**spec と design は互いを引かない。** 前者は What を、後者は How を担当する対等な
+並列で、互いを待たずに書ける。両者が矛盾していないことは、上の feature が
+availability ごとの対応表として担保する。
+
+検証も二つに割れる。**debug** は成果物を実環境で動かして spec の約束を判定し、
+**test** は design が定めた材料をパーツ単位で判定する。前者は design を読まずに
+書け、後者は design の改訂で壊れてよい。
 
 **参照は上から下へ、書き起こしは下から上へ。** この二つは別のものを指す。
 

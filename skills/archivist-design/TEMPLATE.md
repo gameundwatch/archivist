@@ -6,33 +6,24 @@
 
 # DESIGN_NAME
 
-## Needs
-
-<!-- What each cited requirement needs. Not a restatement of the requirement. -->
-| spec | needs |
-| ---- | ----- |
-| [R1](../L2_specs/SPEC_NAME.md#R1) | NEEDS_1 |
-| [R2](../L2_specs/SPEC_NAME.md#R2) | NEEDS_2 |
-| [R3](../L2_specs/SPEC_NAME.md#R3) | NEEDS_3 |
-
-
 ## Parts
 <!--
     Materials for the implementation.
     List the files this design touches, with their inputs and outputs.
+    No: the anchor a feature cites this target by. T1, T2, ...
     target_name: name of the target
     target_file: file it lives in. The only column judged for existence
     IN: input (optional). Describes the flow, never judged for existence
     OUT: output (optional). Describes the flow, never judged for existence
 -->
 
-| target_name | target_file | IN | OUT |
-| ----------- | ---------------- | -- | --- |
-| TARGET_NAME_1 | src/TARGET_FILE_1 | IN_1 | OUT_1 |
-| TARGET_NAME_2 | src/TARGET_FILE_2 | IN_2 | - |
-| TARGET_NAME_3 | src/TARGET_FILE_3 | - | OUT_3 |
-| TARGET_NAME_4 | src/TARGET_FILE_4 | - | - |
-| ... | ... | ... | ... |
+| No | target_name | target_file | IN | OUT |
+| -- | ----------- | ---------------- | -- | --- |
+| <a id="T1"></a>T1 | TARGET_NAME_1 | src/TARGET_FILE_1 | IN_1 | OUT_1 |
+| <a id="T2"></a>T2 | TARGET_NAME_2 | src/TARGET_FILE_2 | IN_2 | - |
+| <a id="T3"></a>T3 | TARGET_NAME_3 | src/TARGET_FILE_3 | - | OUT_3 |
+| <a id="T4"></a>T4 | TARGET_NAME_4 | src/TARGET_FILE_4 | - | - |
+| ... | ... | ... | ... | ... |
 ...
 
 <!-- Add diagrams that stay inside this design, where they help -->
@@ -50,6 +41,51 @@
     - DETAIL_1
 - DESIGN_RULES_3
 ...
+
+## Verify
+
+<!--
+    Items that decide whether a TARGET is built as this design says.
+    Verification here is test: parts are exercised on their own, without
+    running the whole artefact. One item is one judgement.
+    The table below holds which VERIFY checks which TARGET.
+    Details carry the procedure and the condition under which it counts as met.
+    Means carries what runs the check: a file path for test code.
+
+    Write each item detailed enough that the test can be written from this
+    design alone. Do not cite a spec - the promise is verified by debug,
+    which this document never reads.
+-->
+
+| No | VERIFY_NAME | TARGET |
+| -- | ----------- | ------ |
+| 1 | [VERIFY_NAME_1](#V1) | [T1](#T1) |
+| 2 | [VERIFY_NAME_2](#V2) | [T1](#T1), [T2](#T2) |
+| 3 | [VERIFY_NAME_3](#V3) | [T3](#T3) |
+...
+
+<a id="V1"></a>
+
+### V1 VERIFY_NAME_1
+
+- Means: test/TEST_FILE
+- DETAIL_1
+
+<a id="V2"></a>
+
+### V2 VERIFY_NAME_2
+
+- Means: test/TEST_FILE
+- DETAIL_1
+
+<a id="V3"></a>
+
+### V3 VERIFY_NAME_3
+
+- Means: test/TEST_FILE
+- DETAIL_1
+...
+
 
 ## Decisions
 <!-- Decisions this document rests on -->

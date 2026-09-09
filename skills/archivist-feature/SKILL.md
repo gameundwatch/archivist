@@ -36,9 +36,24 @@ Set the units the project exposes against the features.
 ## Availability
 
 What a user can do, as a bullet list. Do not step into requirements or design -
-those belong to L2.
+those belong to L2. Each item carries an anchor, `A1`, `A2`, ...
 
 Background carries why it was needed.
+
+## Coverage
+
+Spec and design never cite each other, so this table is the only place they meet.
+One row is one availability item; the spec column cites `R` anchors, the design
+column cites `T` anchors.
+
+| Blank | Meaning |
+| --- | --- |
+| No spec | Built without being promised |
+| No design | Promised without being solved |
+
+Both stop shipping. An `R` or a `T` that appears in no row is the same defect seen
+from below. This is the point before implementation where a loose spec or a loose
+design shows itself.
 
 ## One file per run
 

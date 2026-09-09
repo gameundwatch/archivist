@@ -57,11 +57,12 @@
     One item is one judgement; running them top to bottom completes the verification.
     The table above holds which VERIFY checks which REQUIREMENT.
     Details carry the procedure and the condition under which it counts as met.
-    Means carries what runs the check: a file path for test code, or `checklist`
-    when a person runs it by hand.
+    Means carries what runs the check: a file path for automated debug
+    (E2E, acceptance), or `checklist` when a person runs it by hand.
 
-    Write each item detailed enough that the test can be written from this spec
-    alone, without reading the design.
+    Verification here is debug: the artefact is actually run and its content
+    is judged. Write each item detailed enough that the debug can be written
+    from this spec alone, without reading the design.
 -->
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -84,7 +85,7 @@
 
 ### V2 VERIFY_NAME_2
 
-- Means: test/TEST_FILE
+- Means: debug/DEBUG_FILE
 - DETAIL_1
 
 <a id="V3"></a>
@@ -98,7 +99,7 @@
 
 ### V4 VERIFY_NAME_4
 
-- Means: test/TEST_FILE
+- Means: debug/DEBUG_FILE
 - DETAIL_1
 
 <a id="V5"></a>

@@ -33,8 +33,13 @@ Write upward. Never skip a layer.
 1. `archivist-term` — words the decision fixed the meaning of
 2. `archivist-structure` — forms the decision imposes
 3. `archivist-spec` — promises derivable from the decision
-4. `archivist-design` — what satisfies those requirements
-5. `archivist-feature` — the unit a user can name
+3. `archivist-design` — what solves them
+4. `archivist-feature` — the unit a user can name, and where the two halves of
+   step 3 are set against each other
+
+**Spec and design share a step.** Neither cites the other, so neither waits for the
+other; write them in either order or at the same time. Only the feature above needs
+both to be there.
 
 Skip a step when it has nothing to write. **Not skipping layers and writing one
 document per layer are different things.**

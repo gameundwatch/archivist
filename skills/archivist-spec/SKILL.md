@@ -29,25 +29,31 @@ This section is the checklist. One item is one judgement; running them top to
 bottom completes the verification. Details carry the procedure and the condition
 under which it counts as met.
 
-**Write each item detailed enough that the test can be written from this spec alone.**
+Its realisation is **debug**: the artefact is actually run in a real environment and
+its content judged. E2E and acceptance checks land here; whether a person or a
+machine runs it makes no difference.
+
+**Write each item detailed enough that the debug can be written from this spec alone.**
 Paths, names exposed to the outside, inputs and expected outputs are vocabulary observable from
 outside - write them. Only what presumes the internal make-up goes to design. If
-the test cannot be written, the judgement is not yet stated.
+the debug cannot be written, the judgement is not yet stated.
 
-Each item carries `Means:` - a file path for test code, or `checklist` when a
+Each item carries `Means:` - a file path for automated debug, or `checklist` when a
 person runs it by hand. Browser checks and targets that cannot be automated leave
 only the latter. Without the declaration there is no measuring whether the spec
 has become fact.
 
-A test asks whether the spec is met. Something that dictates the fine detail of the
-implementation is not a test but a lint, and lint belongs to design.
+Debug asks whether the spec is met. Something that judges the parts on their own is
+a **test**, and test is verified from design. Something that dictates the fine
+detail of the implementation is a lint, and lint belongs to design too.
 
 The table above holds which item checks which requirement. **A requirement no item
 points at is unverified** - look for an R absent from the REQUIREMENT column.
 
 ## Reference direction
 
-A spec does not cite a design. The direction runs one way, design to spec.
+**Never cite a design.** The two sit side by side and neither waits for the other.
+Whether a design answers this promise is settled in the feature, not here.
 
 ## One file per run
 
