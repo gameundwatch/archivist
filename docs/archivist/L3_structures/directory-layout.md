@@ -2,8 +2,6 @@
 
 ## Diagrams
 
-<a id="D1"></a>
-
 ### D1 配置
 
 ```mermaid
@@ -41,8 +39,6 @@ DESIGNS --> UNIMPLEMENTED_DESIGN_FILE["_DESIGN_NAME.md"]
 
 6つのディレクトリが各ノードに1対1で対応する。印が付くのは実現先を持つ三層だけで、
 `L3_structures` `L3_terms` `L4_decisions` には枝が無い。
-
-<a id="D2"></a>
 
 ### D2 命名
 

@@ -4,7 +4,7 @@
 
 - Aliases: 設計, DESIGN
 - Details: 実装ファイルを名指しできる唯一の層になる。材料は Parts として持ち、
-  各行は `T1`, `T2`, ... の錨で feature から指せる。code として実現される。
+  各行は `T1`, `T2`, ... の番号を持ち、feature の表がその番号で指す。code として実現される。
 - Details: 検証は V として持ち、V は design だけを読んで [test](test.md) が書ける
   詳しさで書く。
 - Details: [spec](spec.md) を引かない。両者は対等な並列で、互いを待たずに書ける。

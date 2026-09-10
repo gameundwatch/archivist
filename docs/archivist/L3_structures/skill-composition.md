@@ -2,8 +2,6 @@
 
 ## Diagrams
 
-<a id="D1"></a>
-
 ### D1 スキルの構成と起動順
 
 ```mermaid
@@ -27,8 +25,6 @@ promote は check の報告を受け、`_` の除去と流入リンクの書き�
 decision は すでに存在するものとし、このskillでは作成しない。
 adopt は Order の外に立ち、archivist が回り始める前に decision を用意する。
 archivist は decision が一枚も無いときだけ adopt を案内し、呼びはしない。
-
-<a id="D2"></a>
 
 ### D2 コマンドと feature の対応
 
