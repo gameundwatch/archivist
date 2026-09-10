@@ -14,14 +14,10 @@
     and scope: what is covered and what is not.
 -->
 
-<a id="R1"></a>
-
 ### R1 REQUIREMENT_NAME_1
 
 - DETAIL_1
 - DETAIL_2
-
-<a id="R2"></a>
 
 ### R2 REQUIREMENT_NAME_2
 
@@ -29,20 +25,14 @@
 - DETAIL_2
 - DETAIL_3
 
-<a id="R3"></a>
-
 ### R3 REQUIREMENT_NAME_3
 
 - DETAIL_1
-
-<a id="R4"></a>
 
 ### R4 REQUIREMENT_NAME_4
 
 - DETAIL_1
 - DETAIL_2
-
-<a id="R5"></a>
 
 ### R5 REQUIREMENT_NAME_5
 
@@ -67,42 +57,32 @@
 
 | No | VERIFY_NAME | REQUIREMENT |
 | -- | ----------- | ----------- |
-| 1 | [VERIFY_NAME_1](#V1) | [R1](#R1) |
-| 2 | [VERIFY_NAME_2](#V2) | [R1](#R1), [R2](#R2) |
-| 3 | [VERIFY_NAME_3](#V3) | [R3](#R3) |
-| 4 | [VERIFY_NAME_4](#V4) | [R2](#R2), [R4](#R4) |
-| 5 | [VERIFY_NAME_5](#V5) | [R5](#R5) |
+| 1 | V1 VERIFY_NAME_1 | R1 |
+| 2 | V2 VERIFY_NAME_2 | R1, R2 |
+| 3 | V3 VERIFY_NAME_3 | R3 |
+| 4 | V4 VERIFY_NAME_4 | R2, R4 |
+| 5 | V5 VERIFY_NAME_5 | R5 |
 ...
-
-<a id="V1"></a>
 
 ### V1 VERIFY_NAME_1
 
 - Means: checklist
 - DETAIL_1
 
-<a id="V2"></a>
-
 ### V2 VERIFY_NAME_2
 
 - Means: debug/DEBUG_FILE
 - DETAIL_1
-
-<a id="V3"></a>
 
 ### V3 VERIFY_NAME_3
 
 - Means: checklist
 - DETAIL_1
 
-<a id="V4"></a>
-
 ### V4 VERIFY_NAME_4
 
 - Means: debug/DEBUG_FILE
 - DETAIL_1
-
-<a id="V5"></a>
 
 ### V5 VERIFY_NAME_5
 

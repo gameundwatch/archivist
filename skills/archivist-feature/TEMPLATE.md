@@ -16,21 +16,21 @@
 
 <!--
 What a user can do with this FEATURE_NAME, as a bullet list.
-Each item carries an anchor, A1, A2, ..., so the table below can cite it.
+Each item carries a number, A1, A2, ..., so the table below can cite it.
 
 Write the prose in the language the project already uses.
 -->
 
-<a id="A1"></a>
+
 - **A1** AVAILABILITY_ITEMS_1
     - DETAIL_1
     - DETAIL_2
 
-<a id="A2"></a>
+
 - **A2** AVAILABILITY_ITEMS_2
     - DETAIL_1
 
-<a id="A3"></a>
+
 - **A3** AVAILABILITY_ITEMS_3
     - DETAIL_1
 ...
@@ -42,8 +42,10 @@ Write the prose in the language the project already uses.
     meet, so it is the only place their disagreement can be seen.
 
     One row is one availability item.
-    spec: the R anchors in L2_specs that promise this item. May be several.
-    design: the T anchors in L2_designs that solve it. May be several.
+    spec: the R numbers in the L2_specs document that promise this item. May be several.
+    design: the T numbers in the L2_designs document that solve it. May be several.
+    Write the numbers alone. Which documents they live in is held by References,
+    which links each of them as a whole file.
 
     A blank cell is a defect and stops shipping.
     An empty spec cell means it was built without being promised.
@@ -53,9 +55,9 @@ Write the prose in the language the project already uses.
 
 | availability | spec | design |
 | ------------ | ---- | ------ |
-| [A1](#A1) | [R1](../L2_specs/SPEC_NAME.md#R1) | [T1](../L2_designs/DESIGN_NAME.md#T1) |
-| [A2](#A2) | [R2](../L2_specs/SPEC_NAME.md#R2), [R3](../L2_specs/SPEC_NAME.md#R3) | [T2](../L2_designs/DESIGN_NAME.md#T2) |
-| [A3](#A3) | [R4](../L2_specs/SPEC_NAME.md#R4) | [T3](../L2_designs/DESIGN_NAME.md#T3), [T4](../L2_designs/DESIGN_NAME.md#T4) |
+| A1 | R1 | T1 |
+| A2 | R2, R3 | T2 |
+| A3 | R4 | T3, T4 |
 ...
 
 

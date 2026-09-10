@@ -20,10 +20,8 @@
     Express the structure with any diagram form mermaid supports.
     - https://mermaid.ai/open-source/intro/
     Several diagrams may sit here. One diagram carries one subject.
-    Put an anchor directly before each diagram so upper layers can cite it.
+    Number the diagrams D1, D2, ... Upper layers cite this file as a whole.
 -->
-
-<a id="D1"></a>
 
 ### D1 DIAGRAM_NAME_1
 
@@ -32,8 +30,6 @@
 ```
 
 <!-- About five lines saying what the diagram is -->
-
-<a id="D2"></a>
 
 ### D2 DIAGRAM_NAME_2
 

@@ -10,7 +10,7 @@
 <!--
     Materials for the implementation.
     List the files this design touches, with their inputs and outputs.
-    No: the anchor a feature cites this target by. T1, T2, ...
+    No: the number a feature cites this target by. T1, T2, ...
     target_name: name of the target
     target_file: file it lives in. The only column judged for existence
     IN: input (optional). Describes the flow, never judged for existence
@@ -19,10 +19,10 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ---------------- | -- | --- |
-| <a id="T1"></a>T1 | TARGET_NAME_1 | src/TARGET_FILE_1 | IN_1 | OUT_1 |
-| <a id="T2"></a>T2 | TARGET_NAME_2 | src/TARGET_FILE_2 | IN_2 | - |
-| <a id="T3"></a>T3 | TARGET_NAME_3 | src/TARGET_FILE_3 | - | OUT_3 |
-| <a id="T4"></a>T4 | TARGET_NAME_4 | src/TARGET_FILE_4 | - | - |
+| T1 | TARGET_NAME_1 | src/TARGET_FILE_1 | IN_1 | OUT_1 |
+| T2 | TARGET_NAME_2 | src/TARGET_FILE_2 | IN_2 | - |
+| T3 | TARGET_NAME_3 | src/TARGET_FILE_3 | - | OUT_3 |
+| T4 | TARGET_NAME_4 | src/TARGET_FILE_4 | - | - |
 | ... | ... | ... | ... | ... |
 ...
 
@@ -60,26 +60,20 @@
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [VERIFY_NAME_1](#V1) | [T1](#T1) |
-| 2 | [VERIFY_NAME_2](#V2) | [T1](#T1), [T2](#T2) |
-| 3 | [VERIFY_NAME_3](#V3) | [T3](#T3) |
+| 1 | V1 VERIFY_NAME_1 | T1 |
+| 2 | V2 VERIFY_NAME_2 | T1, T2 |
+| 3 | V3 VERIFY_NAME_3 | T3 |
 ...
-
-<a id="V1"></a>
 
 ### V1 VERIFY_NAME_1
 
 - Means: test/TEST_FILE
 - DETAIL_1
 
-<a id="V2"></a>
-
 ### V2 VERIFY_NAME_2
 
 - Means: test/TEST_FILE
 - DETAIL_1
-
-<a id="V3"></a>
 
 ### V3 VERIFY_NAME_3
 
