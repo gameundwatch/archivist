@@ -4,12 +4,12 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| <a id="T1"></a>T1 | archivist | skills/archivist/SKILL.md | 決断の集合 | 下位スキルの起動 |
-| <a id="T2"></a>T2 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
-| <a id="T3"></a>T3 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
-| <a id="T4"></a>T4 | spec | skills/archivist-spec/SKILL.md | 決断, L3 | L2_specs/SPEC_NAME.md |
-| <a id="T5"></a>T5 | design | skills/archivist-design/SKILL.md | 決断, L3 | L2_designs/DESIGN_NAME.md |
-| <a id="T6"></a>T6 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
+| T1 | archivist | skills/archivist/SKILL.md | 決断の集合 | 下位スキルの起動 |
+| T2 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
+| T3 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
+| T4 | spec | skills/archivist-spec/SKILL.md | 決断, L3 | L2_specs/SPEC_NAME.md |
+| T5 | design | skills/archivist-design/SKILL.md | 決断, L3 | L2_designs/DESIGN_NAME.md |
+| T6 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
 
 ### Relation
 
@@ -38,13 +38,11 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [起動順](#V1) | [T1](#T1) |
-| 2 | [下位スキルの独立](#V2) | [T2](#T2) |
-| 3 | [spec の入力](#V3) | [T4](#T4) |
-| 4 | [design の入力](#V4) | [T5](#T5) |
-| 5 | [feature の合流](#V5) | [T6](#T6) |
-
-<a id="V1"></a>
+| 1 | V1 起動順 | T1 |
+| 2 | V2 下位スキルの独立 | T2 |
+| 3 | V3 spec の入力 | T4 |
+| 4 | V4 design の入力 | T5 |
+| 5 | V5 feature の合流 | T6 |
 
 ### V1 起動順
 
@@ -52,34 +50,25 @@ flowchart LR
 - `SKILL.md` の Order が term, structure, spec, design, feature を挙げることを見る
 - spec と design が同じ段に置かれ、互いを待たないと書かれていることを見る
 
-<a id="V2"></a>
-
 ### V2 下位スキルの独立
 
 - Means: checklist
 - term の What to read が決断だけであることを見る
-
-<a id="V3"></a>
 
 ### V3 spec の入力
 
 - Means: checklist
 - spec の入力に design が含まれていないことを見る
 
-<a id="V4"></a>
-
 ### V4 design の入力
 
 - Means: checklist
 - design の入力に spec が含まれていないことを見る
 
-<a id="V5"></a>
-
 ### V5 feature の合流
 
 - Means: checklist
 - feature の入力に L2 の両方が含まれ、Coverage 表を書くことになっていることを見る
-
 
 ## Decisions
 - [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)

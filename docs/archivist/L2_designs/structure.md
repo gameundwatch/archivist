@@ -4,9 +4,9 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| <a id="T1"></a>T1 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
-| <a id="T2"></a>T2 | template | skills/archivist-structure/TEMPLATE.md | - | 書式 |
-| <a id="T3"></a>T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 図に使える語の集合 |
+| T1 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
+| T2 | template | skills/archivist-structure/TEMPLATE.md | - | 書式 |
+| T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 図に使える語の集合 |
 
 ### Relation
 
@@ -24,31 +24,24 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [スキルの停止条件](#V1) | [T1](#T1) |
-| 2 | [型紙の欄](#V2) | [T2](#T2) |
-| 3 | [語の台帳](#V3) | [T3](#T3) |
-
-<a id="V1"></a>
+| 1 | V1 スキルの停止条件 | T1 |
+| 2 | V2 型紙の欄 | T2 |
+| 3 | V3 語の台帳 | T3 |
 
 ### V1 スキルの停止条件
 
 - Means: checklist
 - 台帳に無い語が要るときは書かずに止まる、と `SKILL.md` に書かれていることを見る
 
-<a id="V2"></a>
-
 ### V2 型紙の欄
 
 - Means: checklist
 - `TEMPLATE.md` が図と、その図が何であるかを述べる散文の欄を対で持つことを見る
 
-<a id="V3"></a>
-
 ### V3 語の台帳
 
 - Means: checklist
 - `docs/archivist/L3_terms/` が入力として `SKILL.md` に挙がっていることを見る
-
 
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)

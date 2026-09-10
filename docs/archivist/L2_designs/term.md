@@ -4,9 +4,9 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| <a id="T1"></a>T1 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
-| <a id="T2"></a>T2 | template | skills/archivist-term/TEMPLATE.md | - | 書式 |
-| <a id="T3"></a>T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 書き直しの対象 |
+| T1 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
+| T2 | template | skills/archivist-term/TEMPLATE.md | - | 書式 |
+| T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 書き直しの対象 |
 
 ### Relation
 
@@ -24,24 +24,19 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [スキルの入力範囲](#V1) | [T1](#T1) |
-| 2 | [型紙の欄](#V2) | [T2](#T2) |
-
-<a id="V1"></a>
+| 1 | V1 スキルの入力範囲 | T1 |
+| 2 | V2 型紙の欄 | T2 |
 
 ### V1 スキルの入力範囲
 
 - Means: checklist
 - `SKILL.md` の What to read が `L4_decisions/` だけを挙げ、上層のディレクトリを挙げていないことを見る
 
-<a id="V2"></a>
-
 ### V2 型紙の欄
 
 - Means: checklist
 - `TEMPLATE.md` が Definition, Aliases, Details, Terms, Decisions の欄を全て持つことを見る
 - 一語一ファイルであることが型紙の注記に書かれていることを見る
-
 
 ## Decisions
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)

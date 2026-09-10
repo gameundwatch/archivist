@@ -4,8 +4,8 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| <a id="T1"></a>T1 | check | skills/archivist-check/SKILL.md | 決断, docs/archivist/ | 判定の報告 |
-| <a id="T2"></a>T2 | docs | docs/archivist/ | 全文書 | 走査の対象 |
+| T1 | check | skills/archivist-check/SKILL.md | 決断, docs/archivist/ | 判定の報告 |
+| T2 | docs | docs/archivist/ | 全文書 | 走査の対象 |
 
 ### Relation
 
@@ -23,10 +23,8 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [無変更](#V1) | [T1](#T1) |
-| 2 | [報告の形](#V2) | [T2](#T2) |
-
-<a id="V1"></a>
+| 1 | V1 無変更 | T1 |
+| 2 | V2 報告の形 | T2 |
 
 ### V1 無変更
 
@@ -34,13 +32,10 @@ flowchart LR
 - `SKILL.md` が書き込みを行わないと明記していることを見る
 - 判定の一覧に、書き換えを伴う項目が無いことを見る
 
-<a id="V2"></a>
-
 ### V2 報告の形
 
 - Means: checklist
 - 報告が promote の入力の形であると `SKILL.md` に書かれていることを見る
-
 
 ## Decisions
 - [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)

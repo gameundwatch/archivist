@@ -4,9 +4,9 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| <a id="T1"></a>T1 | design | skills/archivist-design/SKILL.md | 決断, L3, spec | L2_designs/DESIGN_NAME.md |
-| <a id="T2"></a>T2 | template | skills/archivist-design/TEMPLATE.md | - | 書式 |
-| <a id="T3"></a>T3 | l3 | docs/archivist/L3_*/ | 語と構造 | 参照先 |
+| T1 | design | skills/archivist-design/SKILL.md | 決断, L3, spec | L2_designs/DESIGN_NAME.md |
+| T2 | template | skills/archivist-design/TEMPLATE.md | - | 書式 |
+| T3 | l3 | docs/archivist/L3_*/ | 語と構造 | 参照先 |
 
 ### Relation
 
@@ -24,11 +24,9 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [スキルの入力範囲](#V1) | [T1](#T1) |
-| 2 | [型紙の錨と検証欄](#V2) | [T2](#T2) |
-| 3 | [語と構造の参照先](#V3) | [T3](#T3) |
-
-<a id="V1"></a>
+| 1 | V1 スキルの入力範囲 | T1 |
+| 2 | V2 型紙の番号列と検証欄 | T2 |
+| 3 | V3 語と構造の参照先 | T3 |
 
 ### V1 スキルの入力範囲
 
@@ -36,22 +34,17 @@ flowchart LR
 - `SKILL.md` の What to read が決断と L3 だけを挙げ、`L2_specs/` を挙げていないことを見る
 - spec を引かないことが Reference direction に書かれていることを見る
 
-<a id="V2"></a>
-
-### V2 型紙の錨と検証欄
+### V2 型紙の番号列と検証欄
 
 - Means: checklist
-- `TEMPLATE.md` の Parts が `T1`, `T2`, ... の No 列と `<a id>` を持つことを見る
+- `TEMPLATE.md` の Parts が `T1`, `T2`, ... の No 列を持ち、`<a id>` を持たないことを見る
 - `TEMPLATE.md` に Needs の欄が無いことを見る
 - Verify の注記が test を宛先として名指し、spec を引くなと述べていることを見る
-
-<a id="V3"></a>
 
 ### V3 語と構造の参照先
 
 - Means: checklist
 - `docs/archivist/L3_*/` が入力として `SKILL.md` に挙がっていることを見る
-
 
 ## Decisions
 - [test は design を読んで書く](../L4_decisions/test-from-design.md)

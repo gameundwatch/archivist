@@ -4,8 +4,8 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| <a id="T1"></a>T1 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
-| <a id="T2"></a>T2 | template | skills/archivist-feature/TEMPLATE.md | - | 書式 |
+| T1 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
+| T2 | template | skills/archivist-feature/TEMPLATE.md | - | 書式 |
 
 ### Relation
 
@@ -24,10 +24,8 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | [スキルの起点](#V1) | [T1](#T1) |
-| 2 | [型紙の対応表](#V2) | [T2](#T2) |
-
-<a id="V1"></a>
+| 1 | V1 スキルの起点 | T1 |
+| 2 | V2 型紙の対応表 | T2 |
 
 ### V1 スキルの起点
 
@@ -35,14 +33,12 @@ flowchart LR
 - 仕様と設計の要約にしないことが `SKILL.md` に書かれていることを見る
 - Coverage の節が spec 列と design 列の空欄の意味を書き分けていることを見る
 
-<a id="V2"></a>
-
 ### V2 型紙の対応表
 
 - Means: checklist
-- `TEMPLATE.md` の Availability の各項目が `A1`, `A2`, ... の錨を持つことを見る
+- `TEMPLATE.md` の Availability の各項目が `A1`, `A2`, ... の番号を持つことを見る
+- Coverage 表の spec 列と design 列が番号だけを置き、リンクを持たないことを見る
 - Coverage 表が availability, spec, design の三列を持つことを見る
-
 
 ## Decisions
 - [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
