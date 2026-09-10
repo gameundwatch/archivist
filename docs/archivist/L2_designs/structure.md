@@ -43,12 +43,12 @@ flowchart LR
 - Means: checklist
 - `docs/archivist/L3_terms/` が入力として `SKILL.md` に挙がっていることを見る
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [テンプレートはスキルの中に置く](../L4_decisions/template-belongs-to-skill.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
 
 ## References
 

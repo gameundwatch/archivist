@@ -7,6 +7,6 @@
   `## Requirements` `Means:` は形であり、英語で固定される。
   境界は「機械が読む位置か、人が読む中身か」で引く。位置なら形になる。
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)

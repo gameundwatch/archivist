@@ -70,13 +70,13 @@ flowchart LR
 - Means: checklist
 - feature の入力に L2 の両方が含まれ、Coverage 表を書くことになっていることを見る
 
-## Decisions
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [テンプレートはスキルの中に置く](../L4_decisions/template-belongs-to-skill.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
-- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
+## Articles
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
+- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
+- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 
 ## References
 

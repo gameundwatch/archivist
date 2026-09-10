@@ -98,14 +98,14 @@
 - Means: checklist
 - 生成された spec に `../L2_designs/` を含むリンクが一つも無いことを見る
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
-- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
-- [参照はファイル単位で張る](../L4_decisions/references-are-file-scoped.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
+- [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
 

@@ -4,7 +4,7 @@
     A line holding only `...` means repeat as needed; delete the line.
 -->
 
-# DECISION_NAME
+# ARTICLE_NAME
 
 <!--
     Holds one decision. The title is the decision itself, stated in one line,

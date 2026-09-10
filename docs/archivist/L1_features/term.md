@@ -29,11 +29,11 @@
 | A4 | R4 | T2 |
 | A5 | R5 | T1 |
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
-- [コマンド1本を feature 1枚とする](../L4_decisions/command-is-feature.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
+- [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
 
 ## References
 

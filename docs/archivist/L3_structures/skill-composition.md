@@ -44,13 +44,13 @@ flowchart LR
 起動できるコマンド1本が feature 1枚に対応する。片方だけが増えた状態は、
 名指しできるのに約束が無いか、約束だけあって起動できないかのいずれかを意味する。
 
-## Decisions
-- [決断が増減させる一覧は structure に置く](../L4_decisions/enumeration-as-mapping.md)
-- [コマンド1本を feature 1枚とする](../L4_decisions/command-is-feature.md)
-- [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
-- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
+## Articles
+- [決断が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
+- [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
+- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
+- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 
 ## References
 

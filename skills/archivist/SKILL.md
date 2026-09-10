@@ -1,6 +1,6 @@
 ---
 name: archivist
-description: Rebuild documents from decisions. Starting from docs/archivist/L4_decisions/, reduce upward through L3 to L1. Use when a decision is added, when a decision changes, or when the document set has drifted from the decisions.
+description: Rebuild documents from decisions. Starting from docs/archivist/L4_articles/, reduce upward through L3 to L1. Use when a decision is added, when a decision changes, or when the document set has drifted from the decisions.
 ---
 
 # archivist
@@ -14,13 +14,13 @@ headings are PascalCase.
 
 ## Input
 
-Decisions placed in `docs/archivist/L4_decisions/`. Any range - one file,
+Decisions placed in `docs/archivist/L4_articles/`. Any range - one file,
 all of them, any subset. A topic with no document there is out of scope;
 making decisions is not this skill's work.
 
 ## When there is nothing to read
 
-`L4_decisions/` empty is not a failure of this skill and not a decision to make
+`L4_articles/` empty is not a failure of this skill and not a decision to make
 here. Write nothing, say that `archivist-adopt` is what fills it, and stop.
 
 **Point at it; do not call it.** Say nothing about it when the directory is not
@@ -49,7 +49,7 @@ document per layer are different things.**
 When an existing decision changed, find the documents citing it. There is no index.
 
 ```
-grep -rl 'DECISION_FILE_NAME' docs/archivist/
+grep -rl 'ARTICLE_FILE_NAME' docs/archivist/
 ```
 
 Rewrite what you find, then find what cites those. Stop when nothing above is reached.

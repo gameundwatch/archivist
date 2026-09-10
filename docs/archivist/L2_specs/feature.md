@@ -71,13 +71,13 @@
 - 既存の文書が日本語のプロジェクトで起動し、生成物の散文が日本語であることを見る
 - 同じ生成物の見出しとフィールド名が英語のままであることを見る
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
-- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [参照はファイル単位で張る](../L4_decisions/references-are-file-scoped.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
 

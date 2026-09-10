@@ -14,6 +14,6 @@
 - [test](test.md)
 - [spec](spec.md)
 
-## Decisions
-- [test は design を読んで書く](../L4_decisions/test-from-design.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
+## Articles
+- [test は design を読んで書く](../L4_articles/test-from-design.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)

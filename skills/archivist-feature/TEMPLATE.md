@@ -61,11 +61,11 @@ Write the prose in the language the project already uses.
 ...
 
 
-## Decisions
+## Articles
 <!-- Decisions this document rests on -->
-- [DECISION_NAME_1](../L4_decisions/DECISION_NAME_1.md)
-- [DECISION_NAME_2](../L4_decisions/DECISION_NAME_2.md)
-- [DECISION_NAME_3](../L4_decisions/DECISION_NAME_3.md)
+- [ARTICLE_NAME_1](../L4_articles/ARTICLE_NAME_1.md)
+- [ARTICLE_NAME_2](../L4_articles/ARTICLE_NAME_2.md)
+- [ARTICLE_NAME_3](../L4_articles/ARTICLE_NAME_3.md)
 ...
 
 ## References

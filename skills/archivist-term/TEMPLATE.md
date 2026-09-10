@@ -34,9 +34,9 @@
 - [TERM_NAME_3](../L3_terms/TERM_NAME_3.md)
 ...
 
-## Decisions
+## Articles
 <!-- Decisions this document rests on -->
-- [DECISION_NAME_1](../L4_decisions/DECISION_NAME_1.md)
-- [DECISION_NAME_2](../L4_decisions/DECISION_NAME_2.md)
-- [DECISION_NAME_3](../L4_decisions/DECISION_NAME_3.md)
+- [ARTICLE_NAME_1](../L4_articles/ARTICLE_NAME_1.md)
+- [ARTICLE_NAME_2](../L4_articles/ARTICLE_NAME_2.md)
+- [ARTICLE_NAME_3](../L4_articles/ARTICLE_NAME_3.md)
 ...

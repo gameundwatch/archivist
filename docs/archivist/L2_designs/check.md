@@ -37,13 +37,13 @@ flowchart LR
 - Means: checklist
 - 報告が promote の入力の形であると `SKILL.md` に書かれていることを見る
 
-## Decisions
-- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
-- [test は design を読んで書く](../L4_decisions/test-from-design.md)
-- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
-- [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)
-- [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
-- [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
+## Articles
+- [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
+- [test は design を読んで書く](../L4_articles/test-from-design.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
+- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
 
 ## References
 

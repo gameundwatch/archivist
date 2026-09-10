@@ -63,11 +63,11 @@
 - 既存の文書が日本語のプロジェクトで起動し、生成物の散文が日本語であることを見る
 - 同じ生成物の見出しとフィールド名が英語のままであることを見る
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
-- [参照はファイル単位で張る](../L4_decisions/references-are-file-scoped.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
 

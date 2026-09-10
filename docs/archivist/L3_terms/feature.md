@@ -11,5 +11,5 @@
 
 - [decision](decision.md)
 
-## Decisions
-- [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
+## Articles
+- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)

@@ -10,7 +10,7 @@
 
 ### R2 既存の決断と突き合わせる
 
-- 候補ごとに、`L4_decisions/` の中で同じことを言う一枚を探して示す
+- 候補ごとに、`L4_articles/` の中で同じことを言う一枚を探して示す
 - 矛盾する一枚があれば、矛盾する箇所を示す
 - 対応が無いものは新規として示す
 
@@ -20,7 +20,7 @@
 - 答えの無いまま書き込まない
 - 件数が多くても一括の採択に切り替えない
 
-### R4 採ったものだけを `L4_decisions/` に整形して置く
+### R4 採ったものだけを `L4_articles/` に整形して置く
 
 - 決断の書式に整えて置く。原文をそのまま写さない
 - 人が書いた既存の決断を上書きしない。名前が衝突したら報告して止まる
@@ -54,7 +54,7 @@
 ### V3 無回答では書かない
 
 - Means: checklist
-- 提示に答えずに終えたとき、`L4_decisions/` が増えていないことを見る
+- 提示に答えずに終えたとき、`L4_articles/` が増えていないことを見る
 
 ### V4 衝突で止まる
 
@@ -64,13 +64,13 @@
 ### V5 範囲の限定
 
 - Means: checklist
-- 実行後に増えた文書が `L4_decisions/` の中だけであることを見る
+- 実行後に増えた文書が `L4_articles/` の中だけであることを見る
 
-## Decisions
-- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
-- [取り込むかどうかは人が答える](../L4_decisions/adoption-needs-consent.md)
-- [取り込みの入力は決断記述が並ぶディレクトリ](../L4_decisions/adoption-input-is-a-directory.md)
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
+## Articles
+- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
+- [取り込むかどうかは人が答える](../L4_articles/adoption-needs-consent.md)
+- [取り込みの入力は決断記述が並ぶディレクトリ](../L4_articles/adoption-input-is-a-directory.md)
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
 
 ## References
 

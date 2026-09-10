@@ -38,9 +38,9 @@
 - Means: checklist
 - 報告に無い `_` 付き文書が、印を保ったままであることを見る
 
-## Decisions
-- [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)
-- [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
+## Articles
+- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
 
 ## References
 

@@ -18,9 +18,9 @@ flowchart LR
 既存の文書が無いプロジェクトでは、決断が書かれている言語に合わせる。決断は文書の
 起点であり、そこに書き手の言語が既に現れている。
 
-## Decisions
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
+## Articles
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 
 ## References
 

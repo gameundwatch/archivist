@@ -1,10 +1,10 @@
 # 決断の取り込みは archivist の外に置く
 
-既にある文書から `L4_decisions/` を用意する工程は、archivist の Order に入れず
-独立したスキルとする。ただし `L4_decisions/` が空のまま archivist が起動された
+既にある文書から `L4_articles/` を用意する工程は、archivist の Order に入れず
+独立したスキルとする。ただし `L4_articles/` が空のまま archivist が起動された
 ときは、そのスキルを案内して止まる。
 
-archivist の入力は `L4_decisions/` に置かれた決断であり、この前提は
+archivist の入力は `L4_articles/` に置かれた決断であり、この前提は
 [還元はするが、決断はしない](reduction-not-decision.md) が支えている。取り込みを
 Order に組み込むと、決断を一枚足しただけの通常運転にも取り込みの対話が挟まる。
 

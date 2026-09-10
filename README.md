@@ -109,12 +109,12 @@ npx skills add <owner>/<repo>
 
 ```
 docs/archivist/
-  L1_features/  L2_specs/  L2_designs/  L3_structures/  L3_terms/  L4_decisions/
+  L1_features/  L2_specs/  L2_designs/  L3_structures/  L3_terms/  L4_articles/
 ```
 
 ## 担当外
 
-- **決断を下すこと。** archivist は既に `L4_decisions/` に置かれたものだけを読む
+- **決断を下すこと。** archivist は既に `L4_articles/` に置かれたものだけを読む
 - **文書に無い実装を見つけること。** 実装から決断への還元は前段の仕事になる
 - **検証が通ったかどうか。** 手段が用意されていれば足りる
 

@@ -18,7 +18,7 @@ flowchart TD
         structure[structure: L3_structures/*]
     end
     subgraph L4[L4 decisions]
-        decision[decisions: L4_decisions/*]
+        decision[decisions: L4_articles/*]
     end
     subgraph L5[L5 sources]
         code[code: src/*]
@@ -76,14 +76,14 @@ flowchart LR
 実現先を持つ三層にだけ印が付く。structure と terms は決断の像であり、
 実現先の有無で状態が変わらない。
 
-## Decisions
-- [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)
-- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
-- [test は design を読んで書く](../L4_decisions/test-from-design.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
-- [時間的な要素を文書に持たせない](../L4_decisions/no-time-factor.md)
+## Articles
+- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
+- [test は design を読んで書く](../L4_articles/test-from-design.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [時間的な要素を文書に持たせない](../L4_articles/no-time-factor.md)
 
 ## References
 

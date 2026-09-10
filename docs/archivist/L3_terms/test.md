@@ -17,6 +17,6 @@ design が定めた材料が、その通りに作られているかを確かめ�
 - [design](design.md)
 - [debug](debug.md)
 
-## Decisions
-- [test は design を読んで書く](../L4_decisions/test-from-design.md)
-- [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
+## Articles
+- [test は design を読んで書く](../L4_articles/test-from-design.md)
+- [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)

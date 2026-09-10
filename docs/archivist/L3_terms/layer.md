@@ -6,6 +6,6 @@
 - Details: 土台は下にあり、影響は下層から上層へ波及する。段の中にも同じ基準で
   向きを引く。向きが定まらない二つには引かない。
 
-## Decisions
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
-- [時間的な要素を文書に持たせない](../L4_decisions/no-time-factor.md)
+## Articles
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [時間的な要素を文書に持たせない](../L4_articles/no-time-factor.md)

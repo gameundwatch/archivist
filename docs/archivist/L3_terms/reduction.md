@@ -7,6 +7,6 @@
   還元がどこで止まるかは決断の中身が決める。語だけを変える決断は L3 で止まり、
   その語を使う仕様があれば L2 まで上がる。
 
-## Decisions
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
+## Articles
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)

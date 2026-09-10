@@ -10,7 +10,7 @@
 ### R2 層を飛んでいないか判定する
 
 - 行き先が直下の層、同じ層でグラフが向きを定めた相手、同じノードの中、
-  L4_decisions のいずれかであることを確かめる
+  L4_articles のいずれかであることを確かめる
 - グラフが定めた層内の向きは `structure --> terms` の一つだけ
 - `spec` と `design` はその相手にあたらない。どちらの向きの参照も違反として挙げる
 
@@ -142,17 +142,17 @@
 - どの行からも指されない `R` を含む spec と、`T` を含む design を置き、両方が
   挙がることを見る
 
-## Decisions
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [印が付くのは実現先を持つ層だけ](../L4_decisions/mark-only-where-realized.md)
-- [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
-- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
-- [test は design を読んで書く](../L4_decisions/test-from-design.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
-- [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
-- [参照はファイル単位で張る](../L4_decisions/references-are-file-scoped.md)
+## Articles
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
+- [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
+- [test は design を読んで書く](../L4_articles/test-from-design.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
+- [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
 

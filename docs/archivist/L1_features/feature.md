@@ -32,14 +32,14 @@
 | A5 | R1, R2 | T1 |
 | A6 | R5 | T1 |
 
-## Decisions
-- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
-- [コマンド1本を feature 1枚とする](../L4_decisions/command-is-feature.md)
-- [参照はファイル単位で張る](../L4_decisions/references-are-file-scoped.md)
+## Articles
+- [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
+- [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
+- [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
 

@@ -10,7 +10,7 @@ the work of `archivist-promote` and of whoever adds decisions.
 
 ## Input
 
-The decisions under `docs/archivist/L4_decisions/`, and the whole document tree.
+The decisions under `docs/archivist/L4_articles/`, and the whole document tree.
 The decisions say what the documents above them are supposed to carry; without
 them, only broken links can be found.
 
@@ -26,7 +26,7 @@ hand-written one is neither required nor checked.
 - a node in the same layer the graph gives a direction to (`structure --> terms`).
   `spec` and `design` are **not** such a pair: a reference either way is a violation
 - a document inside the same node
-- `L4_decisions`, which any layer may cite directly
+- `L4_articles`, which any layer may cite directly
 
 Anything else is a skip, and a violation.
 

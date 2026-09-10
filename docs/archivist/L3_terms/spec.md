@@ -13,7 +13,7 @@
 - [debug](debug.md)
 - [design](design.md)
 
-## Decisions
-- [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
+## Articles
+- [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)

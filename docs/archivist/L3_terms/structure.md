@@ -10,5 +10,5 @@
 ## Terms
 - [term](term.md)
 
-## Decisions
-- [決断が増減させる一覧は structure に置く](../L4_decisions/enumeration-as-mapping.md)
+## Articles
+- [決断が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)

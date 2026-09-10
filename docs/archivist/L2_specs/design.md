@@ -81,14 +81,14 @@
 - 生成された各 V について、design 以外を読まずにテストコードが書けることを見る
 - 全ての材料が、いずれかの V から指されていることを見る
 
-## Decisions
-- [test は design を読んで書く](../L4_decisions/test-from-design.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [検証は自分の手段を宣言する](../L4_decisions/verification-declares-its-means.md)
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
-- [参照はファイル単位で張る](../L4_decisions/references-are-file-scoped.md)
+## Articles
+- [test は design を読んで書く](../L4_articles/test-from-design.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
 

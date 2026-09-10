@@ -1,11 +1,11 @@
 ---
 name: archivist-adopt
-description: Read a directory of outside decision statements, match them against docs/archivist/L4_decisions/, and place the ones a person accepts. Use when a project already holds decisions elsewhere, or when L4_decisions/ is empty.
+description: Read a directory of outside decision statements, match them against docs/archivist/L4_articles/, and place the ones a person accepts. Use when a project already holds decisions elsewhere, or when L4_articles/ is empty.
 ---
 
 # archivist-adopt
 
-Bring decisions that already exist outside into `docs/archivist/L4_decisions/`.
+Bring decisions that already exist outside into `docs/archivist/L4_articles/`.
 **Do not decide what is adopted.** A person answers, one candidate at a time.
 
 This skill stands outside the Order. It runs before `archivist` starts, and
@@ -24,7 +24,7 @@ Do not guess at it, and do not split it.
 
 ## Matching
 
-Read `docs/archivist/L4_decisions/` first. For every candidate, say which of the
+Read `docs/archivist/L4_articles/` first. For every candidate, say which of the
 three it is.
 
 | Result | What is shown |
@@ -40,7 +40,7 @@ Read the decisions only. Layers above rest on them and add nothing to this match
 Present one candidate with its match, then wait.
 
 **Nothing is written before an answer.** An answer that never comes leaves
-`L4_decisions/` as it was. Do not offer to take the rest in one go, however many
+`L4_articles/` as it was. Do not offer to take the rest in one go, however many
 are left - narrowing the input is the caller's work.
 
 ## Writing
@@ -62,7 +62,7 @@ on the end.
 
 ## What it does not do
 
-Write only inside `L4_decisions/`. Not one document in the layers above - that is
+Write only inside `L4_articles/`. Not one document in the layers above - that is
 `archivist`, and it runs afterwards.
 
 Nothing enters a decision that was not in its candidate. On finding a gap the

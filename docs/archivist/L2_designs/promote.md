@@ -36,8 +36,8 @@ flowchart LR
 - Means: checklist
 - 索引を持たず走査で流入リンクを見つけると `SKILL.md` に書かれていることを見る
 
-## Decisions
-- [`_` を外す作業は check から分ける](../L4_decisions/promote-separate-from-check.md)
+## Articles
+- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
 
 ## References
 

@@ -34,10 +34,10 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 | A5 | R5 | T2, T3, T4, T5, T6 |
 | A6 | R6 | T1 |
 
-## Decisions
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
-- [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
-- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
+## Articles
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
+- [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
+- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 
 ## References
 

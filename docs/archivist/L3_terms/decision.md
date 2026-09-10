@@ -6,5 +6,5 @@
 - Details: 覆しにくさは文書が名乗るものではなく、流入する参照の量が決める。
   種類を文書内で宣言しない。層内で順序を持たないため、ノードも分けない。
 
-## Decisions
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
+## Articles
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)

@@ -40,13 +40,13 @@ flowchart LR
 - Coverage 表の spec 列と design 列が番号だけを置き、リンクを持たないことを見る
 - Coverage 表が availability, spec, design の三列を持つことを見る
 
-## Decisions
-- [spec と design の整合を担保するのは feature だけ](../L4_decisions/feature-joins-spec-and-design.md)
-- [spec と design は互いを引かない](../L4_decisions/spec-design-independent.md)
-- [生成する文書の言語は対象プロジェクトに合わせる](../L4_decisions/output-language-follows-project.md)
-- [配布物は英語で書く](../L4_decisions/distributed-content-in-english.md)
-- [テンプレートはスキルの中に置く](../L4_decisions/template-belongs-to-skill.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_decisions/features-come-from-decisions.md)
+## Articles
+- [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
+- [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
+- [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
+- [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
+- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
 
 ## References
 

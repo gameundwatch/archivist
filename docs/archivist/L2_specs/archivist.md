@@ -4,7 +4,7 @@
 
 ### R1 決断の集合を起点にする
 
-- 起点は L4_decisions に置かれた文書。単体でも、全件でも、任意の部分集合でもよい
+- 起点は L4_articles に置かれた文書。単体でも、全件でも、任意の部分集合でもよい
 - 実装コードは事実として読むだけで、起点にしない
 - L4 に文書が無い決断は扱わない
 
@@ -31,7 +31,7 @@
 
 ### R6 決断が一枚も無いときは取り込みを案内する
 
-- `L4_decisions/` が空のとき、何も書かずに取り込みのスキルを案内して止まる
+- `L4_articles/` が空のとき、何も書かずに取り込みのスキルを案内して止まる
 - 案内するだけで、呼ばない
 - 空でないときは案内しない
 
@@ -49,12 +49,12 @@
 ### V1 起点の限定
 
 - Means: checklist
-- L4_decisions に無い話題を与えて起動し、何も生成されないことを見る
+- L4_articles に無い話題を与えて起動し、何も生成されないことを見る
 
 ### V2 参照の段差
 
 - Means: checklist
-- 生成された全文書のリンクを集め、行き先の層が自分の直下か L4_decisions のいずれかであることを見る
+- 生成された全文書のリンクを集め、行き先の層が自分の直下か L4_articles のいずれかであることを見る
 
 ### V3 停止の報告
 
@@ -75,12 +75,12 @@
 ### V6 空の入力
 
 - Means: checklist
-- `L4_decisions/` を空にして起動し、取り込みが案内され、勝手に起動しないことを見る
+- `L4_articles/` を空にして起動し、取り込みが案内され、勝手に起動しないことを見る
 
-## Decisions
-- [還元はするが、決断はしない](../L4_decisions/reduction-not-decision.md)
-- [層は飛ばさない。decisions だけが例外](../L4_decisions/no-layer-skip.md)
-- [決断の取り込みは archivist の外に置く](../L4_decisions/adoption-outside-archivist.md)
+## Articles
+- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
+- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 
 ## References
 
