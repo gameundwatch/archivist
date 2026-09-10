@@ -9,38 +9,31 @@
 
 ## Availability
 
-<a id="A1"></a>
 - **A1** 決断と docs/archivist/ 全体を読み、判定が返る
 
-<a id="A2"></a>
 - **A2** リンクが解決するか、層を飛んでいないか、循環していないかが分かる
 
-<a id="A3"></a>
 - **A3** `_` が付いた文書のうち、実現先が実在するものが報告される
 
-<a id="A4"></a>
 - **A4** 何も書き換えない
 
-<a id="A5"></a>
 - **A5** 検証が自分の層だけを読んで実装できるかが分かる
 
-<a id="A6"></a>
 - **A6** 仕様と設計の対応表の欠落が、どちらの側の不備かとともに分かる
 
-<a id="A7"></a>
 - **A7** 形が英語で保たれているか、図が実態と合っているかが分かる
 
 ### Coverage
 
 | availability | spec | design |
 | --- | --- | --- |
-| [A1](#A1) | [R1](../L2_specs/check.md#R1) | [T1](../L2_designs/check.md#T1), [T2](../L2_designs/check.md#T2) |
-| [A2](#A2) | [R1](../L2_specs/check.md#R1), [R2](../L2_specs/check.md#R2), [R3](../L2_specs/check.md#R3) | [T1](../L2_designs/check.md#T1) |
-| [A3](#A3) | [R4](../L2_specs/check.md#R4), [R8](../L2_specs/check.md#R8) | [T1](../L2_designs/check.md#T1) |
-| [A4](#A4) | [R5](../L2_specs/check.md#R5) | [T1](../L2_designs/check.md#T1) |
-| [A5](#A5) | [R6](../L2_specs/check.md#R6), [R7](../L2_specs/check.md#R7) | [T1](../L2_designs/check.md#T1) |
-| [A6](#A6) | [R11](../L2_specs/check.md#R11) | [T1](../L2_designs/check.md#T1), [T2](../L2_designs/check.md#T2) |
-| [A7](#A7) | [R9](../L2_specs/check.md#R9), [R10](../L2_specs/check.md#R10) | [T1](../L2_designs/check.md#T1), [T2](../L2_designs/check.md#T2) |
+| A1 | R1 | T1, T2 |
+| A2 | R1, R2, R3 | T1 |
+| A3 | R4, R8 | T1 |
+| A4 | R5 | T1 |
+| A5 | R6, R7 | T1 |
+| A6 | R11 | T1, T2 |
+| A7 | R9, R10 | T1, T2 |
 
 ## Decisions
 - [debug は spec だけを読んで書ける](../L4_decisions/debug-from-spec-alone.md)

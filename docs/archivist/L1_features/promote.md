@@ -10,22 +10,19 @@
 
 ## Availability
 
-<a id="A1"></a>
 - **A1** check の報告を指定して起動すると、対象の `_` が外れる
 
-<a id="A2"></a>
 - **A2** その文書を指している全てのリンクが追随して書き換わる
 
-<a id="A3"></a>
 - **A3** 実現先が実在しない文書には触れない
 
 ### Coverage
 
 | availability | spec | design |
 | --- | --- | --- |
-| [A1](#A1) | [R1](../L2_specs/promote.md#R1) | [T1](../L2_designs/promote.md#T1) |
-| [A2](#A2) | [R2](../L2_specs/promote.md#R2) | [T1](../L2_designs/promote.md#T1), [T2](../L2_designs/promote.md#T2) |
-| [A3](#A3) | [R3](../L2_specs/promote.md#R3) | [T1](../L2_designs/promote.md#T1) |
+| A1 | R1 | T1 |
+| A2 | R2 | T1, T2 |
+| A3 | R3 | T1 |
 
 ## Decisions
 - [スキルは文書の要素ごとに割る](../L4_decisions/skill-per-element.md)
