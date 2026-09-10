@@ -36,15 +36,16 @@ Set the units the project exposes against the features.
 ## Availability
 
 What a user can do, as a bullet list. Do not step into requirements or design -
-those belong to L2. Each item carries an anchor, `A1`, `A2`, ...
+those belong to L2. Each item carries a number, `A1`, `A2`, ...
 
 Background carries why it was needed.
 
 ## Coverage
 
 Spec and design never cite each other, so this table is the only place they meet.
-One row is one availability item; the spec column cites `R` anchors, the design
-column cites `T` anchors.
+One row is one availability item; the spec column holds `R` numbers, the design
+column holds `T` numbers, written bare. Which documents they live in is held by
+References, which links each of them as a whole file.
 
 | Blank | Meaning |
 | --- | --- |

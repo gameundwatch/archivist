@@ -16,8 +16,9 @@ them, only broken links can be found.
 
 ## What it judges
 
-**Link resolution** — does the relative path exist. With an anchor, does
-`<a id="...">` exist at the destination.
+**Link resolution** — does the relative path exist. References run to a file;
+nothing inside a file is judged. Anchors are nobody's to generate here, so a
+hand-written one is neither required nor checked.
 
 **Layer step** — a reference must land on one of:
 

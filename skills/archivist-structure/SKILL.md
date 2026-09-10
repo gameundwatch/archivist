@@ -34,8 +34,8 @@ When a needed word is absent, **stop without writing**. Run `archivist-term` fir
 
 ## Diagram granularity
 
-One diagram carries one subject. Several may sit in one file. Put an anchor directly
-before each so upper layers can cite it.
+One diagram carries one subject. Several may sit in one file. Number them `D1`,
+`D2`, ... Upper layers cite this file as a whole.
 
 Draw so a reader can judge from it: a missing half should show up as a missing row.
 

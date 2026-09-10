@@ -66,8 +66,8 @@ what is missing. Filling that gap is a decision, and decisions are made elsewher
 ## Language
 
 Write documents in the language the project's existing documents use. Where none
-exist, follow the language the decisions are written in. Headings, anchors and
-field names stay in English - they are form, not prose.
+exist, follow the language the decisions are written in. Headings and field names
+stay in English - they are form, not prose.
 
 ## When done
 

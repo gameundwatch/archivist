@@ -20,8 +20,8 @@ Each detail lists firing conditions - when it works and when it does not - and
 scope: what is covered and what is not. A decision of the form "we will not do X"
 lands here.
 
-Number requirements from `R1` and put an anchor directly before each, so upper
-layers can cite one requirement.
+Number requirements from `R1`, without repeating a number. The number counts
+requirements inside this document; upper layers cite the document as a whole file.
 
 ## Verify
 
