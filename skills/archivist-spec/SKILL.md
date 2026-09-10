@@ -1,6 +1,6 @@
 ---
 name: archivist-spec
-description: Write the promises derivable from a decision into docs/archivist/L2_specs/ as requirements and their verification. Use when what is covered and what is not gets settled, or when defining what the implementation must satisfy to be done.
+description: Write the promises derivable from an article into docs/archivist/L2_specs/ as requirements and their verification. Use when what is covered and what is not gets settled, or when defining what the implementation must satisfy to be done.
 ---
 
 # archivist-spec
@@ -9,7 +9,7 @@ Read `TEMPLATE.md` in this directory for the form. It is not copied here.
 
 ## What to read
 
-The decision, plus `docs/archivist/L3_terms/` and `L3_structures/`.
+The article, plus `docs/archivist/L3_terms/` and `L3_structures/`.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ Keep to **what can be confirmed from outside the spec**. The inside belongs to
 design. When writing starts to touch the inside, send it to design.
 
 Each detail lists firing conditions - when it works and when it does not - and
-scope: what is covered and what is not. A decision of the form "we will not do X"
+scope: what is covered and what is not. A article of the form "we will not do X"
 lands here.
 
 Number requirements from `R1`, without repeating a number. The number counts

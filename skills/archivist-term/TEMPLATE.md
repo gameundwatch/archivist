@@ -35,7 +35,7 @@
 ...
 
 ## Articles
-<!-- Decisions this document rests on -->
+<!-- Articles this document rests on -->
 - [ARTICLE_NAME_1](../L4_articles/ARTICLE_NAME_1.md)
 - [ARTICLE_NAME_2](../L4_articles/ARTICLE_NAME_2.md)
 - [ARTICLE_NAME_3](../L4_articles/ARTICLE_NAME_3.md)

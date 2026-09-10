@@ -34,7 +34,7 @@
 
 ### R7 散文は対象プロジェクトの言語で書く
 
-- 既存の文書が無いときは、決断が書かれている言語に合わせる
+- 既存の文書が無いときは、条項が書かれている言語に合わせる
 - 見出しとフィールド名は言語に依らず英語で固定する
 
 ### R8 design を引かない
@@ -74,7 +74,7 @@
 ### V4 未検証の検出
 
 - Means: checklist
-- 検証を持たない要件を含む決断を与え、表の欠落として現れることを見る
+- 検証を持たない要件を含む条項を与え、表の欠落として現れることを見る
 
 ### V5 debug の実装可能性
 
@@ -104,7 +104,7 @@
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
 - [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
@@ -118,7 +118,7 @@
 ### Terms
 
 - [form](../L3_terms/form.md)
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [debug](../L3_terms/debug.md)
 - [design](../L3_terms/design.md)
 - [reference](../L3_terms/reference.md)

@@ -4,7 +4,7 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
+| T1 | structure | skills/archivist-structure/SKILL.md | 条項, 語 | L3_structures/STRUCTURE_NAME.md |
 | T2 | template | skills/archivist-structure/TEMPLATE.md | - | 書式 |
 | T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 図に使える語の集合 |
 
@@ -13,7 +13,7 @@
 ```mermaid
 flowchart LR
     TP["template"] -.書式.-> S["structure"]
-    IN["決断, 語"] --> S --> OUT["L3_structures/STRUCTURE_NAME.md"]
+    IN["条項, 語"] --> S --> OUT["L3_structures/STRUCTURE_NAME.md"]
 ```
 
 ## Rules
@@ -48,7 +48,7 @@ flowchart LR
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
 - [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 
 ## References
 

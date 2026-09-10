@@ -2,13 +2,13 @@
 
 ## Requirements
 
-### R1 入力は決断記述が並ぶディレクトリ一つ
+### R1 入力は条項記述が並ぶディレクトリ一つ
 
 - 引数はディレクトリのパス一つ。既定値を持たず、省略されたら問う
-- そこに並ぶファイルが一枚一文の決断記述であることだけを前提にする
+- そこに並ぶファイルが一枚一文の条項記述であることだけを前提にする
 - 特定のツールの出力形式を条件にしない。満たさないファイルは飛ばして報告する
 
-### R2 既存の決断と突き合わせる
+### R2 既存の条項と突き合わせる
 
 - 候補ごとに、`L4_articles/` の中で同じことを言う一枚を探して示す
 - 矛盾する一枚があれば、矛盾する箇所を示す
@@ -22,10 +22,10 @@
 
 ### R4 採ったものだけを `L4_articles/` に整形して置く
 
-- 決断の書式に整えて置く。原文をそのまま写さない
-- 人が書いた既存の決断を上書きしない。名前が衝突したら報告して止まる
+- 条項の書式に整えて置く。原文をそのまま写さない
+- 人が書いた既存の条項を上書きしない。名前が衝突したら報告して止まる
 
-### R5 決断を下さない
+### R5 条項を立てない
 
 - 候補に無いことを書き足さない
 - 上層の文書を一枚も書かない
@@ -44,7 +44,7 @@
 
 - Means: checklist
 - 引数なしで起動し、ディレクトリを問われることを見る
-- 決断記述でないファイルを混ぜ、飛ばされた旨が報告に出ることを見る
+- 条項記述でないファイルを混ぜ、飛ばされた旨が報告に出ることを見る
 
 ### V2 突き合わせの提示
 
@@ -67,10 +67,10 @@
 - 実行後に増えた文書が `L4_articles/` の中だけであることを見る
 
 ## Articles
-- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
+- [条項の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 - [取り込むかどうかは人が答える](../L4_articles/adoption-needs-consent.md)
-- [取り込みの入力は決断記述が並ぶディレクトリ](../L4_articles/adoption-input-is-a-directory.md)
-- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
+- [取り込みの入力は条項記述が並ぶディレクトリ](../L4_articles/adoption-input-is-a-directory.md)
+- [還元はするが、条項は立てない](../L4_articles/reduction-not-article.md)
 
 ## References
 
@@ -82,4 +82,4 @@
 ### Terms
 
 - [adoption](../L3_terms/adoption.md)
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)

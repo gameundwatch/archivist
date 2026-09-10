@@ -4,7 +4,7 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | check | skills/archivist-check/SKILL.md | 決断, docs/archivist/ | 判定の報告 |
+| T1 | check | skills/archivist-check/SKILL.md | 条項, docs/archivist/ | 判定の報告 |
 | T2 | docs | docs/archivist/ | 全文書 | 走査の対象 |
 
 ### Relation

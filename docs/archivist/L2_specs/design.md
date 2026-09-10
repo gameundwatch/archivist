@@ -14,9 +14,9 @@
   生成物や雛形の穴を書いてよく、実在を問わない
 - これは実装の対応であり、参照の順序には数えない
 
-### R3 規則は由来となる決断を持つ
+### R3 規則は由来となる条項を持つ
 
-- 決断から導けない規則を書かない
+- 条項から導けない規則を書かない
 
 ### R4 spec を引かない
 
@@ -26,7 +26,7 @@
 
 ### R5 散文は対象プロジェクトの言語で書く
 
-- 既存の文書が無いときは、決断が書かれている言語に合わせる
+- 既存の文書が無いときは、条項が書かれている言語に合わせる
 - 見出しとフィールド名は言語に依らず英語で固定する
 
 ### R6 検証はそれだけで test が書ける詳しさで書く
@@ -61,7 +61,7 @@
 ### V3 規則の由来
 
 - Means: checklist
-- 各規則が決断を指しており、その決断が実在することを見る
+- 各規則が条項を指しており、その条項が実在することを見る
 
 ### V4 spec 非参照
 
@@ -87,7 +87,7 @@
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References

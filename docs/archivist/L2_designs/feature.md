@@ -4,7 +4,7 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
+| T1 | feature | skills/archivist-feature/SKILL.md | 条項, L2 | L1_features/FEATURE_NAME.md |
 | T2 | template | skills/archivist-feature/TEMPLATE.md | - | 書式 |
 
 ### Relation
@@ -12,11 +12,11 @@
 ```mermaid
 flowchart LR
     TP["template"] -.書式.-> S["feature"]
-    IN["決断, L2"] --> S --> OUT["L1_features/FEATURE_NAME.md"]
+    IN["条項, L2"] --> S --> OUT["L1_features/FEATURE_NAME.md"]
 ```
 
 ## Rules
-- 仕様と設計の要約にしない。起点は決断に置く
+- 仕様と設計の要約にしない。起点は条項に置く
 - 仕様と設計が出会う場所はこの層の対応表だけになる。空欄は出荷を止める
 - 1回の起動で1ファイルだけ書く
 
@@ -46,7 +46,7 @@ flowchart LR
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
 - [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
+- [機能が何かは条項であり、下層の要約ではない](../L4_articles/features-come-from-articles.md)
 
 ## References
 
@@ -60,4 +60,4 @@ flowchart LR
 ### Terms
 
 - [feature](../L3_terms/feature.md)
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)

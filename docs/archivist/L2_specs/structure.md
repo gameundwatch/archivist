@@ -2,10 +2,10 @@
 
 ## Requirements
 
-### R1 決断が課した形だけを図にする
+### R1 条項が課した形だけを図にする
 
 - 個数、順序、状態遷移、包含などの制約を対象とする
-- 決断が課していない形は描かない
+- 条項が課していない形は描かない
 
 ### R2 図に使う語は L3_terms にあるものに限る
 
@@ -24,7 +24,7 @@
 
 ### R5 散文は対象プロジェクトの言語で書く
 
-- 既存の文書が無いときは、決断が書かれている言語に合わせる
+- 既存の文書が無いときは、条項が書かれている言語に合わせる
 - 見出しとフィールド名は言語に依らず英語で固定する
 
 ## Verify
@@ -40,7 +40,7 @@
 ### V1 形の限定
 
 - Means: checklist
-- 形を課さない決断を与え、図が起きないことを見る
+- 形を課さない条項を与え、図が起きないことを見る
 
 ### V2 語の在処
 
@@ -66,7 +66,7 @@
 ## Articles
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References

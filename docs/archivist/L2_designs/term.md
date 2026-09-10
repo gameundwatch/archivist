@@ -4,7 +4,7 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
+| T1 | term | skills/archivist-term/SKILL.md | 条項 | L3_terms/TERM_NAME.md |
 | T2 | template | skills/archivist-term/TEMPLATE.md | - | 書式 |
 | T3 | terms | docs/archivist/L3_terms/ | 既存の語 | 書き直しの対象 |
 
@@ -13,11 +13,11 @@
 ```mermaid
 flowchart LR
     TP["template"] -.書式.-> S["term"]
-    IN["決断"] --> S --> OUT["L3_terms/TERM_NAME.md"]
+    IN["条項"] --> S --> OUT["L3_terms/TERM_NAME.md"]
 ```
 
 ## Rules
-- 決断だけを見る。上層は読まない
+- 条項だけを見る。上層は読まない
 - 1回の起動で1ファイルだけ書く
 
 ## Verify
@@ -35,7 +35,7 @@ flowchart LR
 ### V2 型紙の欄
 
 - Means: checklist
-- `TEMPLATE.md` が Definition, Aliases, Details, Terms, Decisions の欄を全て持つことを見る
+- `TEMPLATE.md` が Definition, Aliases, Details, Terms, Articles の欄を全て持つことを見る
 - 一語一ファイルであることが型紙の注記に書かれていることを見る
 
 ## Articles
@@ -55,5 +55,5 @@ flowchart LR
 
 ### Terms
 
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [reduction](../L3_terms/reduction.md)

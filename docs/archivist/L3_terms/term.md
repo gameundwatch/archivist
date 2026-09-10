@@ -7,4 +7,4 @@
   他の語を引くときはより基本的な語に限る。循環すると、どちらが元本かが決まらなくなる。
 
 ## Articles
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)

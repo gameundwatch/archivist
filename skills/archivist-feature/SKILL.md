@@ -1,6 +1,6 @@
 ---
 name: archivist-feature
-description: Write the feature a decision defines into docs/archivist/L1_features/. Use when the unit a user can name gets settled, or when something the user can name has no promise written for it.
+description: Write the feature an article defines into docs/archivist/L1_features/. Use when the unit a user can name gets settled, or when something the user can name has no promise written for it.
 ---
 
 # archivist-feature
@@ -9,13 +9,13 @@ Read `TEMPLATE.md` in this directory for the form. It is not copied here.
 
 ## What to read
 
-The decision, `docs/archivist/L2_*/`, and the units the project exposes to a user.
+The article, `docs/archivist/L2_*/`, and the units the project exposes to a user.
 
-## The starting point is the decision
+## The starting point is the article
 
 **Do not build it as a summary of the specs and designs.** The decomposition into
 features does not come out of L2. What comes out of L2 is not the answer to "what
-can a user name" - that is a decision about what the product exposes.
+can a user name" - that is an article about what the product exposes.
 
 Treated as a summary, and because reduction travels upward, by the time L1 is
 reached there is no moment left to question the decomposition. It merely ratifies
@@ -23,8 +23,8 @@ how the layers below were written.
 
 ## The unit
 
-**What counts as one nameable unit is itself a decision.** Read the unit out of
-the decision. Do not derive it from how the implementation happens to be divided.
+**What counts as one nameable unit is itself an article.** Read the unit out of
+the article. Do not derive it from how the implementation happens to be divided.
 
 Set the units the project exposes against the features.
 

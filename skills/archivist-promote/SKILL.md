@@ -13,7 +13,7 @@ absent from the report stays as it is.
 Invoked without a report, change nothing and finish.
 
 Only feature, spec and design can carry a mark. A mark on a structure, a term or a
-decision is not stripped - `archivist-check` raises it as an error.
+article is not stripped - `archivist-check` raises it as an error.
 
 ## What it does
 

@@ -11,7 +11,7 @@
     Place only forms that survive the design being thrown away.
     - Types, schemas, state transitions, relations between components
     - Diagrams that take in the whole of what the project produces
-    - Lists that decisions grow or shrink, however many entries they hold
+    - Lists that articles grow or shrink, however many entries they hold
 -->
 
 ## Diagrams
@@ -41,7 +41,7 @@
 ...
 
 ## Articles
-<!-- Decisions this document rests on -->
+<!-- Articles this document rests on -->
 - [ARTICLE_NAME_1](../L4_articles/ARTICLE_NAME_1.md)
 - [ARTICLE_NAME_2](../L4_articles/ARTICLE_NAME_2.md)
 - [ARTICLE_NAME_3](../L4_articles/ARTICLE_NAME_3.md)

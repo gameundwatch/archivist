@@ -7,19 +7,19 @@
 # ARTICLE_NAME
 
 <!--
-    Holds one decision. The title is the decision itself, stated in one line,
+    Holds one article. The title is the article itself, stated in one line,
     and the file name is that line in the naming the directory already uses.
 
     - The statement: what was decided, and what it rules out. No rationale here
     - The rationale: why it was decided that way. What it costs, and what
       it protects against
-    - The boundary: what would take this decision away if crossed. Write it
+    - The boundary: what would take this article away if crossed. Write it
       only where there is a near edge worth naming
 
-    Cite another decision by relative path, inline in the prose. It is the one
+    Cite another article by relative path, inline in the prose. It is the one
     layer any layer may point at directly, so no link section is needed.
 
-    Write the prose in the language the project's decisions already use.
+    Write the prose in the language the project's articles already use.
 -->
 
 STATEMENT_OF_WHAT_IS_DECIDED

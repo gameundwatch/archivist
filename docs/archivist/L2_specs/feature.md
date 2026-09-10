@@ -2,14 +2,14 @@
 
 ## Requirements
 
-### R1 決断から機能を起こす
+### R1 条項から機能を起こす
 
 - 仕様と設計の要約として作らない
-- 機能の分解そのものが決断であることを前提とする
+- 機能の分解そのものが条項であることを前提とする
 
 ### R2 利用者が名指しできる単位を一つとする
 
-- 何を一つの単位とするかは決断が決める。実装の分割から導かない
+- 何を一つの単位とするかは条項が決める。実装の分割から導かない
 
 ### R3 何ができるかを箇条書きで示す
 
@@ -29,7 +29,7 @@
 
 ### R5 散文は対象プロジェクトの言語で書く
 
-- 既存の文書が無いときは、決断が書かれている言語に合わせる
+- 既存の文書が無いときは、条項が書かれている言語に合わせる
 - 見出しとフィールド名は言語に依らず英語で固定する
 
 ## Verify
@@ -45,12 +45,12 @@
 ### V1 起点の確認
 
 - Means: checklist
-- 仕様と設計だけを与えて起動し、決断が無い機能が起きないことを見る
+- 仕様と設計だけを与えて起動し、条項が無い機能が起きないことを見る
 
 ### V2 単位との対応
 
 - Means: checklist
-- 決断が公開すると定めた単位の集合と機能の集合が一致することを見る
+- 条項が公開すると定めた単位の集合と機能の集合が一致することを見る
 
 ### V3 層の越境
 
@@ -74,7 +74,7 @@
 ## Articles
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
+- [機能が何かは条項であり、下層の要約ではない](../L4_articles/features-come-from-articles.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
@@ -91,6 +91,6 @@
 
 - [form](../L3_terms/form.md)
 - [feature](../L3_terms/feature.md)
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [spec](../L3_terms/spec.md)
 - [design](../L3_terms/design.md)

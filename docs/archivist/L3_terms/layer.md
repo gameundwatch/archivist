@@ -7,5 +7,5 @@
   向きを引く。向きが定まらない二つには引かない。
 
 ## Articles
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 - [時間的な要素を文書に持たせない](../L4_articles/no-time-factor.md)

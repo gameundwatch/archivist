@@ -4,7 +4,7 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | spec | skills/archivist-spec/SKILL.md | 決断, L3 | L2_specs/SPEC_NAME.md |
+| T1 | spec | skills/archivist-spec/SKILL.md | 条項, L3 | L2_specs/SPEC_NAME.md |
 | T2 | template | skills/archivist-spec/TEMPLATE.md | - | 書式 |
 | T3 | l3 | docs/archivist/L3_*/ | 語と構造 | 参照先 |
 
@@ -13,7 +13,7 @@
 ```mermaid
 flowchart LR
     TP["template"] -.書式.-> S["spec"]
-    IN["決断, L3"] --> S --> OUT["L2_specs/SPEC_NAME.md"]
+    IN["条項, L3"] --> S --> OUT["L2_specs/SPEC_NAME.md"]
 ```
 
 ## Rules
@@ -31,7 +31,7 @@ flowchart LR
 ### V1 スキルの入力範囲
 
 - Means: checklist
-- `SKILL.md` の What to read が決断と L3 だけを挙げ、`L2_designs/` を挙げていないことを見る
+- `SKILL.md` の What to read が条項と L3 だけを挙げ、`L2_designs/` を挙げていないことを見る
 - design を引かないことが Reference direction に書かれていることを見る
 
 ### V2 型紙の検証欄
@@ -65,5 +65,5 @@ flowchart LR
 
 ### Terms
 
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [reference](../L3_terms/reference.md)

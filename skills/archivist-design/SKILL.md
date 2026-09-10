@@ -9,7 +9,7 @@ Read `TEMPLATE.md` in this directory for the form. It is not copied here.
 
 ## What to read
 
-The decision and `docs/archivist/L3_*/`. **Not the spec.**
+The article and `docs/archivist/L3_*/`. **Not the spec.**
 
 ## Parts
 
@@ -25,8 +25,8 @@ column exists — not when anything it outputs has been produced.
 
 ## Rules
 
-Each rule carries the decision it comes from. Do not write a rule the decision does
-not yield. Wanting to write one means it is a decision, and decisions are made
+Each rule carries the article it comes from. Do not write a rule the article does
+not yield. Wanting to write one means it is an article, and articles are written
 elsewhere.
 
 ## Verify

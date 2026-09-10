@@ -4,7 +4,7 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | design | skills/archivist-design/SKILL.md | 決断, L3, spec | L2_designs/DESIGN_NAME.md |
+| T1 | design | skills/archivist-design/SKILL.md | 条項, L3, spec | L2_designs/DESIGN_NAME.md |
 | T2 | template | skills/archivist-design/TEMPLATE.md | - | 書式 |
 | T3 | l3 | docs/archivist/L3_*/ | 語と構造 | 参照先 |
 
@@ -13,7 +13,7 @@
 ```mermaid
 flowchart LR
     TP["template"] -.書式.-> S["design"]
-    IN["決断, L3"] --> S --> OUT["L2_designs/DESIGN_NAME.md"]
+    IN["条項, L3"] --> S --> OUT["L2_designs/DESIGN_NAME.md"]
 ```
 
 ## Rules
@@ -31,7 +31,7 @@ flowchart LR
 ### V1 スキルの入力範囲
 
 - Means: checklist
-- `SKILL.md` の What to read が決断と L3 だけを挙げ、`L2_specs/` を挙げていないことを見る
+- `SKILL.md` の What to read が条項と L3 だけを挙げ、`L2_specs/` を挙げていないことを見る
 - spec を引かないことが Reference direction に書かれていることを見る
 
 ### V2 型紙の番号列と検証欄
@@ -53,7 +53,7 @@ flowchart LR
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
 - [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 
 ## References
 

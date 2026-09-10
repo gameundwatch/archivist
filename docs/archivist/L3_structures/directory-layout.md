@@ -55,7 +55,7 @@ flowchart LR
 
 ## Articles
 - [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
-- [決断が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
+- [条項が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
 
 ## References
 

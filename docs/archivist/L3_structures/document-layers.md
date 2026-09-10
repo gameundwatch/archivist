@@ -17,8 +17,8 @@ flowchart TD
         terms[terms: L3_terms/*]
         structure[structure: L3_structures/*]
     end
-    subgraph L4[L4 decisions]
-        decision[decisions: L4_articles/*]
+    subgraph L4[L4 articles]
+        article[articles: L4_articles/*]
     end
     subgraph L5[L5 sources]
         code[code: src/*]
@@ -37,7 +37,7 @@ flowchart TD
 ```
 
 実線は参照の方向で、上の層から直下の層へ引く。破線は実装の対応を示し、
-参照の順序には数えない。decisions だけは例外で、どの層からも直接指せる。
+参照の順序には数えない。articles だけは例外で、どの層からも直接指せる。
 
 L2 の二つに線は無い。spec と design は対等な並列で、どちらの向きにも引かない。
 両者が矛盾していないことは feature の Coverage 表が担保する。
@@ -50,7 +50,7 @@ L2 の二つに線は無い。spec と design は対等な並列で、どちら�
 
 ```mermaid
 flowchart BT
-    D["L4 decisions"] --> T["L3 terms"] --> S["L3 structures"]
+    D["L4 articles"] --> T["L3 terms"] --> S["L3 structures"]
     S --> SP["L2 specs"] --> F["L1 features"]
     S --> DE["L2 designs"] --> F
 ```
@@ -70,10 +70,10 @@ flowchart LR
     D["design"] -->|"Parts のファイルが在れば"| M
     ST["structure"] --- N["印が付かない"]
     T["terms"] --- N
-    DC["decisions"] --- N
+    DC["articles"] --- N
 ```
 
-実現先を持つ三層にだけ印が付く。structure と terms は決断の像であり、
+実現先を持つ三層にだけ印が付く。structure と terms は条項の像であり、
 実現先の有無で状態が変わらない。
 
 ## Articles
@@ -82,7 +82,7 @@ flowchart LR
 - [test は design を読んで書く](../L4_articles/test-from-design.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
-- [層は飛ばさない。decisions だけが例外](../L4_articles/no-layer-skip.md)
+- [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 - [時間的な要素を文書に持たせない](../L4_articles/no-time-factor.md)
 
 ## References

@@ -4,12 +4,12 @@
 
 | No | target_name | target_file | IN | OUT |
 | -- | ----------- | ----------- | -- | --- |
-| T1 | archivist | skills/archivist/SKILL.md | 決断の集合 | 下位スキルの起動 |
-| T2 | term | skills/archivist-term/SKILL.md | 決断 | L3_terms/TERM_NAME.md |
-| T3 | structure | skills/archivist-structure/SKILL.md | 決断, 語 | L3_structures/STRUCTURE_NAME.md |
-| T4 | spec | skills/archivist-spec/SKILL.md | 決断, L3 | L2_specs/SPEC_NAME.md |
-| T5 | design | skills/archivist-design/SKILL.md | 決断, L3 | L2_designs/DESIGN_NAME.md |
-| T6 | feature | skills/archivist-feature/SKILL.md | 決断, L2 | L1_features/FEATURE_NAME.md |
+| T1 | archivist | skills/archivist/SKILL.md | 条項の集合 | 下位スキルの起動 |
+| T2 | term | skills/archivist-term/SKILL.md | 条項 | L3_terms/TERM_NAME.md |
+| T3 | structure | skills/archivist-structure/SKILL.md | 条項, 語 | L3_structures/STRUCTURE_NAME.md |
+| T4 | spec | skills/archivist-spec/SKILL.md | 条項, L3 | L2_specs/SPEC_NAME.md |
+| T5 | design | skills/archivist-design/SKILL.md | 条項, L3 | L2_designs/DESIGN_NAME.md |
+| T6 | feature | skills/archivist-feature/SKILL.md | 条項, L2 | L1_features/FEATURE_NAME.md |
 
 ### Relation
 
@@ -28,7 +28,7 @@ flowchart LR
 - 下位スキルは1回の起動で1ファイルだけ書く
     - Details: 複数枚に及ぶ還元は、archivist が繰り返し呼ぶ
 - 下位スキルは自分の層より上を読まない
-    - Details: term は decisions だけを見る。spec と design はどちらも decisions と L3 だけを見る
+    - Details: term は articles だけを見る。spec と design はどちらも articles と L3 だけを見る
 - 書式は各スキルの TEMPLATE.md にある。SKILL.md に写さない
     - Details: archivist はテンプレートを持たない。文書を書くのは下位スキルになる
 - 取り込みは Relation に載せず、名を告げるだけにする
@@ -53,7 +53,7 @@ flowchart LR
 ### V2 下位スキルの独立
 
 - Means: checklist
-- term の What to read が決断だけであることを見る
+- term の What to read が条項だけであることを見る
 
 ### V3 spec の入力
 
@@ -73,10 +73,10 @@ flowchart LR
 ## Articles
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
-- [機能が何かは決断であり、下層の要約ではない](../L4_articles/features-come-from-decisions.md)
+- [機能が何かは条項であり、下層の要約ではない](../L4_articles/features-come-from-articles.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
-- [還元はするが、決断はしない](../L4_articles/reduction-not-decision.md)
-- [決断の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
+- [還元はするが、条項は立てない](../L4_articles/reduction-not-article.md)
+- [条項の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 
 ## References
 
@@ -100,5 +100,5 @@ flowchart LR
 ### Terms
 
 - [reduction](../L3_terms/reduction.md)
-- [decision](../L3_terms/decision.md)
+- [article](../L3_terms/article.md)
 - [adoption](../L3_terms/adoption.md)

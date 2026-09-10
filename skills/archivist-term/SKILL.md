@@ -1,6 +1,6 @@
 ---
 name: archivist-term
-description: Write one word the decision fixed the meaning of into docs/archivist/L3_terms/. Use when a decision first settles what a word means, or when an existing definition contradicts a decision.
+description: Write one word the article fixed the meaning of into docs/archivist/L3_terms/. Use when an article first settles what a word means, or when an existing definition contradicts an article.
 ---
 
 # archivist-term
@@ -9,15 +9,15 @@ Read `TEMPLATE.md` in this directory for the form. It is not copied here.
 
 ## What to read
 
-The decision only. Do not read layers above.
+The article only. Do not read layers above.
 
 ## Picking the words
 
-Not every noun in the decision. The test:
+Not every noun in the article. The test:
 
-> **Read the word in another sense - does the decision now say something else?**
+> **Read the word in another sense - does the article now say something else?**
 
-If it does, this decision fixes that word's meaning. If it does not, the decision
+If it does, this article fixes that word's meaning. If it does not, the article
 is merely using a word that already means something, and it is not in scope.
 
 ## Writing
@@ -27,11 +27,11 @@ into one file.
 
 | State | Action |
 | --- | --- |
-| Absent | Write it. Cite the decision under Decisions |
+| Absent | Write it. Cite the article under Articles |
 | Present, no conflict | Leave it |
-| Present, conflicts | Rewrite the definition. Add the decision under Decisions |
+| Present, conflicts | Rewrite the definition. Add the article under Articles |
 
-Do not settle the third row by citing alone. When a decision changes, the documents
+Do not settle the third row by citing alone. When an article changes, the documents
 standing on it get rewritten.
 
 ## Citing other words

@@ -7,7 +7,7 @@
   ない。design なら Parts の `target_file` 列のファイルが在ること、spec なら全ての検証が
   手段を持つこと。
   文書に持たせてよい唯一の時間的な要素になる。付くのは実現先を持つ層に限られ、
-  feature / spec / design が対象。structure と terms と decisions には付かない。
+  feature / spec / design が対象。structure と terms と articles には付かない。
   `ls` に現れるので、どこまでが現物でどこからが予定かが一覧で読める。
 
 ## Articles

@@ -6,12 +6,12 @@ description: Read docs/archivist/ and judge whether the document set meets the s
 # archivist-check
 
 **Writes nothing.** Reads only; changes neither content nor file names. Fixing is
-the work of `archivist-promote` and of whoever adds decisions.
+the work of `archivist-promote` and of whoever adds articles.
 
 ## Input
 
-The decisions under `docs/archivist/L4_articles/`, and the whole document tree.
-The decisions say what the documents above them are supposed to carry; without
+The articles under `docs/archivist/L4_articles/`, and the whole document tree.
+The articles say what the documents above them are supposed to carry; without
 them, only broken links can be found.
 
 ## What it judges
@@ -41,7 +41,7 @@ existence of the thing the document names, never any output produced by running 
 | design | the files in the `target_file` column of Parts exist |
 | spec | every item carries `Means:`, and declared file paths exist |
 | feature | the spec and design its Coverage table cites are both fact |
-| structure / terms / decisions | never marked. A mark here is itself an error |
+| structure / terms / articles | never marked. A mark here is itself an error |
 
 **Verification detail** — two judgements, one per L2 node.
 
@@ -77,7 +77,7 @@ Set three against each other.
 A rule stated in prose but missing an edge in the diagram is the common failure,
 and nothing else catches it.
 
-**Exposed units against features** — where a decision names what the project
+**Exposed units against features** — where an article names what the project
 exposes, set that set against `L1_features/` and raise what exists on one
 side only.
 

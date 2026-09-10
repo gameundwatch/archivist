@@ -1,10 +1,10 @@
 # Archivist
 
-決断から文書を組み直すエージェント。
+条項から文書を組み直すエージェント。
 
-ADR は部分解であり、その集合だけでは実装に必要な文書群にならない。決断と実装方針の
-中間には整理されない決断が残り、実装時に未考慮の部分を取りこぼす。archivist は
-決断の集合を起点に、それが要求する上層の文書を書き起こす。**決断は下さない。**
+ADR は部分解であり、その集合だけでは実装に必要な文書群にならない。条項と実装方針の
+中間には整理されない条項が残り、実装時に未考慮の部分を取りこぼす。archivist は
+条項の集合を起点に、それが要求する上層の文書を書き起こす。**条項は下さない。**
 
 ## 層
 
@@ -24,8 +24,8 @@ flowchart TD
         terms
         structure
     end
-    subgraph L4[L4 decisions]
-        decisions
+    subgraph L4[L4 articles]
+        articles
     end
     subgraph L5[L5 sources]
         code
@@ -42,7 +42,7 @@ flowchart TD
     spec -.-> debug
 ```
 
-実線が参照の方向で、上の層から直下の層へ引く。decisions だけは例外で、どの層からも
+実線が参照の方向で、上の層から直下の層へ引く。articles だけは例外で、どの層からも
 直接指せる——どの層のどの記述にも理由はあり得るため。破線は実装の対応を示す。
 
 **spec と design は互いを引かない。** 前者は What を、後者は How を担当する対等な
@@ -59,15 +59,15 @@ availability ごとの対応表として担保する。
 
 | コマンド | すること | 詳細 |
 | --- | --- | --- |
-| `/archivist` | 決断を起点に、届く範囲の文書を組み直す | [archivist](docs/archivist/L1_features/archivist.md) |
-| `/archivist-term` | 決断が意味を確定させた語を1枚起こす | [term](docs/archivist/L1_features/term.md) |
-| `/archivist-structure` | 決断が課した形を図として1枚起こす | [structure](docs/archivist/L1_features/structure.md) |
-| `/archivist-spec` | 決断から導ける約束を要件と検証として書く | [spec](docs/archivist/L1_features/spec.md) |
+| `/archivist` | 条項を起点に、届く範囲の文書を組み直す | [archivist](docs/archivist/L1_features/archivist.md) |
+| `/archivist-term` | 条項が意味を確定させた語を1枚起こす | [term](docs/archivist/L1_features/term.md) |
+| `/archivist-structure` | 条項が課した形を図として1枚起こす | [structure](docs/archivist/L1_features/structure.md) |
+| `/archivist-spec` | 条項から導ける約束を要件と検証として書く | [spec](docs/archivist/L1_features/spec.md) |
 | `/archivist-design` | 要件を満たす中身を材料と規則として書く | [design](docs/archivist/L1_features/design.md) |
-| `/archivist-feature` | 決断が定めた機能を1枚書く | [feature](docs/archivist/L1_features/feature.md) |
+| `/archivist-feature` | 条項が定めた機能を1枚書く | [feature](docs/archivist/L1_features/feature.md) |
 | `/archivist-check` | 揃っているかを判定する。書き換えない | [check](docs/archivist/L1_features/check.md) |
 | `/archivist-promote` | 実現先が揃った印を外し、流入リンクを追随させる | [promote](docs/archivist/L1_features/promote.md) |
-| `/archivist-adopt` | 外にある決断記述を突き合わせ、採ったものを置く | [adopt](docs/archivist/L1_features/adopt.md) |
+| `/archivist-adopt` | 外にある条項記述を突き合わせ、採ったものを置く | [adopt](docs/archivist/L1_features/adopt.md) |
 
 起動順は書き起こしの向きに従う。
 
@@ -90,7 +90,7 @@ term → structure → (spec & design) → feature
 | design | Parts の `target_file` 列のファイルが実在する |
 | spec | 全ての検証が `手段:` を持ち、ファイルを宣言したものは実在する |
 | feature | 参照する spec と design が両方事実 |
-| structure / terms / decisions | 印が付かない。決まった時点で事実 |
+| structure / terms / articles | 印が付かない。決まった時点で事実 |
 
 見るのは実現先そのものが在るかどうかで、実現先を動かして得られる生成物ではない。
 
@@ -114,8 +114,8 @@ docs/archivist/
 
 ## 担当外
 
-- **決断を下すこと。** archivist は既に `L4_articles/` に置かれたものだけを読む
-- **文書に無い実装を見つけること。** 実装から決断への還元は前段の仕事になる
+- **条項を立てること。** archivist は既に `L4_articles/` に置かれたものだけを読む
+- **文書に無い実装を見つけること。** 実装から条項への還元は前段の仕事になる
 - **検証が通ったかどうか。** 手段が用意されていれば足りる
 
 ## リポジトリ
