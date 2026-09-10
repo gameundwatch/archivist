@@ -11,9 +11,6 @@
     and the file name is that line in the naming the directory already uses.
 
     - The statement: what was decided, and what it rules out. No rationale here
-    - The kind: one line of its own. A decision is one of two -
-      a trade-off that is hard to reverse, or an arrangement made to keep
-      things aligned, where another option would have worked
     - The rationale: why it was decided that way. What it costs, and what
       it protects against
     - The boundary: what would take this decision away if crossed. Write it
@@ -26,8 +23,6 @@
 -->
 
 STATEMENT_OF_WHAT_IS_DECIDED
-
-KIND_OF_DECISION
 
 RATIONALE
 
