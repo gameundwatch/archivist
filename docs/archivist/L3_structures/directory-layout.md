@@ -56,6 +56,7 @@ flowchart LR
 ## Articles
 - [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
 - [条項が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
+- [L4 の文書は条項と呼び、中身を制限しない](../L4_articles/l4-documents-are-articles.md)
 
 ## References
 
