@@ -18,9 +18,9 @@
 
 - 同じノードの中の参照が閉路を作っていないことを確かめる
 
-### R4 `_` と実現先の食い違いを報告する
+### R4 実現先の欠落を報告する
 
-- 印が付いた文書のうち、実現先が実在するものを挙げる
+- 実現先が揃っていない文書を挙げる
 - 判定は実現先の実在で行い、実現先を動かして得られる生成物では行わない
 - 条項が公開すると定めた単位と機能の集合の差を挙げる
 
@@ -40,7 +40,7 @@
 - `手段:` を持たない V を挙げる
 - ファイルパスを宣言していて実在しないものを挙げる
 
-### R8 印を層ごとの条件で判定する
+### R8 実現先の実在を層ごとの条件で測る
 
 - design は Parts の `target_file` 列のファイルの実在で測る。`IN` と `OUT` は見ない
 - spec は全ての V が手段を持つかで測る
@@ -73,11 +73,11 @@
 | 1 | V1 リンクの解決 | R1 |
 | 2 | V2 層の段差 | R2 |
 | 3 | V3 閉路の検出 | R3 |
-| 4 | V4 印の食い違い | R4 |
+| 4 | V4 実現先の欠落 | R4 |
 | 5 | V5 無変更 | R5 |
 | 6 | V6 検証の詳しさ | R6 |
 | 7 | V7 手段の実在 | R7 |
-| 8 | V8 層ごとの印 | R8 |
+| 8 | V8 層ごとの条件 | R8 |
 | 9 | V9 形の言語 | R9 |
 | 10 | V10 図の一致 | R10 |
 | 11 | V11 対応表の欠落 | R11 |
@@ -97,10 +97,10 @@
 - Means: checklist
 - 相互に参照する2枚を与え、それが挙がることを見る
 
-### V4 印の食い違い
+### V4 実現先の欠落
 
 - Means: checklist
-- 実現先が実在する `_` 付き文書を置き、それが挙がることを見る
+- 実現先が実在しない design を置き、それが挙がることを見る
 
 ### V5 無変更
 
@@ -118,11 +118,11 @@
 - Means: checklist
 - 存在しないファイルを手段に宣言した V を置き、それが挙がることを見る
 
-### V8 層ごとの印
+### V8 層ごとの条件
 
 - Means: checklist
-- 印を付けた structure を置き、それが誤りとして挙がることを見る
-- 実現先が揃った spec と design に印が残っている状態を置き、それが挙がることを見る
+- 手段を持たない V のある spec を置き、それが揃っていないものとして挙がることを見る
+- structure と terms と articles が判定の対象に入らないことを見る
 
 ### V9 形の言語
 
@@ -145,13 +145,12 @@
 ## Articles
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
-- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [印を置かず、実現先の実在は判定で読む](../L4_articles/no-mark-on-documents.md)
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
 - [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
 - [test は design を読んで書く](../L4_articles/test-from-design.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
-- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References
@@ -168,4 +167,3 @@
 - [reference](../L3_terms/reference.md)
 - [layer](../L3_terms/layer.md)
 - [test](../L3_terms/test.md)
-- [mark](../L3_terms/mark.md)

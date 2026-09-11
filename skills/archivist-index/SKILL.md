@@ -23,8 +23,7 @@ Three columns, no header row:
 path,title,refs
 ```
 
-- `path` — the file, relative to `docs/archivist/`. The leading `_` of a mark is
-  part of the name and stays in the value
+- `path` — the file, relative to `docs/archivist/`
 - `title` — the text of the first `# ` heading in the file
 - `refs` — every file the document links to, joined by `;`, each one relative to
   `docs/archivist/`
@@ -38,12 +37,10 @@ byte.
 ## What it does not do
 
 - **No column that another column yields.** The layer is the directory in `path`,
-  the mark is the leading `_` in `path`, and in-degree is the `refs` column counted.
-  None of the three is a column
+  and in-degree is the `refs` column counted. Neither is a column
 - **No row for `index.csv` itself.** It is not a document
-- **No judgement.** Whether a link resolves, a layer is skipped or a mark is stale
-  is `archivist-check`'s work. Record the link as written, broken or not
-- **No mark on the index.** The index has nothing it stands in for
+- **No judgement.** Whether a link resolves, a layer is skipped, or a realization
+  exists is `archivist-check`'s work. Record the link as written, broken or not
 
 ## Standing
 

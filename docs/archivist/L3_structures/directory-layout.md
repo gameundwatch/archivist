@@ -32,17 +32,13 @@ DESIGNS --> DESIGN_FILE["DESIGN_NAME.md"]
 STRUCTURES --> STRUCTURE_FILE["STRUCTURE_NAME.md"]
 TERMS --> TERM_FILE["TERM_NAME.md"]
 ARTICLES --> ARTICLE_FILE["ARTICLE_NAME.md"]
-
-FEATURES --> UNIMPLEMENTED_FEATURE_FILE["_FEATURE_NAME.md"]
-SPECS --> UNIMPLEMENTED_SPEC_FILE["_SPEC_NAME.md"]
-DESIGNS --> UNIMPLEMENTED_DESIGN_FILE["_DESIGN_NAME.md"]
 ```
 
-6つのディレクトリが各ノードに1対1で対応する。印が付くのは実現先を持つ三層だけで、
-`L3_structures` `L3_terms` `L4_articles` には枝が無い。
+6つのディレクトリが各ノードに1対1で対応する。ファイル名は中身が決める名前だけで、
+状態を表す接頭辞を持たない。
 
 `index.csv` は6つのディレクトリと並んで `docs/archivist/` の直下に置くが、ノードでは
-ない。層に属さない生成物なので、印も付かない。
+ない。層に属さない生成物になる。
 
 ### D2 命名
 
@@ -58,7 +54,7 @@ flowchart LR
 その名前が文書のどこに置かれるかで決まるので、迷う場面は生じない。
 
 ## Articles
-- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [印を置かず、実現先の実在は判定で読む](../L4_articles/no-mark-on-documents.md)
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [条項が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
 - [L4 の文書は条項と呼び、中身を制限しない](../L4_articles/l4-documents-are-articles.md)
@@ -73,4 +69,3 @@ flowchart LR
 
 - [layer](../L3_terms/layer.md)
 - [index](../L3_terms/index.md)
-- [mark](../L3_terms/mark.md)

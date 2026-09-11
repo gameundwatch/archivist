@@ -17,7 +17,7 @@ flowchart LR
 
 ## Rules
 - 書き込みを一切行わない
-- 報告は promote がそのまま食える形で出す
+- 報告は文書ごとに1行で出し、何が欠けているかを添える
 
 ## Verify
 
@@ -35,15 +35,14 @@ flowchart LR
 ### V2 報告の形
 
 - Means: checklist
-- 報告が promote の入力の形であると `SKILL.md` に書かれていることを見る
+- 報告が文書1枚1行で、欠けているものを添える形だと `SKILL.md` に書かれていることを見る
 
 ## Articles
 - [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
 - [test は design を読んで書く](../L4_articles/test-from-design.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
-- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [印を置かず、実現先の実在は判定で読む](../L4_articles/no-mark-on-documents.md)
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
-- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
 
 ## References
 

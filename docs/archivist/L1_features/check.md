@@ -5,7 +5,7 @@
 ## Background
 
 層と参照の規則は文書に書かれているが、守られているかを見る手が無い。
-リンク切れ、層飛び、循環、実現先と印の食い違いは、目で追う限り必ず漏れる。
+リンク切れ、層飛び、循環、実現先の欠落は、目で追う限り必ず漏れる。
 
 ## Availability
 
@@ -13,7 +13,7 @@
 
 - **A2** リンクが解決するか、層を飛んでいないか、循環していないかが分かる
 
-- **A3** `_` が付いた文書のうち、実現先が実在するものが報告される
+- **A3** 実現先が揃っていない文書が報告される
 
 - **A4** 何も書き換えない
 
@@ -39,11 +39,10 @@
 - [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
 - [test は design を読んで書く](../L4_articles/test-from-design.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
-- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [印を置かず、実現先の実在は判定で読む](../L4_articles/no-mark-on-documents.md)
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
 - [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
-- [`_` を外す作業は check から分ける](../L4_articles/promote-separate-from-check.md)
 
 ## References
 

@@ -95,7 +95,6 @@ flowchart LR
 - [design](design.md)
 - [feature](feature.md)
 - [check](check.md)
-- [promote](promote.md)
 - [adopt](adopt.md)
 
 ### Structures

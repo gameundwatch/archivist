@@ -61,23 +61,8 @@ archivist の起動順そのものになる。
 L2 で経路が二叉に割れる。specs と designs は互いを待たないので、順不同に書ける。
 合流するのは features ただ一つで、そこで初めて両方が揃っている必要が出る。
 
-### D3 印が付く層
-
-```mermaid
-flowchart LR
-    F["feature"] -->|"Coverage が指す spec と design が事実なら"| M["印が外れる"]
-    S["spec"] -->|"全 V に手段が在れば"| M
-    D["design"] -->|"Parts のファイルが在れば"| M
-    ST["structure"] --- N["印が付かない"]
-    T["terms"] --- N
-    DC["articles"] --- N
-```
-
-実現先を持つ三層にだけ印が付く。structure と terms は条項の像であり、
-実現先の有無で状態が変わらない。
-
 ## Articles
-- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [印を置かず、実現先の実在は判定で読む](../L4_articles/no-mark-on-documents.md)
 - [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)
 - [test は design を読んで書く](../L4_articles/test-from-design.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
@@ -94,4 +79,3 @@ flowchart LR
 - [reduction](../L3_terms/reduction.md)
 - [test](../L3_terms/test.md)
 - [debug](../L3_terms/debug.md)
-- [mark](../L3_terms/mark.md)

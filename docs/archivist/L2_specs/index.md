@@ -18,10 +18,10 @@
 - 起動のたびに `index.csv` の全体を置き換える
 - 既存の索引を読んで差分を当てない
 
-### R4 索引に印を付けない
+### R4 索引は層に属さない
 
-- ファイル名に `_` を付けない
-- 索引は実現先を持たないため、印の対象にならない
+- 6つのディレクトリの中に置かず、`docs/archivist/` の直下に置く
+- どの層のノードにもせず、文書から参照させない
 
 ### R5 索引を他の文書の前提にしない
 
@@ -36,7 +36,7 @@
 ### R7 導出できる列を持たない
 
 - 行の中で他の列から導ける値を、独立した列にしない
-- 層はパスのディレクトリ名から、印はパスの先頭の `_` から読む
+- 層はパスのディレクトリ名から読む
 - 入次数を列にしない
 
 ## Verify
@@ -47,7 +47,7 @@
 | 2 | V2 孤立文書の在席 | R1 |
 | 3 | V3 参照の収まり | R2 |
 | 4 | V4 全置換 | R3 |
-| 5 | V5 印の不在 | R4 |
+| 5 | V5 層の外 | R4 |
 | 6 | V6 索引の可削除性 | R5 |
 | 7 | V7 再現性 | R6 |
 | 8 | V8 導出列の不在 | R7 |
@@ -72,10 +72,10 @@
 - Means: checklist
 - 手で1行を壊した索引を置いて起動し、その行が残らないことを見る
 
-### V5 印の不在
+### V5 層の外
 
 - Means: checklist
-- 生成された索引のファイル名に `_` が無いことを見る
+- `index.csv` が6つのディレクトリの外に在り、どの文書からも指されていないことを見る
 
 ### V6 索引の可削除性
 
@@ -97,7 +97,7 @@
 - [索引は点を1行とする](../L4_articles/index-rows-are-nodes.md)
 - [索引の列は path と title と refs の3つとする](../L4_articles/index-columns-are-three.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
-- [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [印を置かず、実現先の実在は判定で読む](../L4_articles/no-mark-on-documents.md)
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
 
@@ -112,4 +112,3 @@
 
 - [index](../L3_terms/index.md)
 - [reference](../L3_terms/reference.md)
-- [mark](../L3_terms/mark.md)

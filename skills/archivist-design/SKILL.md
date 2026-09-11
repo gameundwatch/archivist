@@ -20,8 +20,8 @@ the layer order.
 Each row carries a number, `T1`, `T2`, ..., because the feature cites targets by
 that number. Only `target_file` names a file. `IN` and `OUT` describe what flows through it, and
 may hold what the run produces or a name with a placeholder in it; neither column is
-ever judged for existence. The mark comes off this design when the `target_file`
-column exists — not when anything it outputs has been produced.
+ever judged for existence. This design is fact once the files in the `target_file`
+column exist — not when anything it outputs has been produced.
 
 ## Rules
 

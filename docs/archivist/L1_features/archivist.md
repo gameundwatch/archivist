@@ -53,7 +53,6 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 - [design](design.md)
 - [feature](feature.md)
 - [check](check.md)
-- [promote](promote.md)
 - [adopt](adopt.md)
 
 ### Specs
