@@ -10,12 +10,14 @@
 | T4 | spec | skills/archivist-spec/SKILL.md | 条項, L3 | L2_specs/SPEC_NAME.md |
 | T5 | design | skills/archivist-design/SKILL.md | 条項, L3 | L2_designs/DESIGN_NAME.md |
 | T6 | feature | skills/archivist-feature/SKILL.md | 条項, L2 | L1_features/FEATURE_NAME.md |
+| T7 | index | skills/archivist-index/SKILL.md | 全文書 | docs/archivist/index.csv |
 
 ### Relation
 
 ```mermaid
 flowchart LR
     A[archivist] --> T[term] --> S[structure] --> SP[spec] --> D[design] --> F[feature]
+    A --> IX[index] --> CSV["index.csv"]
     T -.-> TT["TEMPLATE.md"]
     S -.-> TS["TEMPLATE.md"]
     SP -.-> TP["TEMPLATE.md"]
@@ -27,8 +29,11 @@ flowchart LR
 
 - 下位スキルは1回の起動で1ファイルだけ書く
     - Details: 複数枚に及ぶ還元は、archivist が繰り返し呼ぶ
+- 組み直しの後に索引を呼ぶ。最後の1回だけで、文書1枚ごとには呼ばない
+    - Details: 索引は生成物なので、呼ぶことは索引への依存にならない
 - 下位スキルは自分の層より上を読まない
     - Details: term は articles だけを見る。spec と design はどちらも articles と L3 だけを見る
+    - Details: index は層に属さないのでこの規則の外になる。全層を読み、どの層にも書かない
 - 書式は各スキルの TEMPLATE.md にある。SKILL.md に写さない
     - Details: archivist はテンプレートを持たない。文書を書くのは下位スキルになる
 - 取り込みは Relation に載せず、名を告げるだけにする
@@ -38,7 +43,7 @@ flowchart LR
 
 | No | VERIFY_NAME | TARGET |
 | -- | ----------- | ------ |
-| 1 | V1 起動順 | T1 |
+| 1 | V1 起動順 | T1, T7 |
 | 2 | V2 下位スキルの独立 | T2 |
 | 3 | V3 spec の入力 | T4 |
 | 4 | V4 design の入力 | T5 |
@@ -49,6 +54,7 @@ flowchart LR
 - Means: checklist
 - `SKILL.md` の Order が term, structure, spec, design, feature を挙げることを見る
 - spec と design が同じ段に置かれ、互いを待たないと書かれていることを見る
+- 組み直しの後に索引が1回だけ呼ばれると `SKILL.md` に書かれていることを見る
 
 ### V2 下位スキルの独立
 
@@ -71,6 +77,7 @@ flowchart LR
 - feature の入力に L2 の両方が含まれ、Coverage 表を書くことになっていることを見る
 
 ## Articles
+- [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [テンプレートはスキルの中に置く](../L4_articles/template-belongs-to-skill.md)
 - [機能が何かは条項であり、下層の要約ではない](../L4_articles/features-come-from-articles.md)

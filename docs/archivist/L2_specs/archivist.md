@@ -35,6 +35,12 @@
 - 案内するだけで、呼ばない
 - 空でないときは案内しない
 
+### R7 組み直しの後に索引を更新する
+
+- 文書を書き終えた後に索引を1回だけ組み直す
+- 索引が無い状態でも、組み直し自体は成立する
+- 索引の中身を読んで還元の判断を変えない
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -45,6 +51,7 @@
 | 4 | V4 再構成 | R4 |
 | 5 | V5 跡の到達 | R5 |
 | 6 | V6 空の入力 | R6 |
+| 7 | V7 索引の追随 | R7 |
 
 ### V1 起点の限定
 
@@ -77,7 +84,14 @@
 - Means: checklist
 - `L4_articles/` を空にして起動し、取り込みが案内され、勝手に起動しないことを見る
 
+### V7 索引の追随
+
+- Means: checklist
+- 文書を1枚書き直して起動し、索引がその内容に追随していることを見る
+- 索引を削除した状態で起動し、組み直しが最後まで進むことを見る
+
 ## Articles
+- [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [還元はするが、条項は立てない](../L4_articles/reduction-not-article.md)
 - [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
 - [条項の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)

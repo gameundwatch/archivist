@@ -71,4 +71,8 @@ stay in English - they are form, not prose.
 
 ## When done
 
-Run `archivist-check`.
+Run `archivist-index` once, then `archivist-check`.
+
+The index is rebuilt after the writing stops, not after each document. It is a
+generated file: nothing read here comes from it, and a run with no index at all
+still finishes.

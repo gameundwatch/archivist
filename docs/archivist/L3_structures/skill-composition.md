@@ -11,7 +11,7 @@ flowchart LR
     S --> SP["/archivist-spec"] --> F["/archivist-feature"]
     S --> D["/archivist-design"] --> F
     A --> C["/archivist-check"] -.報告.-> P["/archivist-promote"]
-    DOCS["( docs/archivist/ )"] --> IX["/archivist-index"] --> CSV["index.csv"]
+    F --> IX["/archivist-index"] --> CSV["index.csv"]
     DEC["( article )"] --> C
     EXT["( 外の条項記述 )"] --> AD["/archivist-adopt"] --> DEC
     DEC --> A
@@ -24,8 +24,9 @@ feature ただ一つで、そこで両者が対応表として突き合わされ
 check も articles を受け取るが、書かずに読むだけで判定を返す。
 promote は check の報告を受け、`_` の除去と流入リンクの書き換えを行う。
 article は すでに存在するものとし、このskillでは作成しない。
-index は Order の外に立ち、書き上がった文書群を読んで索引を組み直す。索引は生成物で、
-他のスキルはその存在を前提にしない。
+index は archivist が最後に呼び、書き上がった文書群を読んで索引を組み直す。層に属さない
+ことと、起動順の外にあることは別になる。索引は生成物で、他のスキルはその存在を
+前提にしない。
 adopt は Order の外に立ち、archivist が回り始める前に article を用意する。
 archivist は article が一枚も無いときだけ adopt を案内し、呼びはしない。
 
