@@ -19,7 +19,10 @@ flowchart LR
 - 走査で組む。既存の索引を入力にしない
 - 書き出しは全置換。行の追記も差し替えもしない
 - 印の有無はファイル名の先頭の `_` から読む。実現先の実在は見に行かない
+- 列は `path` `title` `refs` の3つ。ヘッダ行を持たない
+- 値は全て引用符で囲み、値の中の `"` は `""` に倍にする。`refs` は `;` でつなぐ
 - 参照はリンクの指し先をそのまま持ち、`docs/archivist/` からの相対で揃える
+- 行は `path` で並べる。同じ文書群からは同じ内容が出る
 - 索引自身は行を持たない。文書ではないため
 
 ## Verify
@@ -31,6 +34,8 @@ flowchart LR
 | 3 | V3 印の読み取り | T1 |
 | 4 | V4 パスの基点 | T2 |
 | 5 | V5 索引自身の除外 | T2 |
+| 6 | V6 列の構成 | T2 |
+| 7 | V7 引用と連結 | T2 |
 
 ### V1 入力の限定
 
@@ -57,9 +62,22 @@ flowchart LR
 - Means: checklist
 - `index.csv` を指す行が索引に無いことを見る
 
+### V6 列の構成
+
+- Means: checklist
+- 各行が3つの値を持ち、ヘッダ行が無いことを見る
+- 層と印を値に持つ列が無いことを見る
+
+### V7 引用と連結
+
+- Means: checklist
+- `"` を含むタイトルの文書を置き、その行で `""` に倍になっていることを見る
+- 参照を複数持つ文書の行で、指し先が `;` でつながれていることを見る
+
 ## Articles
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [索引は点を1行とする](../L4_articles/index-rows-are-nodes.md)
+- [索引の列は path と title と refs の3つとする](../L4_articles/index-columns-are-three.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
 - [テンプレートはスキルが持つ](../L4_articles/template-belongs-to-skill.md)

@@ -20,6 +20,8 @@
 
 - **A5** 索引には印が付かず、層の一覧にも現れない
 
+- **A6** 索引の列は3つで、同じ行の他の列から導ける列を持たない
+
 ### Coverage
 
 | availability | spec | design |
@@ -29,10 +31,12 @@
 | A3 | R2 | T2 |
 | A4 | R5 | T1 |
 | A5 | R4 | T2 |
+| A6 | R7 | T2 |
 
 ## Articles
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [索引は点を1行とする](../L4_articles/index-rows-are-nodes.md)
+- [索引の列は path と title と refs の3つとする](../L4_articles/index-columns-are-three.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
 - [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
 
@@ -40,8 +44,8 @@
 
 ### Specs
 
-- [index](../L2_specs/_index.md)
+- [index](../L2_specs/index.md)
 
 ### Designs
 
-- [index](../L2_designs/_index.md)
+- [index](../L2_designs/index.md)

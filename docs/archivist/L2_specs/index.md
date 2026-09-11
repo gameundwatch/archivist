@@ -33,6 +33,12 @@
 - 入力は `docs/archivist/` の文書に限る
 - 同じ文書群からは同じ索引が出る
 
+### R7 導出できる列を持たない
+
+- 行の中で他の列から導ける値を、独立した列にしない
+- 層はパスのディレクトリ名から、印はパスの先頭の `_` から読む
+- 入次数を列にしない
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -44,6 +50,7 @@
 | 5 | V5 印の不在 | R4 |
 | 6 | V6 索引の可削除性 | R5 |
 | 7 | V7 再現性 | R6 |
+| 8 | V8 導出列の不在 | R7 |
 
 ### V1 行と文書の対応
 
@@ -80,9 +87,15 @@
 - Means: checklist
 - 文書を変えずに二度起動し、同じ内容が出ることを見る
 
+### V8 導出列の不在
+
+- Means: checklist
+- 索引のどの行にも、パスから導ける値だけを持つ列が無いことを見る
+
 ## Articles
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [索引は点を1行とする](../L4_articles/index-rows-are-nodes.md)
+- [索引の列は path と title と refs の3つとする](../L4_articles/index-columns-are-three.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 - [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
 - [検証は自分の手段を宣言する](../L4_articles/verification-declares-its-means.md)
