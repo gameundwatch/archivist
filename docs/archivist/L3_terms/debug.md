@@ -14,7 +14,6 @@
 
 ## Terms
 - [spec](spec.md)
-- [test](test.md)
 
 ## Articles
 - [debug は spec だけを読んで書ける](../L4_articles/debug-from-spec-alone.md)

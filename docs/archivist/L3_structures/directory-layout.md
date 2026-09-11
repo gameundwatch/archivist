@@ -25,6 +25,7 @@ ARCHIVIST --> DESIGNS
 ARCHIVIST --> STRUCTURES
 ARCHIVIST --> TERMS
 ARCHIVIST --> ARTICLES
+ARCHIVIST --> INDEX["index.csv"]
 FEATURES --> FEATURE_FILE["FEATURE_NAME.md"]
 SPECS --> SPEC_FILE["SPEC_NAME.md"]
 DESIGNS --> DESIGN_FILE["DESIGN_NAME.md"]
@@ -39,6 +40,9 @@ DESIGNS --> UNIMPLEMENTED_DESIGN_FILE["_DESIGN_NAME.md"]
 
 6つのディレクトリが各ノードに1対1で対応する。印が付くのは実現先を持つ三層だけで、
 `L3_structures` `L3_terms` `L4_articles` には枝が無い。
+
+`index.csv` は6つのディレクトリと並んで `docs/archivist/` の直下に置くが、ノードでは
+ない。層に属さない生成物なので、印も付かない。
 
 ### D2 命名
 
@@ -55,6 +59,7 @@ flowchart LR
 
 ## Articles
 - [印が付くのは実現先を持つ層だけ](../L4_articles/mark-only-where-realized.md)
+- [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [条項が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
 - [L4 の文書は条項と呼び、中身を制限しない](../L4_articles/l4-documents-are-articles.md)
 
@@ -67,4 +72,5 @@ flowchart LR
 ### Terms
 
 - [layer](../L3_terms/layer.md)
+- [index](../L3_terms/index.md)
 - [mark](../L3_terms/mark.md)
