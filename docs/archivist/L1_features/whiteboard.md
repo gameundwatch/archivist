@@ -44,9 +44,9 @@
     - 開いた元のノードを押す
     - 紙自身のピンを押す
 
-- **A9** 図が描かれた状態で読める
-    - 図は生成時に取得した実装が描く
-    - 取得できなかったときは図を持たない盤面になる
+- **A9** 文書が書式どおりに読める
+    - 本文も図も、生成時に取得した実装が解く
+    - 取得できなかったときは、本文は書かれたままの文字で出て、図は出ず、検索は現れない
 
 - **A10** 盤面をいくら触っても文書は変わらない
     - ノードを動かしても保存されない
@@ -71,6 +71,15 @@
 - **A15** 視点は持ち越さない
     - 開き直すと既定の視点に戻る
 
+- **A16** 開いている文書の周りを木で辿れる
+    - 指している先と指されている元が並ぶ
+    - 先の先へ辿れる。循環したところで枝は止まる
+    - 木は盤面を隠さない。行の外は盤面のまま掴める
+
+- **A17** 語から文書に辿り着ける
+    - 表題にもファイル名にも無い、本文だけに在る語で引ける
+    - 結果を選ぶと紙が開き、木の根がそこへ移る
+
 ### Coverage
 
 | availability | spec | design |
@@ -90,17 +99,21 @@
 | A13 | R13 | T2 |
 | A14 | R14 | T2 |
 | A15 | R15 | T2 |
+| A16 | R16 | T2 |
+| A17 | R17 | T1, T2 |
 
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
 - [盤面の配置に正解を1つ置かない](../L4_articles/whiteboard-layout-has-no-single-answer.md)
 - [ピンは一つの表から引く](../L4_articles/whiteboard-pins-come-from-one-table.md)
-- [図は自前で描かない](../L4_articles/whiteboard-diagrams-are-not-ours.md)
+- [できあいの実装は生成時に取り込む](../L4_articles/whiteboard-outside-implementations.md)
 - [文書は盤面の上で開く](../L4_articles/whiteboard-documents-open-on-the-board.md)
 - [盤面は掴んで動かす](../L4_articles/whiteboard-the-board-is-dragged.md)
 - [ズームはカーソルを固定点にする](../L4_articles/whiteboard-zoom-anchors-at-the-cursor.md)
 - [配置の切り替えは点の移動で行う](../L4_articles/whiteboard-layout-change-is-a-move.md)
 - [盤面は画面より広く開く](../L4_articles/whiteboard-opens-wider-than-the-screen.md)
+- [開いている文書の周りは木として出す](../L4_articles/whiteboard-open-document-shows-its-tree.md)
+- [検索は本文まで届く](../L4_articles/whiteboard-search-reaches-the-body.md)
 - [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
 
