@@ -60,6 +60,28 @@ The page is not tracked by git. `docs/archivist/whiteboard.html` goes into the
 5. Run the page's script once against a stub document object and confirm it raises
    nothing. Parsing alone does not catch a name that went missing: the board renders
    empty and the file still looks well formed.
+6. Serve `docs/archivist/` in the background and say the URL. Do this on every run,
+   including when `archivist` calls this skill.
+
+   Start at port 8765. For each port, probe it first:
+
+   ```
+   curl -sf -o /dev/null http://127.0.0.1:PORT/whiteboard.html
+   ```
+
+   - **It answers**: a server is already serving the board. Use it; start nothing
+   - **Connection refused**: the port is free. Start the server there, in the
+     background, so the run does not wait on it:
+
+     ```
+     python3 -m http.server PORT --bind 127.0.0.1 --directory docs/archivist
+     ```
+
+   - **Something else answers**: go to the next port
+
+   Then say `http://127.0.0.1:PORT/whiteboard.html`. **Bind to `127.0.0.1` only.**
+   Never stop the server; the person does. Without `python3`, serve nothing and say
+   the path of the file instead: it opens on its own.
 
 ## What the page holds
 
