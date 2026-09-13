@@ -71,8 +71,12 @@ stay in English - they are form, not prose.
 
 ## When done
 
-Run `archivist-index` once, then `archivist-check`.
+Run `archivist-index` once, then `archivist-whiteboard` once, then `archivist-check`.
 
 The index is rebuilt after the writing stops, not after each document. It is a
 generated file: nothing read here comes from it, and a run with no index at all
 still finishes.
+
+**The whiteboard is the last step of the chain, and comes after the index.** It
+reads the index when one is there, so the index has to be fresh first. Like the
+index, it runs once, not after each document.

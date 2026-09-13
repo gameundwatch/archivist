@@ -18,8 +18,11 @@ Walk the documents and build the same graph from them.
 `docs/archivist/whiteboard.html`, rewritten whole on every run. It sits beside the
 index, outside the six layer directories: it is generated, and no layer holds it.
 
-**Write nothing else.** Not one document is touched, renamed or reordered. The
-board reads the graph; it never decides it.
+**Write nothing else**, except one line in `.gitignore`. Not one document is
+touched, renamed or reordered. The board reads the graph; it never decides it.
+
+The page is not tracked by git. `docs/archivist/whiteboard.html` goes into the
+`.gitignore` at the project root.
 
 ## What it does
 
@@ -50,6 +53,10 @@ board reads the graph; it never decides it.
    | `__FUSE__` | the search library text, or nothing |
 
 4. Write the result to `docs/archivist/whiteboard.html`.
+   Then make sure `.gitignore` at the project root has the line
+   `docs/archivist/whiteboard.html`. If the line is already there, change nothing.
+   Otherwise append that one line, creating the file if needed. Leave every other
+   line as it is.
 5. Run the page's script once against a stub document object and confirm it raises
    nothing. Parsing alone does not catch a name that went missing: the board renders
    empty and the file still looks well formed.
