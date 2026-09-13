@@ -8,6 +8,7 @@
 | T2 | template | skills/archivist-whiteboard/TEMPLATE.html | 盤面の骨格と差し込み口 | 出力の器 |
 | T3 | html | docs/archivist/whiteboard.html | 盤面の全体 | 1枚で開ける盤面 |
 | T4 | gitignore | .gitignore | 出力のパス | 追跡から外れた出力 |
+| T5 | server | python3 -m http.server | docs/archivist/ | http://127.0.0.1:PORT/whiteboard.html |
 
 ### Relation
 
@@ -19,6 +20,7 @@ flowchart LR
     LIB["mermaid"] -.生成時に取得.-> S
     S --> OUT["whiteboard.html"]
     S --> GI[".gitignore"] -.追わない.-> OUT
+    OUT --> SRV["server（バックグラウンド）"]
 ```
 
 ## Rules
@@ -70,6 +72,12 @@ flowchart LR
 - 出力を書いた後、対象プロジェクト直下の `.gitignore` に出力のパスを1行足す
     - 同じ行がすでに在れば足さない。無ければファイルごと作る
     - 足すのはその1行だけで、他の行は動かさない
+- 最後に `docs/archivist/` を `python3 -m http.server` でバックグラウンドに配信し、URL を告げる
+    - 待ち受けは `127.0.0.1` に限る。ポートは 8765 から始める
+    - そのポートで `whiteboard.html` が返るなら、既存の配信として使い、立てない
+    - 別のものが使っていれば、ポートを1つずつ上げて空きを探す
+    - 起動の終わりを待たせず、止める手順を持たない
+    - `python3` が無ければ配信せず、出力のパスを告げて終わる
 
 ## Verify
 
@@ -92,6 +100,7 @@ flowchart LR
 | 15 | V15 差し込み口の数 | T1, T2 |
 | 16 | V16 検索の設定 | T2 |
 | 17 | V17 追跡の除外 | T1, T4 |
+| 18 | V18 配信の手順 | T1, T5 |
 
 ### V1 入力の走査
 
@@ -188,9 +197,16 @@ flowchart LR
 - Means: checklist
 - `SKILL.md` が `.gitignore` に出力のパスを足す手順を持ち、重複を足さないと書いていることを見る
 
+### V18 配信の手順
+
+- Means: checklist
+- `SKILL.md` の配信が `127.0.0.1` に限られ、バックグラウンドで立つと書かれていることを見る
+- 既存の配信を確かめてから立てる順になっていることを見る
+
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
 - [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
+- [ホワイトボードは生成の後、バックグラウンドで配信する](../L4_articles/whiteboard-hosted-in-background.md)
 - [盤面の配置に正解を1つ置かない](../L4_articles/whiteboard-layout-has-no-single-answer.md)
 - [ピンは一つの表から引く](../L4_articles/whiteboard-pins-come-from-one-table.md)
 - [できあいの実装は生成時に取り込む](../L4_articles/whiteboard-outside-implementations.md)

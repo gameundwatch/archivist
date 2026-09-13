@@ -83,6 +83,10 @@
 - **A18** 生成しても git の差分にならない
     - 出力は `.gitignore` に載る
 
+- **A19** 生成が終わると、そのまま開ける URL がある
+    - 配信はバックグラウンドで続き、手元からだけ届く
+    - 何度生成しても配信は1つのまま
+
 ### Coverage
 
 | availability | spec | design |
@@ -105,6 +109,7 @@
 | A16 | R16 | T2 |
 | A17 | R17 | T1, T2 |
 | A18 | R18 | T1, T4 |
+| A19 | R19 | T1, T5 |
 
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
@@ -119,6 +124,7 @@
 - [開いている文書の周りは木として出す](../L4_articles/whiteboard-open-document-shows-its-tree.md)
 - [検索は本文まで届く](../L4_articles/whiteboard-search-reaches-the-body.md)
 - [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
+- [ホワイトボードは生成の後、バックグラウンドで配信する](../L4_articles/whiteboard-hosted-in-background.md)
 - [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
 

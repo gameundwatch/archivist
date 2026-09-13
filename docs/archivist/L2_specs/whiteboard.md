@@ -103,6 +103,13 @@
 - 起動の後、対象プロジェクトの `.gitignore` に `docs/archivist/whiteboard.html` が載っている
 - すでに載っているとき、`.gitignore` は変わらない
 
+### R19 生成の後に配信する
+
+- 起動が終わったとき、盤面を開く URL が告げられ、その URL で盤面が開ける
+- 配信は手元からだけ届き、起動の終わりを待たせない
+- 同じ場所を配信しているサーバーがすでにあれば、2つ目を立てない
+- skill は配信を止めない
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -135,6 +142,7 @@
 | 26 | V26 本文の語で引ける | R17 |
 | 27 | V27 結果から開く | R17 |
 | 28 | V28 追跡の除外 | R18 |
+| 29 | V29 配信の到達と重複 | R19 |
 
 ### V1 入力の限定
 
@@ -292,9 +300,17 @@
 - もう一度生成し、`.gitignore` に差分が無いことを見る
 - `git status` に `whiteboard.html` が出ないことを見る
 
+### V29 配信の到達と重複
+
+- Means: checklist
+- 生成の後、告げられた URL を開いて盤面が出ることを見る
+- 他の端末からその URL に届かないことを見る
+- もう一度生成し、同じ URL が告げられ、サーバーが1つのままであることを見る
+
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
 - [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
+- [ホワイトボードは生成の後、バックグラウンドで配信する](../L4_articles/whiteboard-hosted-in-background.md)
 - [盤面の配置に正解を1つ置かない](../L4_articles/whiteboard-layout-has-no-single-answer.md)
 - [ピンは一つの表から引く](../L4_articles/whiteboard-pins-come-from-one-table.md)
 - [できあいの実装は生成時に取り込む](../L4_articles/whiteboard-outside-implementations.md)

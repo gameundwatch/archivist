@@ -13,6 +13,7 @@ flowchart LR
     FINDLIB["検索の実装"] -.生成時に取得.-> GEN
     GEN --> OUT["whiteboard.html"]
     GEN -.書き戻さない.-> MD
+    OUT --> SRV["配信（バックグラウンド, 127.0.0.1）"] --> URL["URL を告げる"]
 ```
 
 入力は `docs/archivist/` の文書と索引だけで、出力は HTML 1枚になる。外から取り込む
@@ -20,6 +21,8 @@ flowchart LR
 取りに行かないので、出力は単体で開ける。取得できなかったものは、その働きを持たない
 まま出る。代わりの実装は持たない。
 生成は文書へ何も書き戻さない。向きは常に文書から出力への一方向になる。
+出力を書いた後、手元だけに向けた配信をバックグラウンドで立て、URL を告げて終わる。
+配信は開く手段で、出力は配信なしでも単体で開ける。
 
 ### D2 盤面の要素
 
@@ -126,6 +129,7 @@ flowchart TD
 - [盤面は画面より広く開く](../L4_articles/whiteboard-opens-wider-than-the-screen.md)
 - [開いている文書の周りは木として出す](../L4_articles/whiteboard-open-document-shows-its-tree.md)
 - [検索は本文まで届く](../L4_articles/whiteboard-search-reaches-the-body.md)
+- [ホワイトボードは生成の後、バックグラウンドで配信する](../L4_articles/whiteboard-hosted-in-background.md)
 
 ## References
 
