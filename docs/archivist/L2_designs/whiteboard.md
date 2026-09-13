@@ -7,6 +7,7 @@
 | T1 | whiteboard | skills/archivist-whiteboard/SKILL.md | docs/archivist/ の文書と索引 | 盤面の全体 |
 | T2 | template | skills/archivist-whiteboard/TEMPLATE.html | 盤面の骨格と差し込み口 | 出力の器 |
 | T3 | html | docs/archivist/whiteboard.html | 盤面の全体 | 1枚で開ける盤面 |
+| T4 | gitignore | .gitignore | 出力のパス | 追跡から外れた出力 |
 
 ### Relation
 
@@ -17,6 +18,7 @@ flowchart LR
     TPL["TEMPLATE.html"] --> S
     LIB["mermaid"] -.生成時に取得.-> S
     S --> OUT["whiteboard.html"]
+    S --> GI[".gitignore"] -.追わない.-> OUT
 ```
 
 ## Rules
@@ -65,6 +67,9 @@ flowchart LR
 - 木は面を持たず、行だけが操作を受け取る。行以外は盤面へ抜ける
 - 盤面の状態は出力の外へ書き出さない。位置も拡大率も開閉も保存しない
 - 生成は `docs/archivist/` の `.md` を開くだけで、書き込まない
+- 出力を書いた後、対象プロジェクト直下の `.gitignore` に出力のパスを1行足す
+    - 同じ行がすでに在れば足さない。無ければファイルごと作る
+    - 足すのはその1行だけで、他の行は動かさない
 
 ## Verify
 
@@ -86,6 +91,7 @@ flowchart LR
 | 14 | V14 木の透過と経路 | T2 |
 | 15 | V15 差し込み口の数 | T1, T2 |
 | 16 | V16 検索の設定 | T2 |
+| 17 | V17 追跡の除外 | T1, T4 |
 
 ### V1 入力の走査
 
@@ -177,8 +183,14 @@ flowchart LR
 - 検索の設定が、語の位置に依存しない指定になっていることを見る
 - 空白の無い語で引けることを見る
 
+### V17 追跡の除外
+
+- Means: checklist
+- `SKILL.md` が `.gitignore` に出力のパスを足す手順を持ち、重複を足さないと書いていることを見る
+
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
+- [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
 - [盤面の配置に正解を1つ置かない](../L4_articles/whiteboard-layout-has-no-single-answer.md)
 - [ピンは一つの表から引く](../L4_articles/whiteboard-pins-come-from-one-table.md)
 - [できあいの実装は生成時に取り込む](../L4_articles/whiteboard-outside-implementations.md)

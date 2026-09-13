@@ -26,6 +26,9 @@ ARCHIVIST --> STRUCTURES
 ARCHIVIST --> TERMS
 ARCHIVIST --> ARTICLES
 ARCHIVIST --> INDEX["index.csv"]
+ARCHIVIST --> WHITEBOARD["whiteboard.html"]
+GITIGNORE[".gitignore"] -.載せる.-> WHITEBOARD
+ROOT --> GITIGNORE
 FEATURES --> FEATURE_FILE["FEATURE_NAME.md"]
 SPECS --> SPEC_FILE["SPEC_NAME.md"]
 DESIGNS --> DESIGN_FILE["DESIGN_NAME.md"]
@@ -39,6 +42,9 @@ ARTICLES --> ARTICLE_FILE["ARTICLE_NAME.md"]
 
 `index.csv` は6つのディレクトリと並んで `docs/archivist/` の直下に置くが、ノードでは
 ない。層に属さない生成物になる。
+
+`whiteboard.html` も同じ場所に置く生成物で、ノードではない。対象プロジェクトの
+`.gitignore` に載り、git では追わない。
 
 ### D2 命名
 
@@ -58,6 +64,7 @@ flowchart LR
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [条項が増減させる一覧は structure に置く](../L4_articles/enumeration-as-mapping.md)
 - [L4 の文書は条項と呼び、中身を制限しない](../L4_articles/l4-documents-are-articles.md)
+- [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
 
 ## References
 
@@ -69,3 +76,4 @@ flowchart LR
 
 - [layer](../L3_terms/layer.md)
 - [index](../L3_terms/index.md)
+- [whiteboard](../L3_terms/whiteboard.md)

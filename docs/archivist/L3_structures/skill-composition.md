@@ -12,6 +12,8 @@ flowchart LR
     S --> D["/archivist-design"] --> F
     A --> C["/archivist-check"]
     F --> IX["/archivist-index"] --> CSV["index.csv"]
+    IX --> WB["/archivist-whiteboard"] --> HTML["whiteboard.html"]
+    CSV -.あれば読む.-> WB
     DEC["( article )"] --> C
     EXT["( 外の条項記述 )"] --> AD["/archivist-adopt"] --> DEC
     DEC --> A
@@ -26,6 +28,8 @@ article は すでに存在するものとし、このskillでは作成しない
 index は archivist が最後に呼び、書き上がった文書群を読んで索引を組み直す。層に属さない
 ことと、起動順の外にあることは別になる。索引は生成物で、他のスキルはその存在を
 前提にしない。
+whiteboard は index の直後、起動順の最終段で1回呼ばれる。索引が先に組み直されて
+いるので、盤面は古い索引を読まない。
 adopt は Order の外に立ち、archivist が回り始める前に article を用意する。
 archivist は article が一枚も無いときだけ adopt を案内し、呼びはしない。
 
@@ -42,6 +46,7 @@ flowchart LR
     S6["/archivist-check"] ---|1対1| F6["feature: check"]
     S8["/archivist-adopt"] ---|1対1| F8["feature: adopt"]
     S9["/archivist-index"] ---|1対1| F9["feature: index"]
+    S10["/archivist-whiteboard"] ---|1対1| F10["feature: whiteboard"]
 ```
 
 起動できるコマンド1本が feature 1枚に対応する。片方だけが増えた状態は、
@@ -55,6 +60,7 @@ flowchart LR
 - [還元はするが、条項は立てない](../L4_articles/reduction-not-article.md)
 - [条項の取り込みは archivist の外に置く](../L4_articles/adoption-outside-archivist.md)
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
+- [ホワイトボードは還元の最後に、索引の後で組み直す](../L4_articles/whiteboard-follows-index.md)
 
 ## References
 
@@ -65,3 +71,4 @@ flowchart LR
 - [article](../L3_terms/article.md)
 - [adoption](../L3_terms/adoption.md)
 - [index](../L3_terms/index.md)
+- [whiteboard](../L3_terms/whiteboard.md)

@@ -80,6 +80,9 @@
     - 表題にもファイル名にも無い、本文だけに在る語で引ける
     - 結果を選ぶと紙が開き、木の根がそこへ移る
 
+- **A18** 生成しても git の差分にならない
+    - 出力は `.gitignore` に載る
+
 ### Coverage
 
 | availability | spec | design |
@@ -101,6 +104,7 @@
 | A15 | R15 | T2 |
 | A16 | R16 | T2 |
 | A17 | R17 | T1, T2 |
+| A18 | R18 | T1, T4 |
 
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
@@ -114,6 +118,7 @@
 - [盤面は画面より広く開く](../L4_articles/whiteboard-opens-wider-than-the-screen.md)
 - [開いている文書の周りは木として出す](../L4_articles/whiteboard-open-document-shows-its-tree.md)
 - [検索は本文まで届く](../L4_articles/whiteboard-search-reaches-the-body.md)
+- [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
 - [コマンド1本を feature 1枚とする](../L4_articles/command-is-feature.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)
 

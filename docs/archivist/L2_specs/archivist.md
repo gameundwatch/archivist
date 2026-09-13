@@ -35,9 +35,10 @@
 - 案内するだけで、呼ばない
 - 空でないときは案内しない
 
-### R7 組み直しの後に索引を更新する
+### R7 組み直しの後に索引、続けて盤面を更新する
 
 - 文書を書き終えた後に索引を1回だけ組み直す
+- 索引の後に盤面を1回だけ組み直す。これが起動順の最終段になる
 - 索引が無い状態でも、組み直し自体は成立する
 - 索引の中身を読んで還元の判断を変えない
 
@@ -89,8 +90,10 @@
 - Means: checklist
 - 文書を1枚書き直して起動し、索引がその内容に追随していることを見る
 - 索引を削除した状態で起動し、組み直しが最後まで進むことを見る
+- 盤面が索引の後に組み直され、新しい文書を含んでいることを見る
 
 ## Articles
+- [ホワイトボードは還元の最後に、索引の後で組み直す](../L4_articles/whiteboard-follows-index.md)
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [還元はするが、条項は立てない](../L4_articles/reduction-not-article.md)
 - [層は飛ばさない。articles だけが例外](../L4_articles/no-layer-skip.md)
@@ -107,6 +110,8 @@
 - [feature](feature.md)
 - [check](check.md)
 - [adopt](adopt.md)
+- [index](index.md)
+- [whiteboard](whiteboard.md)
 
 ### Structures
 

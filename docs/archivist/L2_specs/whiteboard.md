@@ -98,6 +98,11 @@
 - 語が空白で割れない文書でも引ける
 - 結果から開いたものは紙になり、木の根になる。別の閲覧面を作らない
 
+### R18 出力を git で追わない
+
+- 起動の後、対象プロジェクトの `.gitignore` に `docs/archivist/whiteboard.html` が載っている
+- すでに載っているとき、`.gitignore` は変わらない
+
 ## Verify
 
 | No | VERIFY_NAME | REQUIREMENT |
@@ -129,6 +134,7 @@
 | 25 | V25 木の透過 | R16 |
 | 26 | V26 本文の語で引ける | R17 |
 | 27 | V27 結果から開く | R17 |
+| 28 | V28 追跡の除外 | R18 |
 
 ### V1 入力の限定
 
@@ -279,8 +285,16 @@
 - 結果を選ぶと紙が開き、木の根がその文書に移ることを見る
 - 結果を読むための別の面が作られていないことを見る
 
+### V28 追跡の除外
+
+- Means: checklist
+- `.gitignore` が無い状態で生成し、`docs/archivist/whiteboard.html` の1行を持つ `.gitignore` ができることを見る
+- もう一度生成し、`.gitignore` に差分が無いことを見る
+- `git status` に `whiteboard.html` が出ないことを見る
+
 ## Articles
 - [ホワイトボードは文書から生成され、文書を書き換えない](../L4_articles/whiteboard-generates-from-documents.md)
+- [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
 - [盤面の配置に正解を1つ置かない](../L4_articles/whiteboard-layout-has-no-single-answer.md)
 - [ピンは一つの表から引く](../L4_articles/whiteboard-pins-come-from-one-table.md)
 - [できあいの実装は生成時に取り込む](../L4_articles/whiteboard-outside-implementations.md)
