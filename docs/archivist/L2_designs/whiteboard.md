@@ -44,6 +44,7 @@ flowchart LR
     - 規則は文書1枚につき `0..1` の座標を1つ返す。盤面の大きさを知らない
     - 規則を足すときは1本足すだけで済む。既存の規則と盤面は書き換えない
     - 既定の配置を1つ選ぶ。既定は盤面を画面より広く取り、全体は引いて見る
+- グループは参照の向きを落としたグラフに貪欲モジュラリティを当てて1回だけ求め、配置はその結果を読む
 - ピンは色と形の表1つを出力に置く
     - 盤面・紙・本文中の参照・凡例の4箇所は、この表だけを読む
     - 色は層に、形は同じ層の中の割れ方に割り当てる
@@ -208,6 +209,7 @@ flowchart LR
 - [ホワイトボードは git で追わない](../L4_articles/whiteboard-not-tracked.md)
 - [ホワイトボードは生成の後、バックグラウンドで配信する](../L4_articles/whiteboard-hosted-in-background.md)
 - [盤面の配置に正解を1つ置かない](../L4_articles/whiteboard-layout-has-no-single-answer.md)
+- [グループは向きを落とした参照から、貪欲モジュラリティで決める](../L4_articles/whiteboard-groups-by-undirected-modularity.md)
 - [ピンは一つの表から引く](../L4_articles/whiteboard-pins-come-from-one-table.md)
 - [できあいの実装は生成時に取り込む](../L4_articles/whiteboard-outside-implementations.md)
 - [文書は盤面の上で開く](../L4_articles/whiteboard-documents-open-on-the-board.md)
