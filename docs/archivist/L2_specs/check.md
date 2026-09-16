@@ -62,8 +62,8 @@
 ### R11 対応表の欠落を判定する
 
 - feature の Coverage 表で、spec 列または design 列が空の行を挙げる
-- どの行からも指されない spec の `R` と design の `T` を挙げる
-- 三つとも出荷を止める不備として扱う
+- どの行からも指されない spec の `R` と design の `T` は不備にしない
+- 二つとも出荷を止める不備として扱う
 - spec が緩いのか design が緩いのか、どちらの側の不備かを報告に含める
 
 ## Verify
@@ -139,8 +139,8 @@
 
 - Means: checklist
 - 片方の列だけ空の行を含む feature を置き、どちらの側の不備かを添えて挙がることを見る
-- どの行からも指されない `R` を含む spec と、`T` を含む design を置き、両方が
-  挙がることを見る
+- どの行からも指されない `R` を含む spec と、`T` を含む design を置き、どちらも
+  挙がらないことを見る
 
 ## Articles
 - [生成する文書の言語は対象プロジェクトに合わせる](../L4_articles/output-language-follows-project.md)
@@ -151,6 +151,7 @@
 - [test は design を読んで書く](../L4_articles/test-from-design.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [対応表は availability から L2 への向きだけを要求する](../L4_articles/coverage-requires-one-direction.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
 ## References

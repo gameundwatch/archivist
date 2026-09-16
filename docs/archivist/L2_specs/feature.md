@@ -25,7 +25,8 @@
 - 空欄は不備であり、出荷を止める
     - spec 列が空 — 約束せずに作った
     - design 列が空 — 約束したが解いていない
-- どの行からも指されない `R` や `T` は、同じ不備を下から見たものになる
+- どの行からも指されない `R` や `T` は不備にしない。条項が design や spec に直接
+  効くことがあり、表はその向きを要求しない
 
 ### R5 散文は対象プロジェクトの言語で書く
 
@@ -63,7 +64,7 @@
 - Means: checklist
 - 各 availability が一行を持ち、spec 列と design 列が共に埋まっていることを見る
 - 片方の列だけ空の行を含む文書を与え、どちらが空かを言い当てて止まることを見る
-- 仕様の全 `R` と設計の全 `T` が、いずれかの行から指されていることを見る
+- どの行からも指されない `R` や `T` があっても止まらないことを見る
 
 ### V5 言語の追随
 
@@ -76,6 +77,7 @@
 - [配布物は英語で書く](../L4_articles/distributed-content-in-english.md)
 - [機能が何かは条項であり、下層の要約ではない](../L4_articles/features-come-from-articles.md)
 - [spec と design の整合を担保するのは feature だけ](../L4_articles/feature-joins-spec-and-design.md)
+- [対応表は availability から L2 への向きだけを要求する](../L4_articles/coverage-requires-one-direction.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
 - [参照はファイル単位で張る](../L4_articles/references-are-file-scoped.md)
 
