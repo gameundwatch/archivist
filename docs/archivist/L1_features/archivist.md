@@ -26,6 +26,8 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 - **A7** 組み直しが終わると、索引と盤面が新しい文書群に追随している
     - 索引が先、盤面が後に組み直される
 
+- **A8** どう作るかを述べる条項を指定しても、文書は組まれない
+
 ### Coverage
 
 | availability | spec | design |
@@ -37,8 +39,10 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 | A5 | R5 | T2, T3, T4, T5, T6 |
 | A6 | R6 | T1 |
 | A7 | R7 | T1, T7, T8 |
+| A8 | R8 | T2, T3, T4, T5, T6 |
 
 ## Articles
+- [整理するのは何を作るかであり、どう作るかではない](../L4_articles/what-not-how.md)
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [還元はするが、条項は立てない](../L4_articles/reduction-not-article.md)
 - [スキルは文書の要素ごとに割る](../L4_articles/skill-per-element.md)

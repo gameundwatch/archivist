@@ -42,6 +42,8 @@ flowchart LR
     - Details: archivist はテンプレートを持たない。文書を書くのは下位スキルになる
 - 取り込みは Relation に載せず、名を告げるだけにする
     - Details: 起動順の外にあり、archivist が呼ぶ相手ではない
+- 下位スキルは、どう作るかを述べる条項から文書を起こさない
+    - Details: 読んで何も起こらないだけで、停止の報告はしない
 
 ## Verify
 
@@ -82,6 +84,7 @@ flowchart LR
 - feature の入力に L2 の両方が含まれ、Coverage 表を書くことになっていることを見る
 
 ## Articles
+- [整理するのは何を作るかであり、どう作るかではない](../L4_articles/what-not-how.md)
 - [生成される索引は層に属さない](../L4_articles/index-outside-layers.md)
 - [ホワイトボードは還元の最後に、索引の後で組み直す](../L4_articles/whiteboard-follows-index.md)
 - [spec と design は互いを引かない](../L4_articles/spec-design-independent.md)
