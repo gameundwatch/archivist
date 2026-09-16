@@ -52,9 +52,10 @@ References, which links each of them as a whole file.
 | No spec | Built without being promised |
 | No design | Promised without being solved |
 
-Both stop shipping. An `R` or a `T` that appears in no row is the same defect seen
-from below. This is the point before implementation where a loose spec or a loose
-design shows itself.
+Both stop shipping. An `R` or a `T` that appears in no row is not a defect: an
+article can act directly on a spec or a design, and the table demands nothing in
+that direction. This is the point before implementation where a loose spec or a
+loose design shows itself.
 
 ## One file per run
 

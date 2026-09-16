@@ -55,13 +55,15 @@ existence of the thing the document names, never any output produced by running 
 the document to be fact. Whether it passes is out of scope.
 
 **Coverage** — the feature's table is the only place spec and design meet, so it is
-the only place their disagreement is visible. Three defects, all of which stop
+the only place their disagreement is visible. Two defects, both of which stop
 shipping.
 
 - a row with an empty `spec` cell — built without being promised
 - a row with an empty `design` cell — promised without being solved
-- an `R` in a spec, or a `T` in a design, that no row cites — the same two defects
-  seen from below
+
+An `R` in a spec, or a `T` in a design, that no row cites is not a defect. An
+article can act directly on a spec or a design, and the table demands nothing in
+that direction.
 
 Report which of the two a defect is. It says whether the spec or the design is the
 loose one, and it says so before implementation starts.

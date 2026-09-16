@@ -50,7 +50,8 @@ Write the prose in the language the project already uses.
     A blank cell is a defect and stops shipping.
     An empty spec cell means it was built without being promised.
     An empty design cell means it was promised without being solved.
-    An R or a T that appears in no row is the same defect seen from below.
+    An R or a T that appears in no row is not a defect. An article can act
+    directly on a spec or a design, and the table demands nothing in that direction.
 -->
 
 | availability | spec | design |
