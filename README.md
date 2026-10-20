@@ -38,7 +38,7 @@ flowchart TD
     structure --> terms
 ```
 
-実線が参照の方向で、上の層から直下の層へ引く。破線は実装の対応を示す。
+線は参照の方向で、上の層から直下の層へ引く。
 
 ```mermaid
 flowchart TD

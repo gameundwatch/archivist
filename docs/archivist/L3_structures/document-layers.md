@@ -29,20 +29,12 @@ flowchart TD
     structure --> terms
     test --> code
     debug --> code
-    design -.-> code
-    design -.-> test
-    spec -.-> debug
 ```
 
-実線は参照の方向で、上の層から直下の層へ引く。破線は実装の対応を示し、
-参照の順序には数えない。
+線は参照の方向で、上の層から直下の層へ引く。
 
 L2 の二つに線は無い。spec と design は対等な並列で、どちらの向きにも引かない。
 両者が矛盾していないことは feature の Coverage 表が担保する。
-
-破線が spec から debug へ、design から test へ分かれているのは、二つの検証が
-別のものを判定するためにある。debug は成果物を動かして約束を判定し、test は
-材料をパーツ単位で判定する。spec から test へも、design から debug へも線は引かない。
 
 ### D2 articles への参照
 
@@ -70,7 +62,31 @@ flowchart TD
 articles だけは D1 の例外で、どの層からも直接指せる。L3 から L4 への線は
 D1 の直下への参照と重なる。
 
-### D3 還元の向き
+### D3 実装の対応
+
+```mermaid
+flowchart TD
+    subgraph L2[L2 solutions]
+        design[design: L2_designs/*]
+        spec[spec: L2_specs/*]
+    end
+    subgraph L5[L5 sources]
+        code[code: src/*]
+        test[test: test/*]
+        debug[debug: e2e/* or checklist]
+    end
+    design -.-> code
+    design -.-> test
+    spec -.-> debug
+```
+
+破線は実装の対応で、参照の順序には数えない。
+
+破線が spec から debug へ、design から test へ分かれているのは、二つの検証が
+別のものを判定するためにある。debug は成果物を動かして約束を判定し、test は
+材料をパーツ単位で判定する。spec から test へも、design から debug へも線は引かない。
+
+### D4 還元の向き
 
 ```mermaid
 flowchart BT
