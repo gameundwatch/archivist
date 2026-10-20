@@ -11,6 +11,8 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 情報の参照順序を7ノード5層で定める。層は「一つ下の層の要素が消えたときに一緒に
 消えるかどうか」で分かれる。
 
+このSkillの役割は、以下の層のうち、L1~L4の作成である。
+
 ```mermaid
 flowchart TD
     subgraph L1[L1 features]
@@ -36,10 +38,6 @@ flowchart TD
     L1 --> L4
     L2 --> L4
     structure --> terms
-    debug --> code
-    design -.-> code
-    design -.-> test
-    spec -.-> debug
 ```
 
 実線が参照の方向で、上の層から直下の層へ引く。articles だけは例外で、どの層からも
@@ -102,7 +100,7 @@ term → structure → (spec & design) → feature
 skills.sh または Claude Code の skill として、`skills/` 以下を導入する。
 
 ```
-npx skills add <owner>/<repo>
+npx skills add gameundwatch/archivist
 ```
 
 導入先には `docs/archivist/` が作られ、6つのディレクトリが各ノードに対応する。
