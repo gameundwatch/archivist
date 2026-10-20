@@ -35,13 +35,33 @@ flowchart TD
         debug
     end
     L1 --> L2 --> L3 --> L4 --> L5
-    L1 --> L4
-    L2 --> L4
     structure --> terms
 ```
 
-実線が参照の方向で、上の層から直下の層へ引く。articles だけは例外で、どの層からも
-直接指せる——どの層のどの記述にも理由はあり得るため。破線は実装の対応を示す。
+実線が参照の方向で、上の層から直下の層へ引く。破線は実装の対応を示す。
+
+```mermaid
+flowchart TD
+    subgraph L1[L1 features]
+        feature[features]
+    end
+    subgraph L2[L2 solutions]
+        design
+        spec
+    end
+    subgraph L3[L3 domains]
+        terms
+        structure
+    end
+    subgraph L4[L4 articles]
+        articles
+    end
+    L1 --> L4
+    L2 --> L4
+    L3 --> L4
+```
+
+articles だけは例外で、どの層からも直接指せる——どの層のどの記述にも理由はあり得るため。
 
 **spec と design は互いを引かない。** 前者は What を、後者は How を担当する対等な
 並列で、互いを待たずに書ける。両者が矛盾していないことは、上の feature が
