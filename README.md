@@ -1,4 +1,4 @@
-# Archivist
+<img width="1500" height="500" alt="Image" src="https://github.com/user-attachments/assets/b0c85e61-7e00-4994-9a3e-f718f67d5d9f" />
 
 決断(decision)・定義(definition)をひっくるめた条項から、設計文書を組み直すためのskills。
 
