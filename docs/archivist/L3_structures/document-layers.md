@@ -75,14 +75,14 @@ flowchart TD
         test[test: test/*]
         debug[debug: e2e/* or checklist]
     end
-    design -.-> code
-    design -.-> test
-    spec -.-> debug
+    design --> code
+    design --> test
+    spec --> debug
 ```
 
-破線は実装の対応で、参照の順序には数えない。
+線は実装の対応で、参照の順序には数えない。
 
-破線が spec から debug へ、design から test へ分かれているのは、二つの検証が
+線が spec から debug へ、design から test へ分かれているのは、二つの検証が
 別のものを判定するためにある。debug は成果物を動かして約束を判定し、test は
 材料をパーツ単位で判定する。spec から test へも、design から debug へも線は引かない。
 
