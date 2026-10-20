@@ -6,7 +6,47 @@ ADR は部分解であり、その集合だけでは実装に必要な文書群�
 中間には整理されない条項が残り、実装時に未考慮の部分を取りこぼす。archivist は
 条項の集合を起点に、それが要求する上層の文書を書き起こす。**条項は下さない。**
 
-## 層
+## 🔧 導入
+
+skills.sh または Claude Code の skill として、`skills/` 以下を導入する。
+
+```
+npx skills add gameundwatch/archivist
+```
+
+導入先には `docs/archivist/` が作られ、6つのディレクトリが各ノードに対応する。
+
+```
+docs/archivist/
+  L1_features/  L2_specs/  L2_designs/  L3_structures/  L3_terms/  L4_articles/
+```
+
+##  コマンド
+
+| 実行者 | コマンド | すること | 詳細 |
+| --- | --- | --- | --- |
+| 👤 | `/archivist` | 条項を起点に、届く範囲の文書を組み直す | [archivist](docs/archivist/L1_features/archivist.md) |
+| 🤖 | `/archivist-term` | 条項が意味を確定させた語を1枚起こす | [term](docs/archivist/L1_features/term.md) |
+| 🤖 | `/archivist-structure` | 条項が課した形を図として1枚起こす | [structure](docs/archivist/L1_features/structure.md) |
+| 🤖 | `/archivist-spec` | 条項から導ける約束を要件と検証として書く | [spec](docs/archivist/L1_features/spec.md) |
+| 🤖 | `/archivist-design` | 要件を満たす中身を材料と規則として書く | [design](docs/archivist/L1_features/design.md) |
+| 🤖 | `/archivist-feature` | 条項が定めた機能を1枚書く | [feature](docs/archivist/L1_features/feature.md) |
+| 👤 | `/archivist-check` | 揃っているかを判定する。書き換えない | [check](docs/archivist/L1_features/check.md) |
+| 🤖 | `/archivist-promote` | 実現先が揃った印を外し、流入リンクを追随させる。将来的に | [promote](docs/archivist/L1_features/promote.md) |
+| 👤 | `/archivist-adopt` | 外にある条項記述を突き合わせ、採ったものを置く | [adopt](docs/archivist/L1_features/adopt.md) |
+
+起動順は書き起こしの向きに従う。
+
+```
+term → structure → (spec & design) → feature
+```
+
+`/archivist` はこの順に呼び、各段で書くものが無ければ飛ばす。**層を飛ばさないことと、
+全ての層に一枚ずつ作ることは別**になる。
+
+## ⚙️ How it works?
+
+### 層
 
 情報の参照順序を7ノード5層で定める。層は「一つ下の層の要素が消えたときに一緒に
 消えるかどうか」で分かれる。
@@ -73,30 +113,7 @@ availability ごとの対応表として担保する。
 
 **参照は上から下へ、書き起こしは下から上へ。** この二つは別のものを指す。
 
-## コマンド
-
-| コマンド | すること | 詳細 |
-| --- | --- | --- |
-| `/archivist` | 条項を起点に、届く範囲の文書を組み直す | [archivist](docs/archivist/L1_features/archivist.md) |
-| `/archivist-term` | 条項が意味を確定させた語を1枚起こす | [term](docs/archivist/L1_features/term.md) |
-| `/archivist-structure` | 条項が課した形を図として1枚起こす | [structure](docs/archivist/L1_features/structure.md) |
-| `/archivist-spec` | 条項から導ける約束を要件と検証として書く | [spec](docs/archivist/L1_features/spec.md) |
-| `/archivist-design` | 要件を満たす中身を材料と規則として書く | [design](docs/archivist/L1_features/design.md) |
-| `/archivist-feature` | 条項が定めた機能を1枚書く | [feature](docs/archivist/L1_features/feature.md) |
-| `/archivist-check` | 揃っているかを判定する。書き換えない | [check](docs/archivist/L1_features/check.md) |
-| `/archivist-promote` | 実現先が揃った印を外し、流入リンクを追随させる | [promote](docs/archivist/L1_features/promote.md) |
-| `/archivist-adopt` | 外にある条項記述を突き合わせ、採ったものを置く | [adopt](docs/archivist/L1_features/adopt.md) |
-
-起動順は書き起こしの向きに従う。
-
-```
-term → structure → (spec & design) → feature
-```
-
-`/archivist` はこの順に呼び、各段で書くものが無ければ飛ばす。**層を飛ばさないことと、
-全ての層に一枚ずつ作ることは別**になる。
-
-## 印
+### 印
 
 実現先がまだ実在しない文書は、ファイル名の先頭に `_` を付ける。`ls` に印が出るので、
 どこまでが現物でどこからが予定かが一覧で読める。
@@ -115,22 +132,7 @@ term → structure → (spec & design) → feature
 外すのは `/archivist-check` の報告を受けた `/archivist-promote`。check は読むだけで
 書き換えない。
 
-## 導入
-
-skills.sh または Claude Code の skill として、`skills/` 以下を導入する。
-
-```
-npx skills add gameundwatch/archivist
-```
-
-導入先には `docs/archivist/` が作られ、6つのディレクトリが各ノードに対応する。
-
-```
-docs/archivist/
-  L1_features/  L2_specs/  L2_designs/  L3_structures/  L3_terms/  L4_articles/
-```
-
-## 担当外
+### 担当外
 
 - **条項を立てること。** archivist は既に `L4_articles/` に置かれたものだけを読む
 - **文書に無い実装を見つけること。** 実装から条項への還元は前段の仕事になる
